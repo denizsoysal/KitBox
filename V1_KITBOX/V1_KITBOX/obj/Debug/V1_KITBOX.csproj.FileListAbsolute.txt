@@ -1,0 +1,10 @@
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe.config
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.pdb
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csprojAssemblyReference.cache
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Form1.resources
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Properties.Resources.resources
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.GenerateResource.cache
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
+C:\Users\Yannis\Documents\Q2\Projet Genie Logiciel\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
