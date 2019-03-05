@@ -19,3 +19,14 @@ C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe.config
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.pdb
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csprojAssemblyReference.cache
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Order_form.resources
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Order_part2.resources
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Properties.Resources.resources
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.GenerateResource.cache
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
+C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
