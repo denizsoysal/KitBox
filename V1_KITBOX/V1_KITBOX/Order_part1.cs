@@ -78,5 +78,10 @@ namespace V1_KITBOX
         {
 
         }
+
+        private void dimension_title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
