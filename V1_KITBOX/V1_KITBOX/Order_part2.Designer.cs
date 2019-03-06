@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order_part2));
             this.resume_title = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -59,7 +60,7 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.82401F));
@@ -79,20 +80,22 @@
             // 
             // userControlBoxe1
             // 
+            this.userControlBoxe1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControlBoxe1.BackgroundImage")));
             this.userControlBoxe1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userControlBoxe1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userControlBoxe1.Location = new System.Drawing.Point(3, 3);
             this.userControlBoxe1.Name = "userControlBoxe1";
-            this.userControlBoxe1.Size = new System.Drawing.Size(879, 329);
+            this.userControlBoxe1.Size = new System.Drawing.Size(620, 329);
             this.userControlBoxe1.TabIndex = 0;
             // 
             // userControlBoxe2
             // 
+            this.userControlBoxe2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControlBoxe2.BackgroundImage")));
             this.userControlBoxe2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userControlBoxe2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userControlBoxe2.Location = new System.Drawing.Point(3, 338);
             this.userControlBoxe2.Name = "userControlBoxe2";
-            this.userControlBoxe2.Size = new System.Drawing.Size(879, 302);
+            this.userControlBoxe2.Size = new System.Drawing.Size(620, 302);
             this.userControlBoxe2.TabIndex = 1;
             // 
             // Order_part2
@@ -101,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 734);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Order_part2";
             this.Text = "Order_part2";
             this.tableLayoutPanel1.ResumeLayout(false);

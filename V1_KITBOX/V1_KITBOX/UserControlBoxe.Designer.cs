@@ -100,10 +100,11 @@
             // boxe_title
             // 
             this.boxe_title.AutoSize = true;
-            this.boxe_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxe_title.Location = new System.Drawing.Point(397, 12);
+            this.boxe_title.BackColor = System.Drawing.Color.BurlyWood;
+            this.boxe_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxe_title.Location = new System.Drawing.Point(252, 0);
             this.boxe_title.Name = "boxe_title";
-            this.boxe_title.Size = new System.Drawing.Size(126, 42);
+            this.boxe_title.Size = new System.Drawing.Size(109, 37);
             this.boxe_title.TabIndex = 5;
             this.boxe_title.Text = "Casier";
             // 
@@ -111,7 +112,7 @@
             // 
             this.Door_color.AutoSize = true;
             this.Door_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Door_color.Location = new System.Drawing.Point(66, 251);
+            this.Door_color.Location = new System.Drawing.Point(240, 250);
             this.Door_color.Name = "Door_color";
             this.Door_color.Size = new System.Drawing.Size(109, 31);
             this.Door_color.TabIndex = 6;
@@ -123,9 +124,9 @@
             this.cbx_door_color.Items.AddRange(new object[] {
             "Brun",
             "Blanc"});
-            this.cbx_door_color.Location = new System.Drawing.Point(237, 248);
+            this.cbx_door_color.Location = new System.Drawing.Point(371, 248);
             this.cbx_door_color.Name = "cbx_door_color";
-            this.cbx_door_color.Size = new System.Drawing.Size(273, 33);
+            this.cbx_door_color.Size = new System.Drawing.Size(132, 33);
             this.cbx_door_color.TabIndex = 7;
             // 
             // boxe_color
@@ -151,15 +152,18 @@
             // 
             // panel_hiding
             // 
-            this.panel_hiding.Location = new System.Drawing.Point(70, 238);
+            this.panel_hiding.BackgroundImage = global::V1_KITBOX.Properties.Resources.hiding_panel;
+            this.panel_hiding.Location = new System.Drawing.Point(114, 238);
             this.panel_hiding.Name = "panel_hiding";
-            this.panel_hiding.Size = new System.Drawing.Size(567, 55);
+            this.panel_hiding.Size = new System.Drawing.Size(409, 67);
             this.panel_hiding.TabIndex = 10;
+            this.panel_hiding.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_hiding_Paint);
             // 
             // UserControlBoxe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panel_hiding);
             this.Controls.Add(this.cbx_boxe_color);
@@ -174,7 +178,7 @@
             this.Controls.Add(this.cbx_boxe_height);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "UserControlBoxe";
-            this.Size = new System.Drawing.Size(936, 302);
+            this.Size = new System.Drawing.Size(617, 333);
             this.ResumeLayout(false);
             this.PerformLayout();
 

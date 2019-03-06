@@ -26,5 +26,10 @@ namespace V1_KITBOX
         {
             panel_hiding.Hide();
         }
+
+        private void panel_hiding_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
