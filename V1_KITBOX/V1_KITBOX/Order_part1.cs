@@ -27,7 +27,7 @@ namespace V1_KITBOX
         // Creating a new cabinet when continue_btn is clicked
         private void continue_btn_Click(object sender, EventArgs e)
         {
-            if (comboBoxDepth.Text == "" || comboBoxHeight.Text == ""|| comboBoxWidth.Text == "" || comboBox_corner_color.Text == "")
+            if (comboBoxDepth.Text == "" || comboBoxWidth.Text == "" || comboBox_corner_color.Text == "")
             {
                 MessageBox.Show("Veuillez indiquer une valeur pour chaque dimensions ainsi qu'une couleur pour les cornières.", "Erreur",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -37,16 +37,16 @@ namespace V1_KITBOX
             {
                 int depth = int.Parse(comboBoxDepth.Items[comboBoxDepth.SelectedIndex].ToString());
                 int width = int.Parse(comboBoxWidth.Items[comboBoxWidth.SelectedIndex].ToString());
-                int height = int.Parse(comboBoxHeight.Items[comboBoxHeight.SelectedIndex].ToString());
+                // int height = int.Parse(comboBoxHeight.Items[comboBoxHeight.SelectedIndex].ToString());
 
-                this.armoire = new Cabinet(depth, width, height, comboBox_corner_color.Text);
+                this.armoire = new Cabinet(depth, width, 0, comboBox_corner_color.Text);
                 Order_part2 resume_order = new Order_part2();
 
                 // Show resume of order on listBox of second form (Order_part2)
-                resume_order.lbx_resume.Items.Add("Profondeur: " + armoire.GetDepth() + " cm ");
-                resume_order.lbx_resume.Items.Add("Largeur: " + armoire.GetWidth() + " cm ");
-                resume_order.lbx_resume.Items.Add("Hauteur: " + armoire.GetHeight() + " cm ");
-                resume_order.lbx_resume.Items.Add("Couleur cornières: " + armoire.GetCornerColor());
+                // resume_order.lbx_resume.Items.Add("Profondeur: " + armoire.GetDepth() + " cm ");
+                // resume_order.lbx_resume.Items.Add("Largeur: " + armoire.GetWidth() + " cm ");
+                // resume_order.lbx_resume.Items.Add("Hauteur: " + armoire.GetHeight() + " cm ");
+                // resume_order.lbx_resume.Items.Add("Couleur cornières: " + armoire.GetCornerColor());
                 resume_order.Show();
                 Hide();
 
