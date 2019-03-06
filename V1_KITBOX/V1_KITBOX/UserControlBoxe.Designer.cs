@@ -152,8 +152,7 @@
             // 
             // panel_hiding
             // 
-            this.panel_hiding.BackgroundImage = global::V1_KITBOX.Properties.Resources.hiding_panel;
-            this.panel_hiding.Location = new System.Drawing.Point(114, 238);
+            this.panel_hiding.Location = new System.Drawing.Point(113, 238);
             this.panel_hiding.Name = "panel_hiding";
             this.panel_hiding.Size = new System.Drawing.Size(409, 67);
             this.panel_hiding.TabIndex = 10;
@@ -163,8 +162,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel_hiding);
             this.Controls.Add(this.cbx_boxe_color);
             this.Controls.Add(this.boxe_color);
@@ -178,7 +178,7 @@
             this.Controls.Add(this.cbx_boxe_height);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "UserControlBoxe";
-            this.Size = new System.Drawing.Size(617, 333);
+            this.Size = new System.Drawing.Size(614, 338);
             this.ResumeLayout(false);
             this.PerformLayout();
 
