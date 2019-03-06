@@ -30,3 +30,4 @@ C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.
 C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UserControlBoxe.resources
+C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csprojAssemblyReference.cache

@@ -44,6 +44,10 @@
             // cbx_boxe_height
             // 
             this.cbx_boxe_height.FormattingEnabled = true;
+            this.cbx_boxe_height.Items.AddRange(new object[] {
+            "30",
+            "40",
+            "50"});
             this.cbx_boxe_height.Location = new System.Drawing.Point(237, 85);
             this.cbx_boxe_height.Name = "cbx_boxe_height";
             this.cbx_boxe_height.Size = new System.Drawing.Size(273, 33);
@@ -116,6 +120,9 @@
             // cbx_door_color
             // 
             this.cbx_door_color.FormattingEnabled = true;
+            this.cbx_door_color.Items.AddRange(new object[] {
+            "Brun",
+            "Blanc"});
             this.cbx_door_color.Location = new System.Drawing.Point(237, 248);
             this.cbx_door_color.Name = "cbx_door_color";
             this.cbx_door_color.Size = new System.Drawing.Size(273, 33);
@@ -134,6 +141,9 @@
             // cbx_boxe_color
             // 
             this.cbx_boxe_color.FormattingEnabled = true;
+            this.cbx_boxe_color.Items.AddRange(new object[] {
+            "Brun",
+            "Blanc"});
             this.cbx_boxe_color.Location = new System.Drawing.Point(237, 143);
             this.cbx_boxe_color.Name = "cbx_boxe_color";
             this.cbx_boxe_color.Size = new System.Drawing.Size(273, 33);
@@ -141,7 +151,7 @@
             // 
             // panel_hiding
             // 
-            this.panel_hiding.Location = new System.Drawing.Point(43, 238);
+            this.panel_hiding.Location = new System.Drawing.Point(70, 238);
             this.panel_hiding.Name = "panel_hiding";
             this.panel_hiding.Size = new System.Drawing.Size(567, 55);
             this.panel_hiding.TabIndex = 10;
