@@ -1,0 +1,5 @@
+1. Ouvrir Wampserver
+2. Ouvrir navigateur
+3. Aller sur localhost/phpmyadmin
+4. Aller sur l'onglet importer
+5. Enjoy 
