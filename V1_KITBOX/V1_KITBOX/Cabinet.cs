@@ -13,9 +13,8 @@ namespace V1_KITBOX
         private int width;
         private int depth;
         private string corner_color;
-        public Cabinet(int depth, int width, int height,string corner_color)
+        public Cabinet(int depth , int width, string corner_color)
         {
-            this.height = height;
             this.width = width;
             this.depth = depth;
             this.corner_color = corner_color;
@@ -24,6 +23,9 @@ namespace V1_KITBOX
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }
         public int GetDepth(){ return depth; }
-        public string GetCornerColor() { return corner_color; }
+        public string GetCornerColor() { return corner_color;}
+        
+        public void SetHeight(int height) { this.height = height;}
+
     }
 }

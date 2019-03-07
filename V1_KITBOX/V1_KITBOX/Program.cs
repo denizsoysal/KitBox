@@ -16,7 +16,7 @@ namespace V1_KITBOX
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Order_form());
+            Application.Run(new Form1());
         }
     }
 }
