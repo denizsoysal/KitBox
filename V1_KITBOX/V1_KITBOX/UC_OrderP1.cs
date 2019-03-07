@@ -37,7 +37,7 @@ namespace V1_KITBOX
                 this.BackgroundImage = null;
                 this.Controls.Clear();
                 this.Controls.Add(new UC_OrderP2());
-
+                
 
             }
         }
@@ -47,6 +47,9 @@ namespace V1_KITBOX
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

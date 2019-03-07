@@ -33,9 +33,10 @@
             // 
             // btn_start
             // 
-            this.btn_start.Location = new System.Drawing.Point(856, 736);
+            this.btn_start.Location = new System.Drawing.Point(428, 383);
+            this.btn_start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_start.Name = "btn_start";
-            this.btn_start.Size = new System.Drawing.Size(326, 116);
+            this.btn_start.Size = new System.Drawing.Size(163, 60);
             this.btn_start.TabIndex = 0;
             this.btn_start.Text = "commencer";
             this.btn_start.UseVisualStyleBackColor = true;
@@ -43,12 +44,14 @@
             // 
             // Introduction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.btn_start);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Introduction";
-            this.Size = new System.Drawing.Size(2000, 1000);
+            this.Size = new System.Drawing.Size(942, 483);
             this.Load += new System.EventHandler(this.Introduction_Load);
             this.ResumeLayout(false);
 

@@ -15,10 +15,16 @@ namespace V1_KITBOX
         public UC_OrderP2()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void UC_OrderP2_Load(object sender, EventArgs e)
         {
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
