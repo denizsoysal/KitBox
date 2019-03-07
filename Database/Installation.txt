@@ -1,5 +1,6 @@
 1. Ouvrir Wampserver
 2. Ouvrir navigateur
 3. Aller sur localhost/phpmyadmin
-4. Aller sur l'onglet importer
-5. Enjoy 
+4. Creer une database nommé kitbox_database
+5. Aller sur l'onglet importer
+6. Enjoy 
