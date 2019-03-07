@@ -43,6 +43,7 @@
             // 
             // cbx_boxe_height
             // 
+            this.cbx_boxe_height.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_boxe_height.FormattingEnabled = true;
             this.cbx_boxe_height.Items.AddRange(new object[] {
             "30",
@@ -141,6 +142,7 @@
             // 
             // cbx_boxe_color
             // 
+            this.cbx_boxe_color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_boxe_color.FormattingEnabled = true;
             this.cbx_boxe_color.Items.AddRange(new object[] {
             "Brun",
