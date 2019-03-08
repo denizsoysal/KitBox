@@ -44,10 +44,10 @@
             // 
             this.continue_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.continue_btn.BackColor = System.Drawing.Color.Gainsboro;
-            this.continue_btn.Location = new System.Drawing.Point(725, 387);
-            this.continue_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.continue_btn.Location = new System.Drawing.Point(1450, 744);
+            this.continue_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.continue_btn.Name = "continue_btn";
-            this.continue_btn.Size = new System.Drawing.Size(192, 74);
+            this.continue_btn.Size = new System.Drawing.Size(384, 142);
             this.continue_btn.TabIndex = 0;
             this.continue_btn.Text = "Continuer";
             this.continue_btn.UseVisualStyleBackColor = false;
@@ -62,20 +62,20 @@
             "Brun",
             "Noir",
             "Galvanisé"});
-            this.comboBox_corner_color.Location = new System.Drawing.Point(234, 154);
-            this.comboBox_corner_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_corner_color.Location = new System.Drawing.Point(468, 296);
+            this.comboBox_corner_color.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox_corner_color.Name = "comboBox_corner_color";
-            this.comboBox_corner_color.Size = new System.Drawing.Size(102, 21);
+            this.comboBox_corner_color.Size = new System.Drawing.Size(200, 33);
             this.comboBox_corner_color.TabIndex = 12;
             // 
             // label_corner_color
             // 
             this.label_corner_color.AutoSize = true;
             this.label_corner_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_corner_color.Location = new System.Drawing.Point(96, 158);
-            this.label_corner_color.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_corner_color.Location = new System.Drawing.Point(192, 304);
+            this.label_corner_color.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_corner_color.Name = "label_corner_color";
-            this.label_corner_color.Size = new System.Drawing.Size(120, 17);
+            this.label_corner_color.Size = new System.Drawing.Size(228, 31);
             this.label_corner_color.TabIndex = 11;
             this.label_corner_color.Text = "Couleur cornières";
             // 
@@ -89,20 +89,20 @@
             "30",
             "40",
             "50"});
-            this.comboBoxWidth.Location = new System.Drawing.Point(233, 109);
-            this.comboBoxWidth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxWidth.Location = new System.Drawing.Point(466, 210);
+            this.comboBoxWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxWidth.Name = "comboBoxWidth";
-            this.comboBoxWidth.Size = new System.Drawing.Size(103, 21);
+            this.comboBoxWidth.Size = new System.Drawing.Size(202, 33);
             this.comboBoxWidth.TabIndex = 3;
             // 
             // width_label
             // 
             this.width_label.AutoSize = true;
             this.width_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.width_label.Location = new System.Drawing.Point(158, 110);
-            this.width_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.width_label.Location = new System.Drawing.Point(316, 212);
+            this.width_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.width_label.Name = "width_label";
-            this.width_label.Size = new System.Drawing.Size(58, 17);
+            this.width_label.Size = new System.Drawing.Size(107, 31);
             this.width_label.TabIndex = 4;
             this.width_label.Text = "Largeur";
             // 
@@ -112,10 +112,10 @@
             this.dimension_title.AutoSize = true;
             this.dimension_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dimension_title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.dimension_title.Location = new System.Drawing.Point(633, 16);
+            this.dimension_title.Location = new System.Drawing.Point(1266, 31);
             this.dimension_title.Margin = new System.Windows.Forms.Padding(0);
             this.dimension_title.Name = "dimension_title";
-            this.dimension_title.Size = new System.Drawing.Size(284, 26);
+            this.dimension_title.Size = new System.Drawing.Size(559, 51);
             this.dimension_title.TabIndex = 5;
             this.dimension_title.Text = "Créez votre propre armoire !";
             this.dimension_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,20 +131,20 @@
             "30",
             "40",
             "50"});
-            this.comboBoxDepth.Location = new System.Drawing.Point(234, 75);
-            this.comboBoxDepth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxDepth.Location = new System.Drawing.Point(468, 144);
+            this.comboBoxDepth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDepth.Name = "comboBoxDepth";
-            this.comboBoxDepth.Size = new System.Drawing.Size(103, 21);
+            this.comboBoxDepth.Size = new System.Drawing.Size(202, 33);
             this.comboBoxDepth.TabIndex = 1;
             // 
             // depth_label
             // 
             this.depth_label.AutoSize = true;
             this.depth_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.depth_label.Location = new System.Drawing.Point(137, 75);
-            this.depth_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.depth_label.Location = new System.Drawing.Point(274, 144);
+            this.depth_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.depth_label.Name = "depth_label";
-            this.depth_label.Size = new System.Drawing.Size(79, 17);
+            this.depth_label.Size = new System.Drawing.Size(148, 31);
             this.depth_label.TabIndex = 2;
             this.depth_label.Text = "Profondeur";
             // 
@@ -160,19 +160,20 @@
             this.panel1.Controls.Add(this.comboBoxDepth);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(942, 483);
+            this.panel1.Size = new System.Drawing.Size(1884, 929);
             this.panel1.TabIndex = 13;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // UC_OrderP1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_OrderP1";
-            this.Size = new System.Drawing.Size(942, 483);
+            this.Size = new System.Drawing.Size(1884, 929);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
