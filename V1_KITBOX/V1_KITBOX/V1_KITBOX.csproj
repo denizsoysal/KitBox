@@ -121,6 +121,9 @@
   <ItemGroup>
     <None Include="Resources\hiding_panel.png" />
     <None Include="Resources\etage_boxe.png" />
+    <None Include="Resources\add_button.png" />
+    <None Include="Resources\rond_button.png" />
+    <None Include="Resources\wooden-shelf.jpg" />
     <Content Include="Ressources\etage_boxe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

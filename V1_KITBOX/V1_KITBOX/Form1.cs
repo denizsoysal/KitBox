@@ -24,5 +24,10 @@ namespace V1_KITBOX
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
