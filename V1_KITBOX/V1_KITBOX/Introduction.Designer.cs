@@ -33,13 +33,15 @@
             // 
             // btn_start
             // 
-            this.btn_start.Location = new System.Drawing.Point(717, 946);
+            this.btn_start.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_start.Font = new System.Drawing.Font("Castellar", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_start.Location = new System.Drawing.Point(714, 904);
             this.btn_start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_start.Name = "btn_start";
-            this.btn_start.Size = new System.Drawing.Size(326, 115);
+            this.btn_start.Size = new System.Drawing.Size(391, 143);
             this.btn_start.TabIndex = 0;
             this.btn_start.Text = "commencer";
-            this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.UseVisualStyleBackColor = false;
             this.btn_start.Click += new System.EventHandler(this.button1_Click);
             // 
             // Introduction
