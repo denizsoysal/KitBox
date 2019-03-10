@@ -33,8 +33,8 @@
             // 
             // btn_start
             // 
-            this.btn_start.Location = new System.Drawing.Point(452, 542);
-            this.btn_start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_start.Location = new System.Drawing.Point(717, 946);
+            this.btn_start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(326, 115);
             this.btn_start.TabIndex = 0;
@@ -47,11 +47,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.wooden_shelf;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btn_start);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Introduction";
-            this.Size = new System.Drawing.Size(1800, 900);
+            this.Size = new System.Drawing.Size(1777, 1065);
             this.Load += new System.EventHandler(this.Introduction_Load);
             this.ResumeLayout(false);
 

@@ -29,21 +29,27 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.lbl_etage = new System.Windows.Forms.Label();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label4
@@ -57,27 +63,6 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "Hauteur";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1415, 846);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 42);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Etage n°";
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Location = new System.Drawing.Point(1063, 773);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(274, 110);
-            this.panel9.TabIndex = 25;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -88,16 +73,6 @@
             this.label6.Size = new System.Drawing.Size(109, 31);
             this.label6.TabIndex = 35;
             this.label6.Text = "Couleur";
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Location = new System.Drawing.Point(1063, 658);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(274, 110);
-            this.panel10.TabIndex = 24;
             // 
             // label7
             // 
@@ -110,16 +85,6 @@
             this.label7.TabIndex = 32;
             this.label7.Text = "Portes";
             // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel11.Location = new System.Drawing.Point(1063, 321);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(274, 110);
-            this.panel11.TabIndex = 28;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -131,16 +96,6 @@
             this.checkBox1.TabIndex = 34;
             this.checkBox1.Text = "Bois";
             this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Location = new System.Drawing.Point(1063, 206);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(274, 110);
-            this.panel12.TabIndex = 29;
             // 
             // comboBox1
             // 
@@ -156,36 +111,16 @@
             this.comboBox1.Size = new System.Drawing.Size(272, 33);
             this.comboBox1.TabIndex = 30;
             // 
-            // panel13
+            // lbl_etage
             // 
-            this.panel13.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(1063, 437);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(274, 110);
-            this.panel13.TabIndex = 27;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(593, 206);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 42);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Etage n°";
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Location = new System.Drawing.Point(1063, 554);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(274, 110);
-            this.panel14.TabIndex = 26;
+            this.lbl_etage.AutoSize = true;
+            this.lbl_etage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_etage.Location = new System.Drawing.Point(593, 206);
+            this.lbl_etage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_etage.Name = "lbl_etage";
+            this.lbl_etage.Size = new System.Drawing.Size(147, 42);
+            this.lbl_etage.TabIndex = 37;
+            this.lbl_etage.Text = "Etage 1";
             // 
             // checkBox2
             // 
@@ -198,16 +133,6 @@
             this.checkBox2.TabIndex = 33;
             this.checkBox2.Text = "Verre";
             this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(1063, 98);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(274, 110);
-            this.panel15.TabIndex = 23;
             // 
             // comboBox2
             // 
@@ -222,34 +147,201 @@
             this.comboBox2.Size = new System.Drawing.Size(272, 33);
             this.comboBox2.TabIndex = 36;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(1318, 672);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(274, 110);
+            this.panel2.TabIndex = 24;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(1318, 371);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(274, 110);
+            this.panel5.TabIndex = 28;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Location = new System.Drawing.Point(1318, 269);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(274, 110);
+            this.panel6.TabIndex = 29;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Location = new System.Drawing.Point(1318, 471);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(274, 110);
+            this.panel4.TabIndex = 27;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Location = new System.Drawing.Point(1318, 571);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(274, 110);
+            this.panel3.TabIndex = 26;
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Location = new System.Drawing.Point(1318, 170);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(274, 110);
+            this.panel7.TabIndex = 23;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(1147, 403);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(124, 63);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(1147, 302);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(124, 63);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button_click);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(1147, 202);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(124, 63);
+            this.button7.TabIndex = 7;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(1147, 598);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(124, 63);
+            this.button3.TabIndex = 3;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button_click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(1147, 505);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(124, 63);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.BackgroundImage = global::V1_KITBOX.Properties.Resources.add_button;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(1147, 694);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 63);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button_click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::V1_KITBOX.Properties.Resources.rond_button;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(1147, 806);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 63);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::V1_KITBOX.Properties.Resources.etage_boxe;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(1318, 776);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(274, 110);
+            this.panel1.TabIndex = 25;
+            // 
             // UC_OrderP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.lbl_etage);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.panel15);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.comboBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_OrderP2";
-            this.Size = new System.Drawing.Size(1884, 929);
+            this.Size = new System.Drawing.Size(1777, 1065);
             this.Load += new System.EventHandler(this.UC_OrderP2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,20 +351,26 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label lbl_etage;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

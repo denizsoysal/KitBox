@@ -63,6 +63,16 @@ namespace V1_KITBOX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_button {
+            get {
+                object obj = ResourceManager.GetObject("add_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap etage_boxe {
             get {
                 object obj = ResourceManager.GetObject("etage_boxe", resourceCulture);
@@ -76,6 +86,26 @@ namespace V1_KITBOX.Properties {
         internal static System.Drawing.Bitmap hiding_panel {
             get {
                 object obj = ResourceManager.GetObject("hiding_panel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rond_button {
+            get {
+                object obj = ResourceManager.GetObject("rond_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wooden_shelf {
+            get {
+                object obj = ResourceManager.GetObject("wooden-shelf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
