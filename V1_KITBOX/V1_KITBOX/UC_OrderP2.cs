@@ -11,7 +11,9 @@ using System.Windows.Forms;
 namespace V1_KITBOX
 {
     public partial class UC_OrderP2 : UserControl
+        
     {
+        public int BoxIndex;
         public UC_OrderP2()
         {
             InitializeComponent();
@@ -67,6 +69,7 @@ namespace V1_KITBOX
             
             button.BackgroundImage = global::V1_KITBOX.Properties.Resources.rond_button;
             lbl_etage.Text = "Etage " + button.Text;
+            BoxIndex = Int32.Parse(button.Text);
 
 
 
