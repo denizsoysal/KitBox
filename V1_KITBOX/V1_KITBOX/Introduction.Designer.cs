@@ -34,8 +34,8 @@
             // btn_start
             // 
             this.btn_start.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_start.Font = new System.Drawing.Font("Castellar", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_start.Location = new System.Drawing.Point(714, 904);
+            this.btn_start.Font = new System.Drawing.Font("Castellar", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_start.Location = new System.Drawing.Point(692, 903);
             this.btn_start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(391, 143);
