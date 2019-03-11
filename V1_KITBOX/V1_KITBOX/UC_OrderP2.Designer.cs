@@ -38,10 +38,15 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_delete4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_delete5 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_delete3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_delete2 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_delete6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,6 +55,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_delete7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -165,6 +171,18 @@
             this.panel5.Size = new System.Drawing.Size(274, 110);
             this.panel5.TabIndex = 28;
             // 
+            // btn_delete4
+            // 
+            this.btn_delete4.BackColor = System.Drawing.Color.White;
+            this.btn_delete4.Location = new System.Drawing.Point(1619, 496);
+            this.btn_delete4.Name = "btn_delete4";
+            this.btn_delete4.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete4.TabIndex = 1;
+            this.btn_delete4.Text = "delete";
+            this.btn_delete4.UseVisualStyleBackColor = false;
+            this.btn_delete4.Visible = false;
+            this.btn_delete4.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // panel6
             // 
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -173,6 +191,18 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(274, 110);
             this.panel6.TabIndex = 29;
+            // 
+            // btn_delete5
+            // 
+            this.btn_delete5.BackColor = System.Drawing.Color.White;
+            this.btn_delete5.Location = new System.Drawing.Point(1619, 395);
+            this.btn_delete5.Name = "btn_delete5";
+            this.btn_delete5.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete5.TabIndex = 1;
+            this.btn_delete5.Text = "delete";
+            this.btn_delete5.UseVisualStyleBackColor = false;
+            this.btn_delete5.Visible = false;
+            this.btn_delete5.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // panel4
             // 
@@ -183,6 +213,18 @@
             this.panel4.Size = new System.Drawing.Size(274, 110);
             this.panel4.TabIndex = 27;
             // 
+            // btn_delete3
+            // 
+            this.btn_delete3.BackColor = System.Drawing.Color.White;
+            this.btn_delete3.Location = new System.Drawing.Point(1619, 598);
+            this.btn_delete3.Name = "btn_delete3";
+            this.btn_delete3.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete3.TabIndex = 1;
+            this.btn_delete3.Text = "delete";
+            this.btn_delete3.UseVisualStyleBackColor = false;
+            this.btn_delete3.Visible = false;
+            this.btn_delete3.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // panel3
             // 
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -192,6 +234,18 @@
             this.panel3.Size = new System.Drawing.Size(274, 110);
             this.panel3.TabIndex = 26;
             // 
+            // btn_delete2
+            // 
+            this.btn_delete2.BackColor = System.Drawing.Color.White;
+            this.btn_delete2.Location = new System.Drawing.Point(1619, 700);
+            this.btn_delete2.Name = "btn_delete2";
+            this.btn_delete2.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete2.TabIndex = 1;
+            this.btn_delete2.Text = "delete";
+            this.btn_delete2.UseVisualStyleBackColor = false;
+            this.btn_delete2.Visible = false;
+            this.btn_delete2.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // panel7
             // 
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -200,6 +254,18 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(274, 110);
             this.panel7.TabIndex = 23;
+            // 
+            // btn_delete6
+            // 
+            this.btn_delete6.BackColor = System.Drawing.Color.White;
+            this.btn_delete6.Location = new System.Drawing.Point(1619, 287);
+            this.btn_delete6.Name = "btn_delete6";
+            this.btn_delete6.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete6.TabIndex = 1;
+            this.btn_delete6.Text = "delete";
+            this.btn_delete6.UseVisualStyleBackColor = false;
+            this.btn_delete6.Visible = false;
+            this.btn_delete6.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // button5
             // 
@@ -308,6 +374,18 @@
             this.panel1.Size = new System.Drawing.Size(274, 110);
             this.panel1.TabIndex = 25;
             // 
+            // btn_delete7
+            // 
+            this.btn_delete7.BackColor = System.Drawing.Color.White;
+            this.btn_delete7.Location = new System.Drawing.Point(1619, 191);
+            this.btn_delete7.Name = "btn_delete7";
+            this.btn_delete7.Size = new System.Drawing.Size(87, 57);
+            this.btn_delete7.TabIndex = 0;
+            this.btn_delete7.Text = "delete";
+            this.btn_delete7.UseVisualStyleBackColor = false;
+            this.btn_delete7.Visible = false;
+            this.btn_delete7.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // UC_OrderP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -317,6 +395,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.btn_delete2);
+            this.Controls.Add(this.btn_delete3);
+            this.Controls.Add(this.btn_delete4);
+            this.Controls.Add(this.btn_delete5);
+            this.Controls.Add(this.btn_delete6);
+            this.Controls.Add(this.btn_delete7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
@@ -372,5 +456,11 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_delete2;
+        private System.Windows.Forms.Button btn_delete5;
+        private System.Windows.Forms.Button btn_delete6;
+        private System.Windows.Forms.Button btn_delete4;
+        private System.Windows.Forms.Button btn_delete3;
+        private System.Windows.Forms.Button btn_delete7;
     }
 }
