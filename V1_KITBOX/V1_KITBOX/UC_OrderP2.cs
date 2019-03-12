@@ -148,5 +148,12 @@ namespace V1_KITBOX
             button.Hide();
          
         }
+
+        private void buttonAdToCart_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = null;
+            this.Controls.Clear();
+            this.Controls.Add(new UC_Cart());
+        }
     }
 }

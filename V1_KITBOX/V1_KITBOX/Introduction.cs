@@ -19,7 +19,7 @@ namespace V1_KITBOX
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = null;
+            //this.BackgroundImage = null;
             this.Controls.Clear();
             this.Controls.Add(new UC_OrderP1());
         }

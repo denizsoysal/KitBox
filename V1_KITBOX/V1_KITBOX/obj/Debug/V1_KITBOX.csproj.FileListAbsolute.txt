@@ -75,3 +75,4 @@ C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
+C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Cart.resources

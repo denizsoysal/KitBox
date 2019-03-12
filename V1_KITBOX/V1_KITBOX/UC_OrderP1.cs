@@ -51,5 +51,10 @@ namespace V1_KITBOX
         {
 
         }
+
+        private void UC_OrderP1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

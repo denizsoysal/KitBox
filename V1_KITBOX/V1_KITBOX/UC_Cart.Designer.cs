@@ -32,8 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelPrixTotal = new System.Windows.Forms.Label();
             this.labelDisponibilité = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonreturnShopping = new System.Windows.Forms.Button();
+            this.buttonValidateAndPay = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -42,7 +42,7 @@
             // 
             this.labelResume.AutoSize = true;
             this.labelResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResume.Location = new System.Drawing.Point(24, 40);
+            this.labelResume.Location = new System.Drawing.Point(36, 44);
             this.labelResume.Name = "labelResume";
             this.labelResume.Size = new System.Drawing.Size(238, 39);
             this.labelResume.TabIndex = 0;
@@ -50,16 +50,16 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(31, 100);
+            this.panel1.Location = new System.Drawing.Point(43, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(563, 422);
+            this.panel1.Size = new System.Drawing.Size(563, 402);
             this.panel1.TabIndex = 1;
             // 
             // labelPrixTotal
             // 
             this.labelPrixTotal.AutoSize = true;
             this.labelPrixTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrixTotal.Location = new System.Drawing.Point(633, 350);
+            this.labelPrixTotal.Location = new System.Drawing.Point(639, 364);
             this.labelPrixTotal.Name = "labelPrixTotal";
             this.labelPrixTotal.Size = new System.Drawing.Size(108, 25);
             this.labelPrixTotal.TabIndex = 2;
@@ -68,36 +68,38 @@
             // labelDisponibilité
             // 
             this.labelDisponibilité.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDisponibilité.Location = new System.Drawing.Point(600, 393);
+            this.labelDisponibilité.Location = new System.Drawing.Point(606, 407);
             this.labelDisponibilité.Name = "labelDisponibilité";
-            this.labelDisponibilité.Size = new System.Drawing.Size(141, 23);
+            this.labelDisponibilité.Size = new System.Drawing.Size(153, 23);
             this.labelDisponibilité.TabIndex = 3;
             this.labelDisponibilité.Text = "Disponibilité :";
             // 
-            // button1
+            // buttonreturnShopping
             // 
-            this.button1.Location = new System.Drawing.Point(616, 473);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 49);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Continuer les achats";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonreturnShopping.Location = new System.Drawing.Point(612, 468);
+            this.buttonreturnShopping.Name = "buttonreturnShopping";
+            this.buttonreturnShopping.Size = new System.Drawing.Size(132, 49);
+            this.buttonreturnShopping.TabIndex = 4;
+            this.buttonreturnShopping.Text = "Continuer les achats";
+            this.buttonreturnShopping.UseVisualStyleBackColor = true;
+            this.buttonreturnShopping.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonValidateAndPay
             // 
-            this.button2.Location = new System.Drawing.Point(742, 473);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 49);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Valider et payer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonValidateAndPay.Location = new System.Drawing.Point(753, 468);
+            this.buttonValidateAndPay.Name = "buttonValidateAndPay";
+            this.buttonValidateAndPay.Size = new System.Drawing.Size(132, 49);
+            this.buttonValidateAndPay.TabIndex = 5;
+            this.buttonValidateAndPay.Text = "Valider et payer";
+            this.buttonValidateAndPay.UseVisualStyleBackColor = true;
+            this.buttonValidateAndPay.Click += new System.EventHandler(this.buttonValidateAndPay_Click);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(762, 352);
+            this.label1.Location = new System.Drawing.Point(768, 366);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 6;
             this.label1.Text = "90€";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -105,9 +107,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(742, 395);
+            this.label2.Location = new System.Drawing.Point(748, 409);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 23);
+            this.label2.Size = new System.Drawing.Size(132, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Dans une semaine";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -116,16 +118,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.labelDisponibilité);
-            this.Controls.Add(this.labelPrixTotal);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.buttonreturnShopping);
             this.Controls.Add(this.labelResume);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonValidateAndPay);
+            this.Controls.Add(this.labelPrixTotal);
+            this.Controls.Add(this.labelDisponibilité);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Cart";
             this.Size = new System.Drawing.Size(888, 554);
+            this.Load += new System.EventHandler(this.UC_Cart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,8 +142,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelPrixTotal;
         private System.Windows.Forms.Label labelDisponibilité;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonreturnShopping;
+        private System.Windows.Forms.Button buttonValidateAndPay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
