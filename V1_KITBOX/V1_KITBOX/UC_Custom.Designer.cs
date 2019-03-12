@@ -1,6 +1,6 @@
 ﻿namespace V1_KITBOX
 {
-    partial class UC_OrderP2
+    partial class UC_Custom
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_OrderP2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Custom));
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,6 +59,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.buttonAdToCart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonQuit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -441,7 +442,18 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Armoire sur mesure :";
             // 
-            // UC_OrderP2
+            // buttonQuit
+            // 
+            this.buttonQuit.AutoSize = true;
+            this.buttonQuit.Location = new System.Drawing.Point(-2, -2);
+            this.buttonQuit.Name = "buttonQuit";
+            this.buttonQuit.Size = new System.Drawing.Size(128, 23);
+            this.buttonQuit.TabIndex = 40;
+            this.buttonQuit.Text = "Vider le panier et quitter";
+            this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
+            // 
+            // UC_Custom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -449,6 +461,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAdToCart);
             this.Controls.Add(this.btn_delete2);
@@ -480,7 +493,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.comboBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "UC_OrderP2";
+            this.Name = "UC_Custom";
             this.Size = new System.Drawing.Size(888, 554);
             this.Load += new System.EventHandler(this.UC_OrderP2_Load);
             this.ResumeLayout(false);
@@ -520,5 +533,6 @@
         private System.Windows.Forms.Button btn_delete7;
         private System.Windows.Forms.Button buttonAdToCart;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonQuit;
     }
 }

@@ -15,6 +15,7 @@ namespace V1_KITBOX
         public Introduction()
         {
             InitializeComponent();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)

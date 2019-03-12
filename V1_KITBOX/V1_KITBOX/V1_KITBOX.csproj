@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UC_ Standard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ Standard.Designer.cs">
+      <DependentUpon>UC_ Standard.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_OrderP1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,11 +91,11 @@
     <Compile Include="UserControlBoxe.Designer.cs">
       <DependentUpon>UserControlBoxe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_OrderP2.cs">
+    <Compile Include="UC_Custom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_OrderP2.Designer.cs">
-      <DependentUpon>UC_OrderP2.cs</DependentUpon>
+    <Compile Include="UC_Custom.Designer.cs">
+      <DependentUpon>UC_Custom.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -102,6 +108,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_ Standard.resx">
+      <DependentUpon>UC_ Standard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_OrderP1.resx">
       <DependentUpon>UC_OrderP1.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,8 +120,8 @@
     <EmbeddedResource Include="UserControlBoxe.resx">
       <DependentUpon>UserControlBoxe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_OrderP2.resx">
-      <DependentUpon>UC_OrderP2.cs</DependentUpon>
+    <EmbeddedResource Include="UC_Custom.resx">
+      <DependentUpon>UC_Custom.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

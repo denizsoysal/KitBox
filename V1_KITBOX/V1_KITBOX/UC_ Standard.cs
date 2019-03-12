@@ -10,33 +10,30 @@ using System.Windows.Forms;
 
 namespace V1_KITBOX
 {
-    public partial class UC_Cart : UserControl
+    public partial class UC__Standard : UserControl
     {
-        public UC_Cart()
+        public UC__Standard()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Controls.Clear();
+            this.Controls.Add(new UC_Custom());
         }
 
-        private void UC_Cart_Load(object sender, EventArgs e)
+        private void buttonCart_Click(object sender, EventArgs e)
         {
-
+            this.Controls.Clear();
+            this.Controls.Add(new UC_Cart());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonOrderP1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.Controls.Add(new UC_OrderP1());
-        }
-
-        private void buttonValidateAndPay_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)

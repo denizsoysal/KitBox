@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_OrderP1));
             this.label_corner_color = new System.Windows.Forms.Label();
             this.dimension_title = new System.Windows.Forms.Label();
             this.continue_btn = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.comboBoxWidth = new System.Windows.Forms.ComboBox();
             this.depth_label = new System.Windows.Forms.Label();
             this.comboBoxDepth = new System.Windows.Forms.ComboBox();
+            this.buttonQuit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -146,10 +148,21 @@
             this.comboBoxDepth.Size = new System.Drawing.Size(103, 21);
             this.comboBoxDepth.TabIndex = 14;
             // 
+            // buttonQuit
+            // 
+            this.buttonQuit.AutoSize = true;
+            this.buttonQuit.Location = new System.Drawing.Point(0, 0);
+            this.buttonQuit.Name = "buttonQuit";
+            this.buttonQuit.Size = new System.Drawing.Size(128, 23);
+            this.buttonQuit.TabIndex = 22;
+            this.buttonQuit.Text = "Vider le panier et quitter";
+            this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.BackgroundImage = global::V1_KITBOX.Properties.Resources.Shelf_dimensions;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(358, 52);
             this.panel1.Name = "panel1";
@@ -161,6 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_corner_color);
             this.Controls.Add(this.dimension_title);
@@ -190,5 +204,6 @@
         private System.Windows.Forms.Label depth_label;
         private System.Windows.Forms.ComboBox comboBoxDepth;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonQuit;
     }
 }

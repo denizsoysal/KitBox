@@ -11,14 +11,14 @@ using System.Windows.Forms;
 namespace V1_KITBOX
 {
    
-    public partial class UC_OrderP2 : UserControl
+    public partial class UC_Custom : UserControl
         
     {
         private int BoxIndex;
         
         
         
-        public UC_OrderP2()
+        public UC_Custom()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
@@ -154,6 +154,12 @@ namespace V1_KITBOX
             this.BackgroundImage = null;
             this.Controls.Clear();
             this.Controls.Add(new UC_Cart());
+        }
+
+        private void buttonQuit_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new Introduction());
         }
     }
 }

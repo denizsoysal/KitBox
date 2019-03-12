@@ -36,6 +36,7 @@
             this.buttonValidateAndPay = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonQuit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelResume
@@ -114,11 +115,23 @@
             this.label2.Text = "Dans une semaine";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // buttonQuit
+            // 
+            this.buttonQuit.AutoSize = true;
+            this.buttonQuit.Location = new System.Drawing.Point(0, 0);
+            this.buttonQuit.Name = "buttonQuit";
+            this.buttonQuit.Size = new System.Drawing.Size(128, 23);
+            this.buttonQuit.TabIndex = 8;
+            this.buttonQuit.Text = "Vider le panier et quitter";
+            this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
+            // 
             // UC_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonreturnShopping);
@@ -146,5 +159,6 @@
         private System.Windows.Forms.Button buttonValidateAndPay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonQuit;
     }
 }

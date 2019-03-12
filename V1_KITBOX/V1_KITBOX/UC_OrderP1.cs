@@ -16,6 +16,7 @@ namespace V1_KITBOX
         public UC_OrderP1()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
 
         private void continue_btn_Click(object sender, EventArgs e)
@@ -36,7 +37,7 @@ namespace V1_KITBOX
 
                 this.BackgroundImage = null;
                 this.Controls.Clear();
-                this.Controls.Add(new UC_OrderP2());
+                this.Controls.Add(new UC__Standard());
                 
 
             }
@@ -55,6 +56,12 @@ namespace V1_KITBOX
         private void UC_OrderP1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonQuit_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new Introduction());
         }
     }
 }

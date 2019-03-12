@@ -70,9 +70,10 @@ C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Introdu
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Properties.Resources.resources
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_OrderP1.resources
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UserControlBoxe.resources
-C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_OrderP2.resources
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.GenerateResource.cache
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
 C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Cart.resources
+C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Custom.resources
+C:\Users\julien\Documents\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC__Standard.resources
