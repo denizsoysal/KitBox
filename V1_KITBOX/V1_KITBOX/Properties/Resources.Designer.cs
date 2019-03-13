@@ -73,6 +73,16 @@ namespace V1_KITBOX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boxe_yannis {
+            get {
+                object obj = ResourceManager.GetObject("boxe_yannis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap etage_boxe {
             get {
                 object obj = ResourceManager.GetObject("etage_boxe", resourceCulture);
