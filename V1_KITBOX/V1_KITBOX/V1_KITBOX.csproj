@@ -46,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boxe.cs" />
-    <Compile Include="Cabinet.cs" />
+    <Compile Include="class\AngleIron.cs" />
+    <Compile Include="class\Boxe.cs" />
+    <Compile Include="class\Cabinet.cs" />
+    <Compile Include="class\Cleat.cs" />
+    <Compile Include="class\Command.cs" />
+    <Compile Include="class\Crossbar.cs" />
+    <Compile Include="class\Door.cs" />
+    <Compile Include="class\Element.cs" />
+    <Compile Include="class\GlassDoor.cs" />
+    <Compile Include="class\Panel.cs" />
+    <Compile Include="class\WoodDoor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
