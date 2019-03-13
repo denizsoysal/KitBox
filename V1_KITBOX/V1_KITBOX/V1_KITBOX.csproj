@@ -142,6 +142,7 @@
     <None Include="Resources\add_button.png" />
     <None Include="Resources\rond_button.png" />
     <None Include="Resources\Shelf_dimensions.png" />
+    <None Include="Resources\trash_logo.png" />
     <Content Include="Resources\wooden_shelf.jpg" />
     <Content Include="Ressources\etage_boxe.png" />
   </ItemGroup>
