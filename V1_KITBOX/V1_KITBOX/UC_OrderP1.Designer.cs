@@ -72,6 +72,7 @@
             // 
             this.continue_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.continue_btn.BackColor = System.Drawing.Color.Gainsboro;
+            this.continue_btn.Font = new System.Drawing.Font("Calibri", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.continue_btn.Location = new System.Drawing.Point(186, 785);
             this.continue_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.continue_btn.Name = "continue_btn";
@@ -172,6 +173,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(926, 875);
             this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // UC_OrderP1
             // 

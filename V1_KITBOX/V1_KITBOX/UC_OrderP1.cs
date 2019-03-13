@@ -63,5 +63,10 @@ namespace V1_KITBOX
             this.Controls.Clear();
             this.Controls.Add(new Introduction());
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
