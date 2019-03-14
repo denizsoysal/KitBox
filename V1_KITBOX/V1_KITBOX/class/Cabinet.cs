@@ -12,6 +12,7 @@ namespace V1_KITBOX
         private int height;
         private int width;
         private int depth;
+        private string corner_color;
         private string angleIron;
         public Cabinet(int depth , int width, string corner_color)
         {

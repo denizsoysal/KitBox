@@ -12,7 +12,10 @@ namespace V1_KITBOX
 {
     public partial class UC_OrderP1 : UserControl
     {
-        public Cabinet armoire;
+        private Cabinet armoire;
+        private string depth;
+        private string width;
+        private string corner_color;
         public UC_OrderP1()
         {
             InitializeComponent();
@@ -29,15 +32,15 @@ namespace V1_KITBOX
             // Convert data from comboBox to int
             else
             {
-                int depth = int.Parse(comboBoxDepth.Items[comboBoxDepth.SelectedIndex].ToString());
-                int width = int.Parse(comboBoxWidth.Items[comboBoxWidth.SelectedIndex].ToString());
+                //int depth = int.Parse(comboBoxDepth.Items[comboBoxDepth.SelectedIndex].ToString());
+                //int width = int.Parse(comboBoxWidth.Items[comboBoxWidth.SelectedIndex].ToString());
                 // int height = int.Parse(comboBoxHeight.Items[comboBoxHeight.SelectedIndex].ToString());
 
-                this.armoire = new Cabinet(depth, width, comboBox_corner_color.Text);
+                //this.armoire = new Cabinet(depth, width, comboBox_corner_color.Text);
 
                 this.BackgroundImage = null;
                 this.Controls.Clear();
-                this.Controls.Add(new UC__Standard());
+                this.Controls.Add(new UC__Standard(depth,width,corner_color));
                 
 
             }
@@ -67,6 +70,21 @@ namespace V1_KITBOX
         private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void comboBoxDepth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.depth = comboBoxDepth.Text;
+        }
+
+        private void comboBoxWidth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.width = comboBoxWidth.Text;
+        }
+
+        private void comboBox_corner_color_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.corner_color = comboBox_corner_color.Text;
         }
     }
 }

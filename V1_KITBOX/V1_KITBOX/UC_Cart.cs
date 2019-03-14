@@ -12,20 +12,32 @@ namespace V1_KITBOX
 {
     public partial class UC_Cart : UserControl
     {
+        private List<string> cabinet;
+
         public UC_Cart()
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public UC_Cart(List<string> cabinet)
         {
+            InitializeComponent();
+            this.Dock = DockStyle.Fill;
+            this.cabinet = cabinet;
+            lbx_commande.Items.Insert(1, "\tHauteur(cm): " + cabinet[0]);
+            lbx_commande.Items.Insert(2, "\tNombre de casiers: " + cabinet[1]);
+            lbx_commande.Items.Insert(3, "\tCouleur: " + cabinet[2]);
+            lbx_commande.Items.Insert(4, "\tCouleur cornières: " + cabinet[5]);
+            lbx_commande.Items.Insert(2, "\tProfondeur(cm): " + cabinet[3]);
+            lbx_commande.Items.Insert(3, "\tLargeur(cm): " + cabinet[4]);
 
         }
 
+
         private void UC_Cart_Load(object sender, EventArgs e)
         {
-
+       
         }
 
         private void button1_Click(object sender, EventArgs e)
