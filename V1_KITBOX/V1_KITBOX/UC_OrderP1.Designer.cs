@@ -74,7 +74,7 @@
             this.continue_btn.BackColor = System.Drawing.Color.Gainsboro;
             this.continue_btn.Font = new System.Drawing.Font("Calibri", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.continue_btn.Location = new System.Drawing.Point(186, 785);
-            this.continue_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.continue_btn.Margin = new System.Windows.Forms.Padding(4);
             this.continue_btn.Name = "continue_btn";
             this.continue_btn.Size = new System.Drawing.Size(384, 142);
             this.continue_btn.TabIndex = 13;
@@ -92,10 +92,11 @@
             "Noir",
             "Galvanisé"});
             this.comboBox_corner_color.Location = new System.Drawing.Point(364, 527);
-            this.comboBox_corner_color.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox_corner_color.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_corner_color.Name = "comboBox_corner_color";
             this.comboBox_corner_color.Size = new System.Drawing.Size(202, 33);
             this.comboBox_corner_color.TabIndex = 20;
+            this.comboBox_corner_color.SelectedIndexChanged += new System.EventHandler(this.comboBox_corner_color_SelectedIndexChanged);
             // 
             // width_label
             // 
@@ -119,10 +120,11 @@
             "40",
             "50"});
             this.comboBoxWidth.Location = new System.Drawing.Point(364, 435);
-            this.comboBoxWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxWidth.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxWidth.Name = "comboBoxWidth";
             this.comboBoxWidth.Size = new System.Drawing.Size(202, 33);
             this.comboBoxWidth.TabIndex = 16;
+            this.comboBoxWidth.SelectedIndexChanged += new System.EventHandler(this.comboBoxWidth_SelectedIndexChanged);
             // 
             // depth_label
             // 
@@ -146,16 +148,17 @@
             "40",
             "50"});
             this.comboBoxDepth.Location = new System.Drawing.Point(364, 367);
-            this.comboBoxDepth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxDepth.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxDepth.Name = "comboBoxDepth";
             this.comboBoxDepth.Size = new System.Drawing.Size(202, 33);
             this.comboBoxDepth.TabIndex = 14;
+            this.comboBoxDepth.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepth_SelectedIndexChanged);
             // 
             // buttonQuit
             // 
             this.buttonQuit.AutoSize = true;
             this.buttonQuit.Location = new System.Drawing.Point(0, 0);
-            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6);
             this.buttonQuit.Name = "buttonQuit";
             this.buttonQuit.Size = new System.Drawing.Size(256, 44);
             this.buttonQuit.TabIndex = 22;
@@ -190,7 +193,7 @@
             this.Controls.Add(this.comboBoxWidth);
             this.Controls.Add(this.depth_label);
             this.Controls.Add(this.comboBoxDepth);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_OrderP1";
             this.Size = new System.Drawing.Size(1776, 1065);
             this.Load += new System.EventHandler(this.UC_OrderP1_Load);

@@ -15,6 +15,7 @@ namespace V1_KITBOX
         
     {
         private int BoxIndex;
+      
         
         
         
@@ -96,7 +97,7 @@ namespace V1_KITBOX
             
             button.BackgroundImage = global::V1_KITBOX.Properties.Resources.rond_button;
             lbl_etage.Text = "Etage " + button.Text;
-            this.BoxIndex = Int32.Parse(button.Text);
+            this.BoxIndex = Int32.Parse(button.Text) - 1;
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -160,6 +161,11 @@ namespace V1_KITBOX
         {
             this.Controls.Clear();
             this.Controls.Add(new Introduction());
+        }
+
+        private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

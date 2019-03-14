@@ -30,6 +30,7 @@
         {
             this.labelResume = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbx_commande = new System.Windows.Forms.ListBox();
             this.labelPrixTotal = new System.Windows.Forms.Label();
             this.labelDisponibilité = new System.Windows.Forms.Label();
             this.buttonreturnShopping = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonQuit = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelResume
@@ -54,11 +56,24 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbx_commande);
             this.panel1.Location = new System.Drawing.Point(86, 221);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1126, 773);
             this.panel1.TabIndex = 1;
+            // 
+            // lbx_commande
+            // 
+            this.lbx_commande.FormattingEnabled = true;
+            this.lbx_commande.ItemHeight = 25;
+            this.lbx_commande.Items.AddRange(new object[] {
+            "1 Armoire",
+            "\t"});
+            this.lbx_commande.Location = new System.Drawing.Point(234, 129);
+            this.lbx_commande.Name = "lbx_commande";
+            this.lbx_commande.Size = new System.Drawing.Size(675, 429);
+            this.lbx_commande.TabIndex = 0;
             // 
             // labelPrixTotal
             // 
@@ -84,7 +99,7 @@
             // buttonreturnShopping
             // 
             this.buttonreturnShopping.Location = new System.Drawing.Point(1224, 900);
-            this.buttonreturnShopping.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonreturnShopping.Margin = new System.Windows.Forms.Padding(6);
             this.buttonreturnShopping.Name = "buttonreturnShopping";
             this.buttonreturnShopping.Size = new System.Drawing.Size(264, 94);
             this.buttonreturnShopping.TabIndex = 4;
@@ -95,7 +110,7 @@
             // buttonValidateAndPay
             // 
             this.buttonValidateAndPay.Location = new System.Drawing.Point(1506, 900);
-            this.buttonValidateAndPay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonValidateAndPay.Margin = new System.Windows.Forms.Padding(6);
             this.buttonValidateAndPay.Name = "buttonValidateAndPay";
             this.buttonValidateAndPay.Size = new System.Drawing.Size(264, 94);
             this.buttonValidateAndPay.TabIndex = 5;
@@ -112,7 +127,6 @@
             this.label1.Size = new System.Drawing.Size(224, 44);
             this.label1.TabIndex = 6;
             this.label1.Text = "90€";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -129,7 +143,7 @@
             // 
             this.buttonQuit.AutoSize = true;
             this.buttonQuit.Location = new System.Drawing.Point(0, 0);
-            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6);
             this.buttonQuit.Name = "buttonQuit";
             this.buttonQuit.Size = new System.Drawing.Size(256, 44);
             this.buttonQuit.TabIndex = 8;
@@ -151,10 +165,11 @@
             this.Controls.Add(this.buttonValidateAndPay);
             this.Controls.Add(this.labelPrixTotal);
             this.Controls.Add(this.labelDisponibilité);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_Cart";
             this.Size = new System.Drawing.Size(1776, 1065);
             this.Load += new System.EventHandler(this.UC_Cart_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +186,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonQuit;
+        private System.Windows.Forms.ListBox lbx_commande;
     }
 }
