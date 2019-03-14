@@ -25,12 +25,14 @@ namespace V1_KITBOX
 
         public UC__Standard(string depth, string width, string corner_color)
         {
+            InitializeComponent();
+            this.Dock = DockStyle.Fill;
             this.depth = depth;
             this.width = width;
             this.corner_color = corner_color;
-            //_cabinet.Insert(0, depth);
-            //_cabinet.Insert(1, width);
-            //_cabinet.Insert(2, corner_color);
+            _cabinet.Insert(0, depth);
+            _cabinet.Insert(1, width);
+            _cabinet.Insert(2, corner_color);
 
         }
 
@@ -60,17 +62,22 @@ namespace V1_KITBOX
 
         private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(0, cbx_height.Text);               
+            this._cabinet.Insert(3, cbx_height.Text);               
         }
 
         private void cbx_nbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(1, cbx_nbox.Text);
+            this._cabinet.Insert(4, cbx_nbox.Text);
         }
 
         private void cbx_color_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(2, cbx_color.Text);
+            this._cabinet.Insert(5, cbx_color.Text);
+        }
+
+        private void button_validate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Votre commande a bien été enregistrée");
         }
     }
 }

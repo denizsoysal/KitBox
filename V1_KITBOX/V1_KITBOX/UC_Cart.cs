@@ -25,12 +25,12 @@ namespace V1_KITBOX
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.cabinet = cabinet;
-            lbx_commande.Items.Insert(1, "\tHauteur(cm): " + cabinet[0]);
-            lbx_commande.Items.Insert(2, "\tNombre de casiers: " + cabinet[1]);
-            lbx_commande.Items.Insert(3, "\tCouleur: " + cabinet[2]);
-            lbx_commande.Items.Insert(4, "\tCouleur cornières: " + cabinet[5]);
-            lbx_commande.Items.Insert(2, "\tProfondeur(cm): " + cabinet[3]);
-            lbx_commande.Items.Insert(3, "\tLargeur(cm): " + cabinet[4]);
+            lbx_commande.Items.Insert(1, "\tHauteur(cm): " + cabinet[3]);
+            lbx_commande.Items.Insert(2, "\tNombre de casiers: " + cabinet[4]);
+            lbx_commande.Items.Insert(3, "\tCouleur: " + cabinet[5]);
+            lbx_commande.Items.Insert(4, "\tCouleur cornières: " + cabinet[2]);
+            lbx_commande.Items.Insert(2, "\tProfondeur(cm): " + cabinet[0]);
+            lbx_commande.Items.Insert(3, "\tLargeur(cm): " + cabinet[1]);
 
         }
 

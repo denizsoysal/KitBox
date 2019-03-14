@@ -69,9 +69,7 @@
             this.lbx_commande.ItemHeight = 25;
             this.lbx_commande.Items.AddRange(new object[] {
             "1 Armoire",
-            "\tHauteur (cm) :",
-            "\tNombres de casiers :",
-            "\tCouleur :"});
+            "\t"});
             this.lbx_commande.Location = new System.Drawing.Point(234, 129);
             this.lbx_commande.Name = "lbx_commande";
             this.lbx_commande.Size = new System.Drawing.Size(675, 429);
