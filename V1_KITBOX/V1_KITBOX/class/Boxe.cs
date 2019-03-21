@@ -13,6 +13,7 @@ namespace V1_KITBOX
         private int depth;
         private string color;
         private bool door;
+        private List<Element> elements;
 
         public Boxe(int height, int width, int depth, string color, bool door)
         {
@@ -21,6 +22,7 @@ namespace V1_KITBOX
             this.depth = depth;
             this.color = color;
             this.door = door;
+            elements = new List<Element>();
 
         }
     }

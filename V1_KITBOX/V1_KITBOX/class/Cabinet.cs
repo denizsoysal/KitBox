@@ -8,7 +8,7 @@ namespace V1_KITBOX
 {
     public class Cabinet
     {
-        private List<Boxe> boxe;
+        private List<Boxe> boxes;
         private int height;
         private int width;
         private int depth;
@@ -19,7 +19,7 @@ namespace V1_KITBOX
             this.width = width;
             this.depth = depth;
             this.corner_color = corner_color;
-            boxe = new List<Boxe>();
+            boxes = new List<Boxe>();
         }
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }
