@@ -25,8 +25,11 @@ namespace V1_KITBOX
             elements = new List<Element>();
 
             if ( door is true ) { AddDoor(); }
+            // Ajout des 5 Panneaux
             AddPanel();
+            // Ajout des 8 Traverses
             AddCleat();
+            // Ajout des 4 Tasseaux
             AddCrossbar();
         }
         private void AddDoor()
