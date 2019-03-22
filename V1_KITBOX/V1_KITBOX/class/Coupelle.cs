@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Crossbar:Element
+    class Coupelle:Element
     {
-        public Crossbar(int height)
+        public Coupelle()
         {
-            this.height = height;
-            this.code = "TAS" + (height - 5).ToString();
+            this.code = "COUPEL";
         }
     }
 }

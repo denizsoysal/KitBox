@@ -16,14 +16,13 @@ namespace V1_KITBOX
             this.depth = depth;            
             this.position = position;
             this.code = "TR";
-            this.nbPerBox = 2;
             SetCode();
         }
 
         private void SetCode()
         {
 
-            if (depth != 0)
+            if (width == 0)
             {
                 code += "G" + depth.ToString();
             }
