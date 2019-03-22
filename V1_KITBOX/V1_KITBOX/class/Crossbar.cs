@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Crossbar
-{
-}
+    class Crossbar:Element
+    {
+        public Crossbar(int height)
+        {
+            this.height = height;
+            this.code = "TAS" + (height - 5).ToString();
+            this.nbPerBox = 2;
+        }
+    }
 }

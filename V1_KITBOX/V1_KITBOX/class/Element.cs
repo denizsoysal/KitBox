@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Element
-{
-}
+    public abstract class Element
+    {
+       protected string code;       
+       protected int height;
+       protected int depth;
+       protected int width;
+       protected string position;
+       protected string color;
+       protected int nbPerBox;
+      
+    }
 }
