@@ -51,6 +51,17 @@ namespace V1_KITBOX
 
             }
 
+            if (door_color == "Blanc" || door_color == "Brun")
+            {
+                // Creation Coupelles
+                Caps CG = new Caps();
+                Caps CD = new Caps();
+                elements.Add(CG);
+                elements.Add(CD);
+
+            }
+            
+
             Door leftDoor = new Door(width_door, (height - 4), door_color);
             Door rightDoor = new Door(width_door, (height - 4), door_color);
             elements.Add(leftDoor);
