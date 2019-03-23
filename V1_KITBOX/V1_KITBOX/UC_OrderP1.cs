@@ -12,37 +12,32 @@ namespace V1_KITBOX
 {
     public partial class UC_OrderP1 : UserControl
     {
-        private Cabinet armoire;
-        private string depth;
-        private string width;
+        private int depth;
+        private int width;
         private string corner_color;
-        public UC_OrderP1()
+        Order order;
+        Cabinet cabinet;
+        public UC_OrderP1(Order currentOrder)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-        }
+            this.order = currentOrder;
+        }   
+       
 
-        private void continue_btn_Click(object sender, EventArgs e)
+            private void continue_btn_Click(object sender, EventArgs e)
         {
             if (comboBoxDepth.Text == "" || comboBoxWidth.Text == "" || comboBox_corner_color.Text == "")
             {
                 MessageBox.Show("Veuillez indiquer une valeur pour chaque dimensions ainsi qu'une couleur pour les cornières.", "Erreur",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            // Convert data from comboBox to int
             else
             {
-                //int depth = int.Parse(comboBoxDepth.Items[comboBoxDepth.SelectedIndex].ToString());
-                //int width = int.Parse(comboBoxWidth.Items[comboBoxWidth.SelectedIndex].ToString());
-                // int height = int.Parse(comboBoxHeight.Items[comboBoxHeight.SelectedIndex].ToString());
-
-                //this.armoire = new Cabinet(depth, width, comboBox_corner_color.Text);
-
+                this.cabinet = new Cabinet(depth, width, corner_color);
                 this.BackgroundImage = null;
                 this.Controls.Clear();
-                this.Controls.Add(new UC__Standard(depth,width,corner_color));
-                
-
+                this.Controls.Add(new UC__Standard(order,cabinet));
             }
         }
 
@@ -58,7 +53,7 @@ namespace V1_KITBOX
 
         private void UC_OrderP1_Load(object sender, EventArgs e)
         {
-
+           // Order order = new Order(55, "Julien");
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
@@ -74,17 +69,19 @@ namespace V1_KITBOX
 
         private void comboBoxDepth_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.depth = comboBoxDepth.Text;
+            this.depth = int.Parse(comboBoxDepth.Text);
         }
 
         private void comboBoxWidth_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.width = comboBoxWidth.Text;
+            this.width = int.Parse(comboBoxWidth.Text);
         }
 
         private void comboBox_corner_color_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.corner_color = comboBox_corner_color.Text;
         }
+
+        
     }
 }

@@ -49,12 +49,12 @@
     <Compile Include="class\AngleIron.cs" />
     <Compile Include="class\Boxe.cs" />
     <Compile Include="class\Cabinet.cs" />
+    <Compile Include="class\Caps.cs" />
     <Compile Include="class\Cleat.cs" />
-    <Compile Include="class\Command.cs" />
-    <Compile Include="class\Coupelle.cs" />
     <Compile Include="class\Crossbar.cs" />
     <Compile Include="class\Door.cs" />
     <Compile Include="class\Element.cs" />
+    <Compile Include="class\Order.cs" />
     <Compile Include="class\Panel.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,6 +93,12 @@
     <Compile Include="UC_Cart.Designer.cs">
       <DependentUpon>UC_Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBoxe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBoxe.Designer.cs">
+      <DependentUpon>UserControlBoxe.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Custom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Cart.resx">
       <DependentUpon>UC_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBoxe.resx">
+      <DependentUpon>UserControlBoxe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Custom.resx">
       <DependentUpon>UC_Custom.cs</DependentUpon>

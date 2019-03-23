@@ -12,15 +12,16 @@ namespace V1_KITBOX
 {
     public partial class UC_Cart : UserControl
     {
-        private List<string> cabinet;
-
-        public UC_Cart()
+       // private List<string> cabinet;
+        private Order order;
+        public UC_Cart(Order currentOrder)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            this.order = currentOrder;
         }
 
-        public UC_Cart(List<string> cabinet)
+        /*public UC_Cart(List<string> cabinet)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
@@ -32,7 +33,7 @@ namespace V1_KITBOX
             lbx_commande.Items.Insert(2, "\tProfondeur(cm): " + cabinet[0]);
             lbx_commande.Items.Insert(3, "\tLargeur(cm): " + cabinet[1]);
 
-        }
+        }*/
 
 
         private void UC_Cart_Load(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace V1_KITBOX
         private void button1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.Controls.Add(new UC_OrderP1());
+           // this.Controls.Add(new UC_OrderP1());
         }
 
         private void buttonValidateAndPay_Click(object sender, EventArgs e)

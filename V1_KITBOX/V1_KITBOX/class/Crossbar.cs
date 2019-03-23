@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Crossbar:Element
+    class Crossbar : Element
     {
         public Crossbar(int height)
         {

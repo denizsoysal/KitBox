@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Panel:Element
+    class Panel : Element
     {
         public Panel(int height, int depth, int width, string position, string color)
         {

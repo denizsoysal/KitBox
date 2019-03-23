@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Cleat:Element
+    class Cleat : Element
     {
-        
 
-        public Cleat(int width, int depth,string position)
+
+        public Cleat(int width, int depth, string position)
         {
             this.width = width;
-            this.depth = depth;            
+            this.depth = depth;
             this.position = position;
             this.code = "TR";
             SetCode();
@@ -37,6 +37,6 @@ namespace V1_KITBOX
                 code += "F" + width.ToString();
             }
         }
-       
+
     }
 }
