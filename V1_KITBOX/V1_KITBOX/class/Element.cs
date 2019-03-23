@@ -14,12 +14,12 @@ namespace V1_KITBOX
        protected int width;
        protected string position;
        protected string color;
-       protected int nbPerBox;
     
        public string GetCode(){ return code; }
        public int GetHeight(){ return height; }
        public int GetDepth(){ return height; }
        public int GetWidth(){ return width; }
+       public string GetColor() { return color; }
 
     }
 }

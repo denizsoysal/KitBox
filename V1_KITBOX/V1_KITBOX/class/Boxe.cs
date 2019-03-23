@@ -13,17 +13,20 @@ namespace V1_KITBOX
         private int depth;
         private string color;
         private bool door;
+        private string door_color;
         private List<Element> elements;
-
-        public Boxe(int height, int width, int depth, string color, bool door)
+        
+        public Boxe(int height, int width, int depth, string color, bool door, string door_color = null)
         {
             this.height = height;
             this.width = width;
             this.depth = depth;
             this.color = color;
             this.door = door;
+            this.door_color = door_color;
             elements = new List<Element>();
 
+            // Ajout des 2 Portes
             if ( door is true ) { AddDoor(); }
             // Ajout des 5 Panneaux
             AddPanel();
@@ -34,22 +37,36 @@ namespace V1_KITBOX
         }
         private void AddDoor()
         {
+            int width_door;
             // Portes G/D
-            Door leftDoor = new Door((width-4) / 2, height-4, color);
-            Door rightDoor = new Door((width-4)/ 2, height-4, color);
+            if (width == 62)
+            {
+                width_door = width / 2 + 1;
+              
+                
+            }
+            else
+            {
+                width_door = width / 2 + 2;
+
+            }
+
+            Door leftDoor = new Door(width_door, (height - 4), door_color);
+            Door rightDoor = new Door(width_door, (height - 4), door_color);
             elements.Add(leftDoor);
             elements.Add(rightDoor);
-         
+
+
         }
 
         private void AddCleat()
         {
             // 2 Traverses avant
-            Cleat TAVB = new Cleat(width-4, 0, "AV");
-            Cleat TAVH = new Cleat(width - 4, 0, "AV");
+            Cleat TAVB = new Cleat(width, 0, "AV");
+            Cleat TAVH = new Cleat(width, 0, "AV");
             // 2 Traverses arrières
-            Cleat TARB = new Cleat(width-4, 0, "AR");
-            Cleat TARH = new Cleat(width - 4, 0, "AR");
+            Cleat TARB = new Cleat(width, 0, "AR");
+            Cleat TARH = new Cleat(width, 0, "AR");
             // 4 Traverses GD
             Cleat TGB = new Cleat(0, depth, "G");
             Cleat TGH = new Cleat(0, depth, "G");
@@ -82,11 +99,11 @@ namespace V1_KITBOX
         private void AddPanel()
         {
             // 5 Panels
-            Panel PH = new Panel(0, depth,width-4,"HB",color);
-            Panel PB =  new Panel(0, depth, width-4, "HB", color);
+            Panel PH = new Panel(0, depth,width,"HB",color);
+            Panel PB =  new Panel(0, depth, width, "HB", color);
             Panel PG = new Panel(height - 4, depth, 0, "GD", color);
             Panel PD = new Panel(height - 4, depth, 0, "GD", color);
-            Panel PAR = new Panel(height - 4, 0, width - 4, "AR", color);
+            Panel PAR = new Panel(height - 4, 0, width, "AR", color);
         }
 
         public List<Element> GetElem()
