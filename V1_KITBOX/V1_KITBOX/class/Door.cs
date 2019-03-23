@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Door:Element
+    class Door : Element
     {
-        public Door (int width, int height,string color)
+        public Door(int width, int height, string color)
         {
             this.width = width;
             this.height = height;
@@ -20,9 +20,9 @@ namespace V1_KITBOX
         {
             code = "POR" + height.ToString() + width.ToString();
 
-            if (color == "Blanc") { code += "BL" ; }
+            if (color == "Blanc") { code += "BL"; }
 
-            else if (color == "Brun") { code += "BR" ; }
+            else if (color == "Brun") { code += "BR"; }
 
             else { code += "VE"; }
 

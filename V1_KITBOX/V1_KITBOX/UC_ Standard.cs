@@ -12,18 +12,22 @@ namespace V1_KITBOX
 {
     public partial class UC__Standard : UserControl
     {
-        private List<string> _cabinet = new List<string>();
-        private string depth;
-        private string width;
-        private string corner_color;
+        //private List<string> _cabinet = new List<string>();
+        private int height;
+        private int nbrBoxes;
+        private string cabinetColor;
+        Order order;
+        Cabinet cabinet;
 
-        public UC__Standard()
+        public UC__Standard(Order currentOrder, Cabinet currentCabinet)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
+            this.order = currentOrder;
+            this.cabinet = currentCabinet;
         }
 
-        public UC__Standard(string depth, string width, string corner_color)
+        /*public UC__Standard(string depth, string width, string corner_color)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
@@ -34,24 +38,24 @@ namespace V1_KITBOX
             _cabinet.Insert(1, width);
             _cabinet.Insert(2, corner_color);
 
-        }
+        }*/
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.Controls.Add(new UC_Custom());
+            this.Controls.Add(new UC_Custom(order,cabinet));
         }
 
         private void buttonCart_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.Controls.Add(new UC_Cart(_cabinet));
+            this.Controls.Add(new UC_Cart(order));
         }
 
         private void buttonOrderP1_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.Controls.Add(new UC_OrderP1());
+            this.Controls.Add(new UC_OrderP1(order));
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
@@ -62,22 +66,33 @@ namespace V1_KITBOX
 
         private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(3, cbx_height.Text);               
+            this.height = int.Parse(cbx_height.Text);             
         }
 
         private void cbx_nbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(4, cbx_nbox.Text);
+            this.nbrBoxes = int.Parse(cbx_nbox.Text);
         }
 
         private void cbx_color_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this._cabinet.Insert(5, cbx_color.Text);
+            this.cabinetColor = cbx_color.Text;
         }
 
         private void button_validate_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Votre commande a bien été enregistrée");
+            // Vérifier que tous les champs sont remplis
+            for (int i=0; i<this.nbrBoxes; i++)
+            {
+                this.cabinet.AddBox(height / nbrBoxes, cabinet.GetWidth(), cabinet.GetDepth(), cabinetColor, true);
+            }
+            this.order.AddCabinet(this.cabinet);
+            MessageBox.Show("Votre armoire a été ajoutée au panier.");
+        }
+
+        private void UC__Standard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

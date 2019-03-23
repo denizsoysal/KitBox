@@ -8,18 +8,18 @@ namespace V1_KITBOX
 {
     public abstract class Element
     {
-       protected string code;       
-       protected int height;
-       protected int depth;
-       protected int width;
-       protected string position;
-       protected string color;
-       protected int nbPerBox;
-    
-       public string GetCode(){ return code; }
-       public int GetHeight(){ return height; }
-       public int GetDepth(){ return height; }
-       public int GetWidth(){ return width; }
+        protected string code;
+        protected int height;
+        protected int depth;
+        protected int width;
+        protected string position;
+        protected string color;
+        protected int nbPerBox;
+
+        public string GetCode() { return code; }
+        public int GetHeight() { return height; }
+        public int GetDepth() { return height; }
+        public int GetWidth() { return width; }
 
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 
 namespace V1_KITBOX
 {
@@ -23,8 +25,9 @@ namespace V1_KITBOX
             this.color = color;
             this.door = door;
             elements = new List<Element>();
+            MessageBox.Show("Casier créé : "+ height.ToString()+"-"+width.ToString() + "-"+ depth.ToString() + " couleur "+color+" portes:"+door.ToString());
 
-            if ( door is true ) { AddDoor(); }
+            if (door is true) { AddDoor(); }
             // Ajout des 5 Panneaux
             AddPanel();
             // Ajout des 8 Traverses
@@ -32,23 +35,25 @@ namespace V1_KITBOX
             // Ajout des 4 Tasseaux
             AddCrossbar();
         }
+
+
         private void AddDoor()
         {
             // Portes G/D
-            Door leftDoor = new Door((width-4) / 2, height-4, color);
-            Door rightDoor = new Door((width-4)/ 2, height-4, color);
+            Door leftDoor = new Door((width - 4) / 2, height - 4, color);
+            Door rightDoor = new Door((width - 4) / 2, height - 4, color);
             elements.Add(leftDoor);
             elements.Add(rightDoor);
-         
+
         }
 
         private void AddCleat()
         {
             // 2 Traverses avant
-            Cleat TAVB = new Cleat(width-4, 0, "AV");
+            Cleat TAVB = new Cleat(width - 4, 0, "AV");
             Cleat TAVH = new Cleat(width - 4, 0, "AV");
             // 2 Traverses arrières
-            Cleat TARB = new Cleat(width-4, 0, "AR");
+            Cleat TARB = new Cleat(width - 4, 0, "AR");
             Cleat TARH = new Cleat(width - 4, 0, "AR");
             // 4 Traverses GD
             Cleat TGB = new Cleat(0, depth, "G");
@@ -82,8 +87,8 @@ namespace V1_KITBOX
         private void AddPanel()
         {
             // 5 Panels
-            Panel PH = new Panel(0, depth,width-4,"HB",color);
-            Panel PB =  new Panel(0, depth, width-4, "HB", color);
+            Panel PH = new Panel(0, depth, width - 4, "HB", color);
+            Panel PB = new Panel(0, depth, width - 4, "HB", color);
             Panel PG = new Panel(height - 4, depth, 0, "GD", color);
             Panel PD = new Panel(height - 4, depth, 0, "GD", color);
             Panel PAR = new Panel(height - 4, 0, width - 4, "AR", color);

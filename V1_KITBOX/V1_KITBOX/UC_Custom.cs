@@ -14,17 +14,27 @@ namespace V1_KITBOX
     public partial class UC_Custom : UserControl
         
     {
-        private int BoxIndex;
-      
+        private int BoxIndex=0;
+        private List<string> heights;
+        private List<string> colors;
+        
+        private Order order;
+        private Cabinet cabinet;
         
         
         
-        public UC_Custom()
+        public UC_Custom(Order currentOrder, Cabinet currentCabinet)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
-        }
+            this.order = currentOrder;
+            this.cabinet = currentCabinet;
+            this.heights = new List<string>();
+            this.colors = new List<string>();
+            this.colors.Add("");
+            this.heights.Add("");
 
+        }
         private void UC_OrderP2_Load(object sender, EventArgs e)
         {
         }
@@ -33,9 +43,11 @@ namespace V1_KITBOX
         {
             Button button = (Button)sender;
             
-
+            // This box is not visible yet
             if (button.Text == "")
             {
+                this.colors.Add("");
+                this.heights.Add("");
                 switch (button.Name)
                 {
                     case "button2":
@@ -93,15 +105,60 @@ namespace V1_KITBOX
 
                         break;
                 }
+                
             }
             
             button.BackgroundImage = global::V1_KITBOX.Properties.Resources.rond_button;
             lbl_etage.Text = "Etage " + button.Text;
             this.BoxIndex = Int32.Parse(button.Text) - 1;
+
+            cbx_color.SelectedValue = null;
+            cbx_color.SelectedText = null;
+            cbx_color.Text = null;
+
+            cbx_height.SelectedValue = null;
+            cbx_height.SelectedText = null;
+            cbx_height.Text = null;
+
+            cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
+            cbx_color.SelectedText = colors.ElementAt(BoxIndex);
+            cbx_color.Text = colors.ElementAt(BoxIndex);
+
+            cbx_height.SelectedValue = heights.ElementAt(BoxIndex);
+            cbx_height.SelectedText = heights.ElementAt(BoxIndex);
+            cbx_height.Text = heights.ElementAt(BoxIndex);
+            
+            
+
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            this.colors.RemoveAt(colors.Count - 1);
+            this.heights.RemoveAt(heights.Count - 1);
+            if (BoxIndex > (heights.Count-1) )
+            {
+                BoxIndex = heights.Count - 1;
+                lbl_etage.Text = "Etage " + (BoxIndex+1).ToString();
+
+                cbx_color.SelectedValue = null;
+                cbx_color.SelectedText = null;
+                cbx_color.Text = null;
+
+                cbx_height.SelectedValue = null;
+                cbx_height.SelectedText = null;
+                cbx_height.Text = null;
+
+                cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
+                cbx_color.SelectedText = colors.ElementAt(BoxIndex);
+                cbx_color.Text = colors.ElementAt(BoxIndex);
+
+                cbx_height.SelectedValue = heights.ElementAt(BoxIndex);
+                cbx_height.SelectedText = heights.ElementAt(BoxIndex);
+                cbx_height.Text = heights.ElementAt(BoxIndex);
+            }
+
             Button button = (Button)sender;
             switch(button.Name)
             {
@@ -152,9 +209,16 @@ namespace V1_KITBOX
 
         private void buttonAdToCart_Click(object sender, EventArgs e)
         {
+            // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
+            for (int i = 0; i < this.heights.Count; i++)
+            {
+                this.cabinet.AddBox(int.Parse(heights[i]), cabinet.GetWidth(), cabinet.GetDepth(), colors[i], true);
+            }
+            this.order.AddCabinet(this.cabinet);
+
             this.BackgroundImage = null;
             this.Controls.Clear();
-            this.Controls.Add(new UC_Cart());
+            this.Controls.Add(new UC_Cart(order));
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
@@ -165,7 +229,19 @@ namespace V1_KITBOX
 
         private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if(cbx_height.SelectedItem != null)
+            {
+                this.heights[BoxIndex] = cbx_height.SelectedItem.ToString();
+            }
+                
+        }
+
+        private void cbx_color_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbx_color.SelectedItem != null)
+            {
+                this.colors[BoxIndex] = cbx_color.SelectedItem.ToString();
+            }
         }
     }
 }

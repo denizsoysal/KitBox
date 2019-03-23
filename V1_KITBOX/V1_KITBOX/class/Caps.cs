@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace V1_KITBOX
 {
-    class Coupelle:Element
+    class Caps:Element
     {
-        public Coupelle()
+        public Caps()
         {
             this.code = "COUPEL";
         }
