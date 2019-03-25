@@ -16,7 +16,7 @@ namespace V1_KITBOX
         private int width;
         private string corner_color;
         Order order;
-        Cabinet cabinet;
+        
         public UC_OrderP1(Order currentOrder)
         {
             InitializeComponent();
@@ -34,10 +34,10 @@ namespace V1_KITBOX
             }
             else
             {
-                this.cabinet = new Cabinet(depth, width, corner_color);
+                
                 this.BackgroundImage = null;
                 this.Controls.Clear();
-                this.Controls.Add(new UC__Standard(order,cabinet));
+                this.Controls.Add(new UC__Standard(order,depth, width, corner_color));
             }
         }
 
@@ -53,7 +53,7 @@ namespace V1_KITBOX
 
         private void UC_OrderP1_Load(object sender, EventArgs e)
         {
-           // Order order = new Order(55, "Julien");
+           
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)

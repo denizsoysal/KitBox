@@ -24,13 +24,17 @@ namespace V1_KITBOX
             MessageBox.Show("Une armoire à été crée aux dimensions :" + depth.ToString() + "-"+width.ToString()+" couleur "+corner_color);
         }
 
-        public void AddBox(int height, int width, int depth, string color, bool door)
+        public void AddBox(int height, int width, int depth, string color, bool door, string door_color)
         {
-            this.boxes.Add(new Boxe(height, width, depth, color, door));
+            this.boxes.Add(new Boxe(height, width, depth, color, door, door_color));
         }
 
+        public void removeAllBoxes()
+        {
+            this.boxes.Clear();
+        }
 
-
+        public List<Boxe> getboxes { get { return boxes; } }
 
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }

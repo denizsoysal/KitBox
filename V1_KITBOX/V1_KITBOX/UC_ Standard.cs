@@ -17,33 +17,28 @@ namespace V1_KITBOX
         private int nbrBoxes;
         private string cabinetColor;
         Order order;
-        Cabinet cabinet;
 
-        public UC__Standard(Order currentOrder, Cabinet currentCabinet)
+        private string corner_color;
+        private int width;
+        private int depth;
+
+        public UC__Standard(Order currentOrder, int depth , int width, string corner_color)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.order = currentOrder;
-            this.cabinet = currentCabinet;
+
+            this.width = width;
+            this.depth = depth;
+            this.corner_color = corner_color;
         }
 
-        /*public UC__Standard(string depth, string width, string corner_color)
-        {
-            InitializeComponent();
-            this.Dock = DockStyle.Fill;
-            this.depth = depth;
-            this.width = width;
-            this.corner_color = corner_color;
-            _cabinet.Insert(0, depth);
-            _cabinet.Insert(1, width);
-            _cabinet.Insert(2, corner_color);
-
-        }*/
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            this.Controls.Add(new UC_Custom(order,cabinet));
+            this.Controls.Add(new UC_Custom(order, depth, width, corner_color));
         }
 
         private void buttonCart_Click(object sender, EventArgs e)
@@ -82,12 +77,18 @@ namespace V1_KITBOX
         private void button_validate_Click(object sender, EventArgs e)
         {
             // Vérifier que tous les champs sont remplis
+
+            this.order.AddCabinet(this.depth, this.width, this.corner_color);
             for (int i=0; i<this.nbrBoxes; i++)
             {
-                this.cabinet.AddBox(height / nbrBoxes, cabinet.GetWidth(), cabinet.GetDepth(), cabinetColor, true);
+                this.order.AddBoxToCurrentCabinet(height / nbrBoxes, cabinetColor, true, "vert");
             }
-            this.order.AddCabinet(this.cabinet);
+
+            
+             
+            
             MessageBox.Show("Votre armoire a été ajoutée au panier.");
+            
         }
 
         private void UC__Standard_Load(object sender, EventArgs e)

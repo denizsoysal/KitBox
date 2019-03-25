@@ -19,21 +19,17 @@ namespace V1_KITBOX
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.order = currentOrder;
+
+            for(int i=0; i< this.order.getCabinets.Count;i++)
+            {
+                lbx_cabinets.Items.Add("Armoire " +(i+1).ToString() );
+            }
+            lbx_cabinets.SelectedIndex = 0;
+            
+            lbx_boxes.SelectedIndex = 0; // this call the changed selected item so we don't need to add the items here
         }
 
-        /*public UC_Cart(List<string> cabinet)
-        {
-            InitializeComponent();
-            this.Dock = DockStyle.Fill;
-            this.cabinet = cabinet;
-            lbx_commande.Items.Insert(1, "\tHauteur(cm): " + cabinet[3]);
-            lbx_commande.Items.Insert(2, "\tNombre de casiers: " + cabinet[4]);
-            lbx_commande.Items.Insert(3, "\tCouleur: " + cabinet[5]);
-            lbx_commande.Items.Insert(4, "\tCouleur cornières: " + cabinet[2]);
-            lbx_commande.Items.Insert(2, "\tProfondeur(cm): " + cabinet[0]);
-            lbx_commande.Items.Insert(3, "\tLargeur(cm): " + cabinet[1]);
-
-        }*/
+        
 
 
         private void UC_Cart_Load(object sender, EventArgs e)
@@ -41,21 +37,40 @@ namespace V1_KITBOX
        
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-           // this.Controls.Add(new UC_OrderP1());
-        }
+        
 
         private void buttonValidateAndPay_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new UC_OrderP1(this.order));
+        }
+
         private void buttonQuit_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
             this.Controls.Add(new Introduction());
+        }
+
+        private void lbx_cabinets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedCabinet = lbx_cabinets.SelectedIndex;
+            lbx_boxes.Items.Clear();
+            for (int j = 0; j < this.order.getCabinets[selectedCabinet].getboxes.Count; j++)
+            {
+                lbx_boxes.Items.Add("Etage " + (j + 1).ToString());
+            }
+            lbx_boxes.SelectedIndex = 0;
+        }
+
+        private void lbx_boxes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

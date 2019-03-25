@@ -17,18 +17,26 @@ namespace V1_KITBOX
         private int BoxIndex=0;
         private List<string> heights;
         private List<string> colors;
-        
+
+        private string corner_color;
+        private int width;
+        private int depth;
+
         private Order order;
-        private Cabinet cabinet;
+      
         
         
         
-        public UC_Custom(Order currentOrder, Cabinet currentCabinet)
+        public UC_Custom(Order currentOrder, int depth , int width, string corner_color)
         {
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.order = currentOrder;
-            this.cabinet = currentCabinet;
+
+            this.width = width;
+            this.depth = depth;
+            this.corner_color = corner_color;
+
             this.heights = new List<string>();
             this.colors = new List<string>();
             this.colors.Add("");
@@ -210,11 +218,12 @@ namespace V1_KITBOX
         private void buttonAdToCart_Click(object sender, EventArgs e)
         {
             // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
+            this.order.AddCabinet(this.depth, this.width, this.corner_color);
             for (int i = 0; i < this.heights.Count; i++)
             {
-                this.cabinet.AddBox(int.Parse(heights[i]), cabinet.GetWidth(), cabinet.GetDepth(), colors[i], true);
+                this.order.AddBoxToCurrentCabinet(int.Parse(heights[i]), colors[i], true, "vert");
             }
-            this.order.AddCabinet(this.cabinet);
+           
 
             this.BackgroundImage = null;
             this.Controls.Clear();

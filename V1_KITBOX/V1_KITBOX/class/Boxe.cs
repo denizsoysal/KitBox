@@ -16,7 +16,7 @@ namespace V1_KITBOX
         private string door_color;
         private List<Element> elements;
         
-        public Boxe(int height, int width, int depth, string color, bool door, string door_color = null)
+        public Boxe(int height, int width, int depth, string color, bool door, string door_color)
         {
             this.height = height;
             this.width = width;
