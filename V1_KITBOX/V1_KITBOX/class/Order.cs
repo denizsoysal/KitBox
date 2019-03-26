@@ -13,12 +13,14 @@ namespace V1_KITBOX
        // private float amount;
         public string client;
         private List<Cabinet> cabinets;
-        // cabinets.Add(new Cabinet()); pour ajouter une armoire à la commande
+        private Dictionary<string, int> orderElements;
+
         public Order(int nbr)
         {
-            this.orderNbr = nbr;
+            this.orderNbr = nbr;     // Prendre le numero de commande dans la database au lieu de "nbr" en paramètre
             cabinets = new List<Cabinet>();
-            MessageBox.Show("Commande numéro " + orderNbr.ToString() + " créée.");
+            orderElements = new Dictionary<string, int>();
+            //MessageBox.Show("Commande numéro " + orderNbr.ToString() + " créée.");
         }
     
         public void AddCabinet(int depth, int width, string corner_color)
@@ -32,18 +34,33 @@ namespace V1_KITBOX
             int width = this.cabinets[indexOfCurrentCabinet].GetWidth();
             int depth = this.cabinets[indexOfCurrentCabinet].GetDepth();
             this.cabinets[indexOfCurrentCabinet].AddBox(height, width, depth, color, door, door_color);
+            AddLastBoxElements();
         }
-    
-        /*public void AddSimilarCabinet()
-        {
-            int indexOfCurrentCabinet = this.cabinets.Count - 1;
-            int width = this.cabinets[indexOfCurrentCabinet].GetWidth();
-            int depth = this.cabinets[indexOfCurrentCabinet].GetDepth();
-            string corner_color = this.cabinets[indexOfCurrentCabinet].GetCornerColor();
-            this.cabinets.Add(new Cabinet(depth, width, corner_color));
-        }*/
 
+        private void AddLastBoxElements()
+        {
+            Boxe lastBox = cabinets[cabinets.Count - 1].getLastBox();
+            foreach (Element elem in lastBox.GetElem())
+            {
+                string code = elem.GetCode();
+
+                if (!orderElements.ContainsKey(code))
+                {
+                    orderElements.Add(code, 1);
+                }
+                else
+                {
+                    orderElements[code] = orderElements[code] + 1;
+                }
+            }
+
+        }
+
+
+        
+        
         public List<Cabinet> GetCabinet { get { return cabinets; }  }
+        public Dictionary<string,int> getOrderElements { get { return orderElements; } }
 
    }
 }

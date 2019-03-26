@@ -27,6 +27,16 @@ namespace V1_KITBOX
             lbx_cabinets.SelectedIndex = 0;
             
             lbx_boxes.SelectedIndex = 0; // this call the changed selected item so we don't need to add the items here
+
+            // provisoire, pour visualiser le dico des pièces,
+            // montre comment accéder aux codes bares des pièces et leur nombre nécessaire
+            string result = "";
+            foreach (string code in order.getOrderElements.Keys)
+            {
+                result += code + " : ";
+                result += order.getOrderElements[code].ToString() + "\n";
+            }
+            label3.Text = result;
         }
 
         
@@ -70,6 +80,11 @@ namespace V1_KITBOX
         private void lbx_boxes_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

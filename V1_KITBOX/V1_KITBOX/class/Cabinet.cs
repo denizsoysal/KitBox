@@ -35,7 +35,7 @@ namespace V1_KITBOX
         }
 
         public List<Boxe> getboxes { get { return boxes; } }
-
+        public Boxe getLastBox() { return boxes[boxes.Count - 1]; }
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }
         public int GetDepth(){ return depth; }
