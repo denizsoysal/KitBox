@@ -43,7 +43,7 @@ namespace V1_KITBOX
             this.cabinets.Add(new Cabinet(depth, width, corner_color));
         }*/
 
-        public List<Cabinet> getCabinets { get { return cabinets; }  }
+        public List<Cabinet> GetCabinet { get { return cabinets; }  }
 
    }
 }

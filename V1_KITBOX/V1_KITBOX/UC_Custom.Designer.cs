@@ -147,6 +147,7 @@
             this.checkBox_glass.TabIndex = 33;
             this.checkBox_glass.Text = "Verre";
             this.checkBox_glass.UseVisualStyleBackColor = true;
+            this.checkBox_glass.CheckedChanged += new System.EventHandler(this.checkBox_glass_CheckedChanged);
             // 
             // cbx_color
             // 

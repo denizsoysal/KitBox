@@ -14,9 +14,11 @@ namespace V1_KITBOX
     public partial class UC_Custom : UserControl
         
     {
-        private int BoxIndex=0;
-        private List<string> heights;
+        private int BoxIndex = 0;
+        private List<int> heights;
         private List<string> colors;
+        private List<bool> doors;
+        private List<string> doors_color;
 
         private string corner_color;
         private int width;
@@ -37,11 +39,17 @@ namespace V1_KITBOX
             this.depth = depth;
             this.corner_color = corner_color;
 
-            this.heights = new List<string>();
+            this.heights = new List<int>();
             this.colors = new List<string>();
+        
             this.colors.Add("");
-            this.heights.Add("");
-         
+            this.heights.Add(0);
+
+            this.doors = new List<bool>();
+            this.doors_color = new List<string>();
+
+            this.doors.Add(false);
+            this.doors_color.Add("");        
 
         }
         private void UC_OrderP2_Load(object sender, EventArgs e)
@@ -51,12 +59,14 @@ namespace V1_KITBOX
         private void button_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            
+
             // This box is not visible yet
             if (button.Text == "")
             {
                 this.colors.Add("");
-                this.heights.Add("");
+                this.heights.Add(0);
+                this.doors.Add(false);
+                this.doors_color.Add("");
                 switch (button.Name)
                 {
                     case "button2":
@@ -65,7 +75,7 @@ namespace V1_KITBOX
                         button3.BackgroundImage = global::V1_KITBOX.Properties.Resources.add_button;
                         button3.Show();
                         btn_delete2.Show();
-                        
+
 
                         break;
                     case "button3":
@@ -114,9 +124,9 @@ namespace V1_KITBOX
 
                         break;
                 }
-                
+
             }
-            
+
             button.BackgroundImage = global::V1_KITBOX.Properties.Resources.rond_button;
             lbl_etage.Text = "Etage " + button.Text;
             this.BoxIndex = Int32.Parse(button.Text) - 1;
@@ -129,17 +139,15 @@ namespace V1_KITBOX
             cbx_height.SelectedText = null;
             cbx_height.Text = null;
 
-            checkBox_wood.Checked = false;
+
+
             cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
             cbx_color.SelectedText = colors.ElementAt(BoxIndex);
             cbx_color.Text = colors.ElementAt(BoxIndex);
 
-            cbx_height.SelectedValue = heights.ElementAt(BoxIndex);
-            cbx_height.SelectedText = heights.ElementAt(BoxIndex);
-            cbx_height.Text = heights.ElementAt(BoxIndex);
-            
-            
-
+            cbx_height.SelectedValue = heights.ElementAt(BoxIndex).ToString();
+            cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
+            cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
 
         }
 
@@ -147,6 +155,8 @@ namespace V1_KITBOX
         {
             this.colors.RemoveAt(colors.Count - 1);
             this.heights.RemoveAt(heights.Count - 1);
+            doors.RemoveAt(doors.Count - 1);
+            doors_color.RemoveAt(doors_color.Count - 1);
             if (BoxIndex > (heights.Count-1) )
             {
                 BoxIndex = heights.Count - 1;
@@ -160,13 +170,18 @@ namespace V1_KITBOX
                 cbx_height.SelectedText = null;
                 cbx_height.Text = null;
 
+                checkBox_wood.Checked = false;
+                checkBox_glass.Checked = false;
+
+                 
                 cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
                 cbx_color.SelectedText = colors.ElementAt(BoxIndex);
                 cbx_color.Text = colors.ElementAt(BoxIndex);
 
                 cbx_height.SelectedValue = heights.ElementAt(BoxIndex);
-                cbx_height.SelectedText = heights.ElementAt(BoxIndex);
-                cbx_height.Text = heights.ElementAt(BoxIndex);
+                cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
+                cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
+
             }
 
             Button button = (Button)sender;
@@ -220,10 +235,14 @@ namespace V1_KITBOX
         private void buttonAdToCart_Click(object sender, EventArgs e)
         {
             // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
-            this.order.AddCabinet(this.depth, this.width, this.corner_color);
+            order.AddCabinet(this.depth, this.width, this.corner_color);
+            List<Cabinet> cabinets = order.GetCabinet;
+            int index_of_cabinet = cabinets.Count - 1;
+
             for (int i = 0; i < this.heights.Count; i++)
             {
-                this.order.AddBoxToCurrentCabinet(int.Parse(heights[i]), colors[i], true, "vert");
+                cabinets[index_of_cabinet].AddBox(heights[i], width, depth,colors[i], doors[i],doors_color[i]);
+               
             }
            
 
@@ -242,7 +261,7 @@ namespace V1_KITBOX
         {
             if(cbx_height.SelectedItem != null)
             {
-                this.heights[BoxIndex] = cbx_height.SelectedItem.ToString();
+                this.heights[BoxIndex] = Int32.Parse(cbx_height.SelectedItem.ToString());
             }
                 
         }
@@ -257,6 +276,7 @@ namespace V1_KITBOX
 
         private void checkBox_wood_CheckedChanged(object sender, EventArgs e)
         {
+           
             cbx_door_color.Hide();
             panel_door_color.Hide();
             if (checkBox_wood.Checked)
@@ -267,20 +287,31 @@ namespace V1_KITBOX
 
             }
 
+
         }
 
-        private void cbx_door_color_SelectedIndexChanged(object sender, EventArgs e)
+    private void cbx_door_color_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbx_door_color.Text == "Brun")
             {
-                panel_door_color.BackColor = System.Drawing.Color.Maroon;
-
+                panel_door_color.BackColor = System.Drawing.Color.Maroon;              
             }
             else
             {
                 panel_door_color.BackColor = System.Drawing.Color.White;
-
             }
+            doors_color[BoxIndex] = cbx_door_color.Text;
+            doors[BoxIndex] = true;
         }
+
+        private void checkBox_glass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_glass.Checked == true)
+            {
+                doors[BoxIndex] = true;
+                doors_color[BoxIndex] = "Verre";
+            }        
+        }
+        
     }
 }

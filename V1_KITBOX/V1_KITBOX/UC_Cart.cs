@@ -20,7 +20,7 @@ namespace V1_KITBOX
             this.Dock = DockStyle.Fill;
             this.order = currentOrder;
 
-            for(int i=0; i< this.order.getCabinets.Count;i++)
+            for(int i=0; i< this.order.GetCabinet.Count;i++)
             {
                 lbx_cabinets.Items.Add("Armoire " +(i+1).ToString() );
             }
@@ -60,7 +60,7 @@ namespace V1_KITBOX
         {
             int selectedCabinet = lbx_cabinets.SelectedIndex;
             lbx_boxes.Items.Clear();
-            for (int j = 0; j < this.order.getCabinets[selectedCabinet].getboxes.Count; j++)
+            for (int j = 0; j < this.order.GetCabinet[selectedCabinet].getboxes.Count; j++)
             {
                 lbx_boxes.Items.Add("Etage " + (j + 1).ToString());
             }
