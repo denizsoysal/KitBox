@@ -41,6 +41,7 @@ namespace V1_KITBOX
             this.colors = new List<string>();
             this.colors.Add("");
             this.heights.Add("");
+         
 
         }
         private void UC_OrderP2_Load(object sender, EventArgs e)
@@ -128,6 +129,7 @@ namespace V1_KITBOX
             cbx_height.SelectedText = null;
             cbx_height.Text = null;
 
+            checkBox_wood.Checked = false;
             cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
             cbx_color.SelectedText = colors.ElementAt(BoxIndex);
             cbx_color.Text = colors.ElementAt(BoxIndex);
@@ -250,6 +252,34 @@ namespace V1_KITBOX
             if (cbx_color.SelectedItem != null)
             {
                 this.colors[BoxIndex] = cbx_color.SelectedItem.ToString();
+            }
+        }
+
+        private void checkBox_wood_CheckedChanged(object sender, EventArgs e)
+        {
+            cbx_door_color.Hide();
+            panel_door_color.Hide();
+            if (checkBox_wood.Checked)
+            {
+                cbx_door_color.Show();
+                panel_door_color.Show();
+                panel_door_color.BackColor = System.Drawing.Color.White;
+
+            }
+
+        }
+
+        private void cbx_door_color_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbx_door_color.Text == "Brun")
+            {
+                panel_door_color.BackColor = System.Drawing.Color.Maroon;
+
+            }
+            else
+            {
+                panel_door_color.BackColor = System.Drawing.Color.White;
+
             }
         }
     }
