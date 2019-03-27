@@ -28,6 +28,7 @@ namespace V1_KITBOX
         {
             this.boxes.Add(new Boxe(height, width, depth, color, door, door_color));
         }
+    
 
         public void removeAllBoxes()
         {

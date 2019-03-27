@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonQuit = new System.Windows.Forms.Button();
             this.lbx_boxes = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_codeRef = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelResume
@@ -47,19 +47,21 @@
             this.labelResume.BackColor = System.Drawing.Color.LightGray;
             this.labelResume.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelResume.Font = new System.Drawing.Font("Calibri", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResume.Location = new System.Drawing.Point(36, 44);
+            this.labelResume.Location = new System.Drawing.Point(72, 85);
+            this.labelResume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelResume.Name = "labelResume";
-            this.labelResume.Size = new System.Drawing.Size(171, 39);
+            this.labelResume.Size = new System.Drawing.Size(330, 74);
             this.labelResume.TabIndex = 0;
             this.labelResume.Text = "Votre panier";
             // 
             // lbx_cabinets
             // 
             this.lbx_cabinets.FormattingEnabled = true;
-            this.lbx_cabinets.Location = new System.Drawing.Point(36, 125);
-            this.lbx_cabinets.Margin = new System.Windows.Forms.Padding(2);
+            this.lbx_cabinets.ItemHeight = 25;
+            this.lbx_cabinets.Location = new System.Drawing.Point(72, 240);
+            this.lbx_cabinets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbx_cabinets.Name = "lbx_cabinets";
-            this.lbx_cabinets.Size = new System.Drawing.Size(163, 82);
+            this.lbx_cabinets.Size = new System.Drawing.Size(322, 154);
             this.lbx_cabinets.TabIndex = 0;
             this.lbx_cabinets.SelectedIndexChanged += new System.EventHandler(this.lbx_cabinets_SelectedIndexChanged);
             // 
@@ -67,26 +69,29 @@
             // 
             this.labelPrixTotal.AutoSize = true;
             this.labelPrixTotal.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrixTotal.Location = new System.Drawing.Point(639, 364);
+            this.labelPrixTotal.Location = new System.Drawing.Point(1278, 700);
+            this.labelPrixTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelPrixTotal.Name = "labelPrixTotal";
-            this.labelPrixTotal.Size = new System.Drawing.Size(104, 27);
+            this.labelPrixTotal.Size = new System.Drawing.Size(202, 53);
             this.labelPrixTotal.TabIndex = 2;
             this.labelPrixTotal.Text = "Prix total :";
             // 
             // labelDisponibilité
             // 
             this.labelDisponibilité.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDisponibilité.Location = new System.Drawing.Point(606, 407);
+            this.labelDisponibilité.Location = new System.Drawing.Point(1212, 783);
+            this.labelDisponibilité.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelDisponibilité.Name = "labelDisponibilité";
-            this.labelDisponibilité.Size = new System.Drawing.Size(153, 23);
+            this.labelDisponibilité.Size = new System.Drawing.Size(306, 44);
             this.labelDisponibilité.TabIndex = 3;
             this.labelDisponibilité.Text = "Disponibilité :";
             // 
             // buttonreturnShopping
             // 
-            this.buttonreturnShopping.Location = new System.Drawing.Point(612, 468);
+            this.buttonreturnShopping.Location = new System.Drawing.Point(1224, 900);
+            this.buttonreturnShopping.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonreturnShopping.Name = "buttonreturnShopping";
-            this.buttonreturnShopping.Size = new System.Drawing.Size(132, 49);
+            this.buttonreturnShopping.Size = new System.Drawing.Size(264, 94);
             this.buttonreturnShopping.TabIndex = 4;
             this.buttonreturnShopping.Text = "Continuer les achats";
             this.buttonreturnShopping.UseVisualStyleBackColor = true;
@@ -94,9 +99,10 @@
             // 
             // buttonValidateAndPay
             // 
-            this.buttonValidateAndPay.Location = new System.Drawing.Point(753, 468);
+            this.buttonValidateAndPay.Location = new System.Drawing.Point(1506, 900);
+            this.buttonValidateAndPay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonValidateAndPay.Name = "buttonValidateAndPay";
-            this.buttonValidateAndPay.Size = new System.Drawing.Size(132, 49);
+            this.buttonValidateAndPay.Size = new System.Drawing.Size(264, 94);
             this.buttonValidateAndPay.TabIndex = 5;
             this.buttonValidateAndPay.Text = "Valider et payer";
             this.buttonValidateAndPay.UseVisualStyleBackColor = true;
@@ -105,18 +111,20 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(768, 366);
+            this.label1.Location = new System.Drawing.Point(1536, 704);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 23);
+            this.label1.Size = new System.Drawing.Size(224, 44);
             this.label1.TabIndex = 6;
             this.label1.Text = "90€";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(748, 409);
+            this.label2.Location = new System.Drawing.Point(1496, 787);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 23);
+            this.label2.Size = new System.Drawing.Size(264, 44);
             this.label2.TabIndex = 7;
             this.label2.Text = "Dans une semaine";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,8 +133,9 @@
             // 
             this.buttonQuit.AutoSize = true;
             this.buttonQuit.Location = new System.Drawing.Point(0, 0);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonQuit.Name = "buttonQuit";
-            this.buttonQuit.Size = new System.Drawing.Size(128, 23);
+            this.buttonQuit.Size = new System.Drawing.Size(256, 44);
             this.buttonQuit.TabIndex = 8;
             this.buttonQuit.Text = "Vider le panier et quitter";
             this.buttonQuit.UseVisualStyleBackColor = true;
@@ -135,28 +144,31 @@
             // lbx_boxes
             // 
             this.lbx_boxes.FormattingEnabled = true;
-            this.lbx_boxes.Location = new System.Drawing.Point(260, 125);
+            this.lbx_boxes.ItemHeight = 25;
+            this.lbx_boxes.Location = new System.Drawing.Point(520, 240);
+            this.lbx_boxes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.lbx_boxes.Name = "lbx_boxes";
-            this.lbx_boxes.Size = new System.Drawing.Size(110, 82);
+            this.lbx_boxes.Size = new System.Drawing.Size(216, 154);
             this.lbx_boxes.TabIndex = 9;
             this.lbx_boxes.SelectedIndexChanged += new System.EventHandler(this.lbx_boxes_SelectedIndexChanged);
             // 
-            // label3
+            // label_codeRef
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 253);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "label3";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label_codeRef.AutoSize = true;
+            this.label_codeRef.Location = new System.Drawing.Point(72, 487);
+            this.label_codeRef.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label_codeRef.Name = "label_codeRef";
+            this.label_codeRef.Size = new System.Drawing.Size(70, 25);
+            this.label_codeRef.TabIndex = 10;
+            this.label_codeRef.Text = "label3";
+            this.label_codeRef.Click += new System.EventHandler(this.label3_Click);
             // 
             // UC_Cart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_codeRef);
             this.Controls.Add(this.lbx_boxes);
             this.Controls.Add(this.lbx_cabinets);
             this.Controls.Add(this.buttonQuit);
@@ -167,9 +179,9 @@
             this.Controls.Add(this.buttonValidateAndPay);
             this.Controls.Add(this.labelPrixTotal);
             this.Controls.Add(this.labelDisponibilité);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_Cart";
-            this.Size = new System.Drawing.Size(888, 554);
+            this.Size = new System.Drawing.Size(1776, 1065);
             this.Load += new System.EventHandler(this.UC_Cart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,6 +200,6 @@
         private System.Windows.Forms.Button buttonQuit;
         private System.Windows.Forms.ListBox lbx_cabinets;
         private System.Windows.Forms.ListBox lbx_boxes;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_codeRef;
     }
 }

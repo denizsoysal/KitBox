@@ -27,12 +27,10 @@ C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.
 C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
-C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UserControlBoxe.resources
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csprojAssemblyReference.cache
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Form1.resources
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Introduction.resources
 C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_OrderP1.resources
-C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_OrderP2.resources
 C:\Users\julien\Documents\GitHub\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe.config
 C:\Users\julien\Documents\GitHub\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\GitHub\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.pdb
@@ -171,3 +169,6 @@ C:\Users\julien\Documents\KitBox\KitBox3\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX
 C:\Users\julien\Documents\KitBox\KitBox3\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\julien\Documents\KitBox\KitBox3\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\KitBox\KitBox3\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
+C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC__Standard.resources
+C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Cart.resources
+C:\Users\Yannis\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Custom.resources

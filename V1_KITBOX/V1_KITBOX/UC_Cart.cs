@@ -36,7 +36,7 @@ namespace V1_KITBOX
                 result += code + " : ";
                 result += order.getOrderElements[code].ToString() + "\n";
             }
-            label3.Text = result;
+            label_codeRef.Text = result;
         }
 
         

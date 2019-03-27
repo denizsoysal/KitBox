@@ -28,16 +28,8 @@ namespace V1_KITBOX
                 this.cabinets.Add(new Cabinet(depth, width, corner_color));
         }
 
-        public void AddBoxToCurrentCabinet(int height, string color, bool door, string door_color = null)
-        {
-            int indexOfCurrentCabinet = this.cabinets.Count -1;
-            int width = this.cabinets[indexOfCurrentCabinet].GetWidth();
-            int depth = this.cabinets[indexOfCurrentCabinet].GetDepth();
-            this.cabinets[indexOfCurrentCabinet].AddBox(height, width, depth, color, door, door_color);
-            AddLastBoxElements();
-        }
 
-        private void AddLastBoxElements()
+        public void AddLastBoxElements()
         {
             Boxe lastBox = cabinets[cabinets.Count - 1].getLastBox();
             foreach (Element elem in lastBox.GetElem())

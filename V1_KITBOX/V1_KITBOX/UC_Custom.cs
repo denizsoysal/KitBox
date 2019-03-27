@@ -49,7 +49,7 @@ namespace V1_KITBOX
             this.doors_color = new List<string>();
 
             this.doors.Add(false);
-            this.doors_color.Add("");        
+            this.doors_color.Add(null);        
 
         }
         private void UC_OrderP2_Load(object sender, EventArgs e)
@@ -63,10 +63,11 @@ namespace V1_KITBOX
             // This box is not visible yet
             if (button.Text == "")
             {
+
                 this.colors.Add("");
                 this.heights.Add(0);
                 this.doors.Add(false);
-                this.doors_color.Add("");
+                this.doors_color.Add(null);
                 switch (button.Name)
                 {
                     case "button2":
@@ -149,6 +150,21 @@ namespace V1_KITBOX
             cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
             cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
 
+            if (doors_color[BoxIndex] == "Transparent")
+            {
+                checkBox_glass.Checked = true;
+            }
+            else if (doors_color[BoxIndex] == "Blanc" || doors_color[BoxIndex] == "Brun")
+            {
+                checkBox_wood.Checked = true;
+                cbx_door_color.Text = doors_color[BoxIndex];
+            }
+            else
+            {
+                checkBox_wood.Checked = false;
+                checkBox_glass.Checked = false;
+                cbx_door_color.Text = "";
+            }
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -169,11 +185,7 @@ namespace V1_KITBOX
                 cbx_height.SelectedValue = null;
                 cbx_height.SelectedText = null;
                 cbx_height.Text = null;
-
-                checkBox_wood.Checked = false;
-                checkBox_glass.Checked = false;
-
-                 
+                
                 cbx_color.SelectedValue = colors.ElementAt(BoxIndex);
                 cbx_color.SelectedText = colors.ElementAt(BoxIndex);
                 cbx_color.Text = colors.ElementAt(BoxIndex);
@@ -181,6 +193,22 @@ namespace V1_KITBOX
                 cbx_height.SelectedValue = heights.ElementAt(BoxIndex);
                 cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
                 cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
+
+                if (doors_color[BoxIndex] == "Transparent")
+                {
+                    checkBox_glass.Checked = true;
+                }
+                else if (doors_color[BoxIndex] == "Blanc" || doors_color[BoxIndex] == "Brun")
+                {
+                    checkBox_wood.Checked = true;
+                    cbx_door_color.Text = doors_color[BoxIndex];
+                }
+                else
+                {
+                    checkBox_wood.Checked = false;
+                    checkBox_glass.Checked = false;
+                    cbx_door_color.Text = "";
+                }
 
             }
 
@@ -242,7 +270,8 @@ namespace V1_KITBOX
             for (int i = 0; i < this.heights.Count; i++)
             {
                 cabinets[index_of_cabinet].AddBox(heights[i], width, depth,colors[i], doors[i],doors_color[i]);
-               
+                order.AddLastBoxElements();
+
             }
            
 
@@ -284,6 +313,12 @@ namespace V1_KITBOX
                 cbx_door_color.Show();
                 panel_door_color.Show();
                 panel_door_color.BackColor = System.Drawing.Color.White;
+                checkBox_glass.Checked = false;
+                cbx_door_color.Text = doors_color[BoxIndex];
+                if (doors_color[BoxIndex] == null || doors_color[BoxIndex] == "Transparent")
+                {
+                    cbx_door_color.Text = "Blanc";
+                }
 
             }
 
@@ -309,7 +344,8 @@ namespace V1_KITBOX
             if (checkBox_glass.Checked == true)
             {
                 doors[BoxIndex] = true;
-                doors_color[BoxIndex] = "Verre";
+                doors_color[BoxIndex] = "Transparent";
+                checkBox_wood.Checked = false;
             }        
         }
         

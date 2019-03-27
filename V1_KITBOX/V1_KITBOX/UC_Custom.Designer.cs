@@ -129,7 +129,7 @@
             // 
             this.lbl_etage.AutoSize = true;
             this.lbl_etage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_etage.Location = new System.Drawing.Point(592, 206);
+            this.lbl_etage.Location = new System.Drawing.Point(535, 223);
             this.lbl_etage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_etage.Name = "lbl_etage";
             this.lbl_etage.Size = new System.Drawing.Size(147, 42);
