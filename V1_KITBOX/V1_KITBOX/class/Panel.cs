@@ -22,15 +22,13 @@ namespace V1_KITBOX
         {
             code = "PA";
 
-            if (position == "AR") { code += "R" + height.ToString() + width.ToString(); }
+            if (position == "AR") { code += "R"; }
 
-            else if (position == "GD") { code += "G" + height.ToString() + width.ToString(); }
+            else if (position == "GD") { code += "G"; }
 
-            else if (position == "HB") { code += "H" + depth.ToString() + width.ToString(); }
+            else if (position == "HB") { code += "H"; }
 
-            if (color == "Blanc") { code += "BL"; }
-
-            else if (color == "Brun") { code += "BR"; }
+            code += height.ToString() + width.ToString() + char.ToUpper(color[0]) + char.ToUpper(color[1]);
         }
     }
 }

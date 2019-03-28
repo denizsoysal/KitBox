@@ -51,7 +51,7 @@ namespace V1_KITBOX
 
             }
 
-            if (door_color == "Blanc" || door_color == "Brun")
+            if (door_color != "Verre")
             {
                 // Creation Coupelles
                 Caps CG = new Caps();

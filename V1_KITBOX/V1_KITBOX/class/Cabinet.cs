@@ -14,12 +14,14 @@ namespace V1_KITBOX
         private int width;
         private int depth;
         private string corner_color;
+        private Corner corner;
 
-        public Cabinet(int depth , int width, string corner_color)
+        public Cabinet(int depth , int width, int height , string corner_color)
         {
             this.width = width;
             this.depth = depth;
-            this.corner_color = corner_color;
+            this.height = height;
+            this.corner = new Corner(height, corner_color);
             boxes = new List<Boxe>();
             MessageBox.Show("Une armoire à été crée aux dimensions :" + depth.ToString() + "-"+width.ToString()+" couleur "+corner_color);
         }
@@ -35,15 +37,16 @@ namespace V1_KITBOX
             this.boxes.Clear();
         }
 
-        public List<Boxe> getboxes { get { return boxes; } }
+        public List<Boxe> GetBoxes { get { return boxes; } }
         public Boxe getLastBox() { return boxes[boxes.Count - 1]; }
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }
         public int GetDepth(){ return depth; }
         public string GetCornerColor() { return corner_color;}
+        public Corner GetCorner() { return corner; }
         // Write an "Add" function to add a new box in the box list
         
-        public void SetHeight(int height) { this.height = height;}
+
 
     }
 }

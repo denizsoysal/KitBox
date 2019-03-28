@@ -23,13 +23,25 @@ namespace V1_KITBOX
             //MessageBox.Show("Commande numéro " + orderNbr.ToString() + " créée.");
         }
     
-        public void AddCabinet(int depth, int width, string corner_color)
+        public void AddCabinet(int depth, int width, int height, string corner_color)
         {
-                this.cabinets.Add(new Cabinet(depth, width, corner_color));
+                this.cabinets.Add(new Cabinet(depth, width, height, corner_color));
         }
 
+        public void AddCornerToDico()
+        {
+            string cornerCode = cabinets[cabinets.Count - 1].GetCorner().GetCode();
+            if (!orderElements.ContainsKey(cornerCode))
+            {
+                orderElements.Add(cornerCode, 4);
+            }
+            else
+            {
+                orderElements[cornerCode] = orderElements[cornerCode] + 4;
+            }
 
-        public void AddLastBoxElements()
+        }
+        public void AddLastBoxElementsToDico()
         {
             Boxe lastBox = cabinets[cabinets.Count - 1].getLastBox();
             foreach (Element elem in lastBox.GetElem())

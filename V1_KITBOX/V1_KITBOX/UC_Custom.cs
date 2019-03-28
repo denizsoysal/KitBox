@@ -150,11 +150,11 @@ namespace V1_KITBOX
             cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
             cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
 
-            if (doors_color[BoxIndex] == "Transparent")
+            if (doors_color[BoxIndex] == "Verre")
             {
                 checkBox_glass.Checked = true;
             }
-            else if (doors_color[BoxIndex] == "Blanc" || doors_color[BoxIndex] == "Brun")
+            else if (doors_color[BoxIndex] != "Verre" & doors_color[BoxIndex] != null)
             {
                 checkBox_wood.Checked = true;
                 cbx_door_color.Text = doors_color[BoxIndex];
@@ -194,11 +194,11 @@ namespace V1_KITBOX
                 cbx_height.SelectedText = heights.ElementAt(BoxIndex).ToString();
                 cbx_height.Text = heights.ElementAt(BoxIndex).ToString();
 
-                if (doors_color[BoxIndex] == "Transparent")
+                if (doors_color[BoxIndex] == "Verre")
                 {
                     checkBox_glass.Checked = true;
                 }
-                else if (doors_color[BoxIndex] == "Blanc" || doors_color[BoxIndex] == "Brun")
+                else if (doors_color[BoxIndex] != null)
                 {
                     checkBox_wood.Checked = true;
                     cbx_door_color.Text = doors_color[BoxIndex];
@@ -263,16 +263,17 @@ namespace V1_KITBOX
         private void buttonAdToCart_Click(object sender, EventArgs e)
         {
             // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
-            order.AddCabinet(this.depth, this.width, this.corner_color);
+            order.AddCabinet(this.depth, this.width, heights.Sum(), this.corner_color);
             List<Cabinet> cabinets = order.GetCabinet;
             int index_of_cabinet = cabinets.Count - 1;
 
             for (int i = 0; i < this.heights.Count; i++)
             {
                 cabinets[index_of_cabinet].AddBox(heights[i], width, depth,colors[i], doors[i],doors_color[i]);
-                order.AddLastBoxElements();
+                order.AddLastBoxElementsToDico();
 
             }
+            order.AddCornerToDico();
            
 
             this.BackgroundImage = null;
@@ -315,7 +316,7 @@ namespace V1_KITBOX
                 panel_door_color.BackColor = System.Drawing.Color.White;
                 checkBox_glass.Checked = false;
                 cbx_door_color.Text = doors_color[BoxIndex];
-                if (doors_color[BoxIndex] == null || doors_color[BoxIndex] == "Transparent")
+                if (doors_color[BoxIndex] == null || doors_color[BoxIndex] == "Verre")
                 {
                     cbx_door_color.Text = "Blanc";
                 }
@@ -344,7 +345,7 @@ namespace V1_KITBOX
             if (checkBox_glass.Checked == true)
             {
                 doors[BoxIndex] = true;
-                doors_color[BoxIndex] = "Transparent";
+                doors_color[BoxIndex] = "Verre";
                 checkBox_wood.Checked = false;
             }        
         }

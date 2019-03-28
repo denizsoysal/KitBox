@@ -18,13 +18,7 @@ namespace V1_KITBOX
 
         public void SetCode()
         {
-            code = "POR" + height.ToString() + width.ToString();
-
-            if (color == "Blanc") { code += "BL"; }
-
-            else if (color == "Brun") { code += "BR"; }
-
-            else { code += "VE"; }
+            code = "POR" + height.ToString() + width.ToString() + char.ToUpper(color[0]) + char.ToUpper(color[1]);
 
         }
     }

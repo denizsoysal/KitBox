@@ -27,14 +27,17 @@ namespace V1_KITBOX
                 code += "G" + depth.ToString();
             }
 
-            else if (position == "AR")
+            else
             {
-                code += "R" + width.ToString();
-            }
-
-            else if (position == "AV")
-            {
-                code += "F" + width.ToString();
+                if (position == "AR")
+                {
+                    code += "R" ;
+                }
+                if (position == "AV")
+                {
+                    code += "F" ;
+                }
+                code += width.ToString();
             }
         }
 

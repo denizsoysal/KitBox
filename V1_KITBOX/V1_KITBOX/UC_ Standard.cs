@@ -78,18 +78,15 @@ namespace V1_KITBOX
         {
             // Vérifier que tous les champs sont remplis
 
-            this.order.AddCabinet(this.depth, this.width, this.corner_color);
+            this.order.AddCabinet(this.depth, this.width, this.height, this.corner_color);
             List<Cabinet> cabinets = order.GetCabinet;
             int index_of_cabinet = cabinets.Count - 1;
             for (int i=0; i<this.nbrBoxes; i++)
             {
                 cabinets[index_of_cabinet].AddBox(height / nbrBoxes,width,depth,cabinetColor,true,cabinetColor);
-                order.AddLastBoxElements();
+                order.AddLastBoxElementsToDico();
             }
-            
-
-            
-             
+            order.AddCornerToDico();                     
             
             MessageBox.Show("Votre armoire a été ajoutée au panier.");
             

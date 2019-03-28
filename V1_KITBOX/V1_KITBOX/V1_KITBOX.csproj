@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="class\AngleIron.cs" />
+    <Compile Include="class\Corner.cs" />
     <Compile Include="class\Boxe.cs" />
     <Compile Include="class\Cabinet.cs" />
     <Compile Include="class\Caps.cs" />
