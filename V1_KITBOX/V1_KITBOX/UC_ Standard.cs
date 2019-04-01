@@ -79,7 +79,7 @@ namespace V1_KITBOX
             // Vérifier que tous les champs sont remplis
 
             this.order.AddCabinet(this.depth, this.width, this.height, this.corner_color);
-            List<Cabinet> cabinets = order.GetCabinet;
+            List<Cabinet> cabinets = order.GetCabinets;
             int index_of_cabinet = cabinets.Count - 1;
             for (int i=0; i<this.nbrBoxes; i++)
             {

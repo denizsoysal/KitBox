@@ -63,7 +63,7 @@ namespace V1_KITBOX
 
         
         
-        public List<Cabinet> GetCabinet { get { return cabinets; }  }
+        public List<Cabinet> GetCabinets { get { return cabinets; }  }
         public Dictionary<string,int> getOrderElements { get { return orderElements; } }
 
    }

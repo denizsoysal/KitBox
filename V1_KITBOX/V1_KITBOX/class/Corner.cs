@@ -32,6 +32,7 @@ namespace V1_KITBOX
                       
         }
         public string GetCode() { return code; }
+        public string GetColor() { return color; }
 
 
     }

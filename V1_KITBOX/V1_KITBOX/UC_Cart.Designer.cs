@@ -53,8 +53,6 @@
             this.CabinetDepthValue = new System.Windows.Forms.Label();
             this.BoxHeigthValue = new System.Windows.Forms.Label();
             this.BoxColorValue = new System.Windows.Forms.Label();
-            this.BoxDoorsType = new System.Windows.Forms.Label();
-            this.BoxDoorsColor = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -62,6 +60,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.CabinetCornerColor = new System.Windows.Forms.Label();
+            this.CabinetCornerColorValue = new System.Windows.Forms.Label();
+            this.BoxDoorType = new System.Windows.Forms.Label();
+            this.BoxDoorColor = new System.Windows.Forms.Label();
+            this.BoxDoorTypeValue = new System.Windows.Forms.Label();
+            this.BoxDoorColorValue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelResume
@@ -292,24 +296,6 @@
             this.BoxColorValue.TabIndex = 28;
             this.BoxColorValue.Text = "........";
             // 
-            // BoxDoorsType
-            // 
-            this.BoxDoorsType.AutoSize = true;
-            this.BoxDoorsType.Location = new System.Drawing.Point(375, 363);
-            this.BoxDoorsType.Name = "BoxDoorsType";
-            this.BoxDoorsType.Size = new System.Drawing.Size(31, 13);
-            this.BoxDoorsType.TabIndex = 29;
-            this.BoxDoorsType.Text = "........";
-            // 
-            // BoxDoorsColor
-            // 
-            this.BoxDoorsColor.AutoSize = true;
-            this.BoxDoorsColor.Location = new System.Drawing.Point(422, 363);
-            this.BoxDoorsColor.Name = "BoxDoorsColor";
-            this.BoxDoorsColor.Size = new System.Drawing.Size(31, 13);
-            this.BoxDoorsColor.TabIndex = 30;
-            this.BoxDoorsColor.Text = "........";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -369,19 +355,77 @@
             this.label7.TabIndex = 37;
             this.label7.Text = "Etages de l\'armoire";
             // 
+            // CabinetCornerColor
+            // 
+            this.CabinetCornerColor.AutoSize = true;
+            this.CabinetCornerColor.Location = new System.Drawing.Point(37, 428);
+            this.CabinetCornerColor.Name = "CabinetCornerColor";
+            this.CabinetCornerColor.Size = new System.Drawing.Size(60, 13);
+            this.CabinetCornerColor.TabIndex = 38;
+            this.CabinetCornerColor.Text = "Cornières : ";
+            // 
+            // CabinetCornerColorValue
+            // 
+            this.CabinetCornerColorValue.AutoSize = true;
+            this.CabinetCornerColorValue.Location = new System.Drawing.Point(103, 428);
+            this.CabinetCornerColorValue.Name = "CabinetCornerColorValue";
+            this.CabinetCornerColorValue.Size = new System.Drawing.Size(37, 13);
+            this.CabinetCornerColorValue.TabIndex = 39;
+            this.CabinetCornerColorValue.Text = "..........";
+            // 
+            // BoxDoorType
+            // 
+            this.BoxDoorType.AutoSize = true;
+            this.BoxDoorType.Location = new System.Drawing.Point(381, 366);
+            this.BoxDoorType.Name = "BoxDoorType";
+            this.BoxDoorType.Size = new System.Drawing.Size(60, 13);
+            this.BoxDoorType.TabIndex = 40;
+            this.BoxDoorType.Text = "- Matériau :";
+            // 
+            // BoxDoorColor
+            // 
+            this.BoxDoorColor.AutoSize = true;
+            this.BoxDoorColor.Location = new System.Drawing.Point(381, 397);
+            this.BoxDoorColor.Name = "BoxDoorColor";
+            this.BoxDoorColor.Size = new System.Drawing.Size(55, 13);
+            this.BoxDoorColor.TabIndex = 41;
+            this.BoxDoorColor.Text = "- Couleur :";
+            // 
+            // BoxDoorTypeValue
+            // 
+            this.BoxDoorTypeValue.AutoSize = true;
+            this.BoxDoorTypeValue.Location = new System.Drawing.Point(447, 366);
+            this.BoxDoorTypeValue.Name = "BoxDoorTypeValue";
+            this.BoxDoorTypeValue.Size = new System.Drawing.Size(34, 13);
+            this.BoxDoorTypeValue.TabIndex = 42;
+            this.BoxDoorTypeValue.Text = ".........";
+            // 
+            // BoxDoorColorValue
+            // 
+            this.BoxDoorColorValue.AutoSize = true;
+            this.BoxDoorColorValue.Location = new System.Drawing.Point(442, 397);
+            this.BoxDoorColorValue.Name = "BoxDoorColorValue";
+            this.BoxDoorColorValue.Size = new System.Drawing.Size(31, 13);
+            this.BoxDoorColorValue.TabIndex = 43;
+            this.BoxDoorColorValue.Text = "........";
+            // 
             // UC_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.BoxDoorColorValue);
+            this.Controls.Add(this.BoxDoorTypeValue);
+            this.Controls.Add(this.BoxDoorColor);
+            this.Controls.Add(this.BoxDoorType);
+            this.Controls.Add(this.CabinetCornerColorValue);
+            this.Controls.Add(this.CabinetCornerColor);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BoxDoorsColor);
-            this.Controls.Add(this.BoxDoorsType);
             this.Controls.Add(this.BoxColorValue);
             this.Controls.Add(this.BoxHeigthValue);
             this.Controls.Add(this.CabinetDepthValue);
@@ -442,7 +486,6 @@
         private System.Windows.Forms.Label BoxHeigthValue;
         private System.Windows.Forms.Label BoxColorValue;
         private System.Windows.Forms.Label BoxDoorsType;
-        private System.Windows.Forms.Label BoxDoorsColor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -450,5 +493,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label CabinetCornerColor;
+        private System.Windows.Forms.Label CabinetCornerColorValue;
+        private System.Windows.Forms.Label BoxDoorType;
+        private System.Windows.Forms.Label BoxDoorColor;
+        private System.Windows.Forms.Label BoxDoorTypeValue;
+        private System.Windows.Forms.Label BoxDoorColorValue;
     }
 }

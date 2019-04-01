@@ -121,5 +121,9 @@ namespace V1_KITBOX
         {
             return elements;
         }
+        public string GetColor { get { return color; } }
+        public string GetDoorColor { get { return door_color; } }
+        public int GetHeight {  get { return height; } }
+
     }
 }

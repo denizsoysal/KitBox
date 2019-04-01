@@ -264,7 +264,7 @@ namespace V1_KITBOX
         {
             // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
             order.AddCabinet(this.depth, this.width, heights.Sum(), this.corner_color);
-            List<Cabinet> cabinets = order.GetCabinet;
+            List<Cabinet> cabinets = order.GetCabinets;
             int index_of_cabinet = cabinets.Count - 1;
 
             for (int i = 0; i < this.heights.Count; i++)

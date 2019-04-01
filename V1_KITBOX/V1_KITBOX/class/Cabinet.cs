@@ -13,7 +13,7 @@ namespace V1_KITBOX
         private int height;
         private int width;
         private int depth;
-        private string corner_color;
+       
         private Corner corner;
 
         public Cabinet(int depth , int width, int height , string corner_color)
@@ -42,9 +42,8 @@ namespace V1_KITBOX
         public int GetHeight() { return height; }
         public int GetWidth() { return width; }
         public int GetDepth(){ return depth; }
-        public string GetCornerColor() { return corner_color;}
         public Corner GetCorner() { return corner; }
-        // Write an "Add" function to add a new box in the box list
+        
         
 
 
