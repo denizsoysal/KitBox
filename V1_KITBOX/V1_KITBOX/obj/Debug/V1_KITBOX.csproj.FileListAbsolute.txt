@@ -186,3 +186,5 @@ C:\Users\julien\Documents\KitBox\KitBox6\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX
 C:\Users\julien\Documents\KitBox\KitBox6\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe.config
 C:\Users\julien\Documents\KitBox\KitBox6\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe
 C:\Users\julien\Documents\KitBox\KitBox6\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\MySql.Data.dll
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CopyComplete

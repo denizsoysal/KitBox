@@ -53,7 +53,11 @@ namespace V1_KITBOX
 
         private void UC_OrderP1_Load(object sender, EventArgs e)
         {
-           
+            function.Fill("Profondeur", "kitbox_database.`kitbox`", "Reference='Panneau GD'", comboBoxDepth);
+            function.Fill("Largeur", "kitbox_database.`kitbox`", "Reference='Panneau Ar' ORDER BY Largeur ASC", comboBoxWidth);
+            function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Cornieres'", comboBox_corner_color);
+            function.ConnectionClose();
+
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
