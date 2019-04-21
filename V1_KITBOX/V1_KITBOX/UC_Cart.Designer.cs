@@ -223,6 +223,7 @@
             this.CabinetPrice.Size = new System.Drawing.Size(33, 13);
             this.CabinetPrice.TabIndex = 16;
             this.CabinetPrice.Text = "Prix : ";
+            this.CabinetPrice.Click += new System.EventHandler(this.CabinetPrice_Click);
             // 
             // BoxColor
             // 
@@ -250,6 +251,7 @@
             this.CabinetPriceValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetPriceValue.TabIndex = 23;
             this.CabinetPriceValue.Text = "........";
+            this.CabinetPriceValue.Click += new System.EventHandler(this.CabinetPriceValue_Click);
             // 
             // CabinetHeightValue
             // 
@@ -259,6 +261,7 @@
             this.CabinetHeightValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetHeightValue.TabIndex = 24;
             this.CabinetHeightValue.Text = "........";
+            this.CabinetHeightValue.Click += new System.EventHandler(this.CabinetHeightValue_Click);
             // 
             // CabinetWidthValue
             // 
@@ -286,6 +289,7 @@
             this.BoxHeigthValue.Size = new System.Drawing.Size(31, 13);
             this.BoxHeigthValue.TabIndex = 27;
             this.BoxHeigthValue.Text = "........";
+            this.BoxHeigthValue.Click += new System.EventHandler(this.BoxHeigthValue_Click);
             // 
             // BoxColorValue
             // 
@@ -372,6 +376,7 @@
             this.CabinetCornerColorValue.Size = new System.Drawing.Size(37, 13);
             this.CabinetCornerColorValue.TabIndex = 39;
             this.CabinetCornerColorValue.Text = "..........";
+            this.CabinetCornerColorValue.Click += new System.EventHandler(this.CabinetCornerColorValue_Click);
             // 
             // BoxDoorType
             // 
@@ -408,6 +413,7 @@
             this.BoxDoorColorValue.Size = new System.Drawing.Size(31, 13);
             this.BoxDoorColorValue.TabIndex = 43;
             this.BoxDoorColorValue.Text = "........";
+            this.BoxDoorColorValue.Click += new System.EventHandler(this.BoxDoorColorValue_Click);
             // 
             // UC_Cart
             // 

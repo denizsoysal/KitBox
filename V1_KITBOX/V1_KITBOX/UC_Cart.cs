@@ -50,8 +50,54 @@ namespace V1_KITBOX
 
         
 
-        private void buttonValidateAndPay_Click(object sender, EventArgs e)
+       public void buttonValidateAndPay_Click(object sender, EventArgs e)
         {
+            int selectedCabinet = lbx_cabinets.SelectedIndex;
+            lbx_boxes.Items.Clear();
+            for (int j = 0; j < this.order.GetCabinets[selectedCabinet].GetBoxes.Count; j++)
+            {
+                lbx_boxes.Items.Add("Etage " + (j + 1).ToString());
+            }
+            lbx_boxes.SelectedIndex = 0;    // also calls the method ...IndexChanged()
+            string deppth = order.GetCabinets[selectedCabinet].GetDepth().ToString(); //profondeur de l'armoire
+            string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
+            string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor().ToString(); //couleur des cornières
+            
+
+            
+            int selectedBox = lbx_boxes.SelectedIndex;
+
+            string BoxHeight = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetHeight.ToString();  
+            string BoxColor = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetColor;
+            string Door_color = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetDoorColor;
+
+            string PannelHBCode = "";
+            string PannelGDCode = "";
+            string DoorCode ="";
+            string TasseauCode = "";
+            string PannelARCode = "";
+            string TraverseAVCode = "";
+            string TraverseGDCode = "";
+            string TraverseARCode = "";
+            string PannelAR = "Panneau AR";
+
+            //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
+            PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
+            PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
+            DoorCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", Door_color); //code barre de la porte
+            TasseauCode = function.Return0("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight); //code barre du tausseau
+
+
+
+
+
+
+            //PannelARCode=function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", BoxColor, "Reference", 'Panneau AR');
+            function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'");
+
+            //function.Insert("kitbox_database.`commande`", "`PanneauHB`", "'" + PannelHBCode + "'");
+            //function.Insert("kitbox_database.`commande`", "`PanneauGD`", "'" + PannelGDCode + "'");
+            //string CommandString = "insert into kitbox_database.test (DelaiFourn2) values('" + this.REF.Text + "','" + this.CodeBarre.Text + "','" + this.Dimensions.Text + "','" + this.Hauteur.Text + "','" + this.Profondeur.Text + "','" + this.Largeur.Text + "','" + this.Couleur.Text + "','" + this.EnStock.Text + "','" + this.StockMinimum.Text + "','" + this.PrixClient.Text + "','" + this.NbPecesCasier.Text + "','" + this.PrixFourn1.Text + "','" + this.DelaiFourn1.Text + "','" + this.PrixFourn2.Text + "','" + this.DelaiFourn2.Text + "') ;";
 
         }
 
@@ -67,7 +113,7 @@ namespace V1_KITBOX
             this.Controls.Add(new Introduction());
         }
 
-        private void lbx_cabinets_SelectedIndexChanged(object sender, EventArgs e)
+        public void lbx_cabinets_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedCabinet = lbx_cabinets.SelectedIndex;
             lbx_boxes.Items.Clear();
@@ -78,9 +124,14 @@ namespace V1_KITBOX
             lbx_boxes.SelectedIndex = 0;    // also calls the method ...IndexChanged()
 
             CabinetHeightValue.Text = order.GetCabinets[selectedCabinet].GetHeight().ToString();
+          
             CabinetDepthValue.Text = order.GetCabinets[selectedCabinet].GetDepth().ToString();
             CabinetWidthValue.Text = order.GetCabinets[selectedCabinet].GetWidth().ToString();
             CabinetCornerColorValue.Text = order.GetCabinets[selectedCabinet].GetCorner().GetColor();
+           /* string deppth = order.GetCabinets[selectedCabinet].GetDepth().ToString(); //profondeur de l'armoire
+            string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
+            string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor(); //couleur des cornières*/
+
         }
 
         private void lbx_boxes_SelectedIndexChanged(object sender, EventArgs e)
@@ -112,11 +163,40 @@ namespace V1_KITBOX
 
         }
 
+
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-       
+        private void CabinetPriceValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CabinetPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CabinetCornerColorValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BoxHeigthValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CabinetHeightValue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BoxDoorColorValue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

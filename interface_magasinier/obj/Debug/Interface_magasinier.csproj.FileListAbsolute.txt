@@ -11,3 +11,16 @@ C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\test_database\WinForms_MySQL\inter
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\test_database\WinForms_MySQL\interface_magasinier\obj\Debug\Interface_magasinier.csproj.CopyComplete
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\test_database\WinForms_MySQL\interface_magasinier\obj\Debug\WinForms_MySQL.exe
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\test_database\WinForms_MySQL\interface_magasinier\obj\Debug\WinForms_MySQL.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\bin\Debug\WinForms_MySQL.exe.config
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\bin\Debug\WinForms_MySQL.exe
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\bin\Debug\WinForms_MySQL.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\interface_magasinier.csprojAssemblyReference.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.Form1.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.Form2.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.home.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.Properties.Resources.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\interface_magasinier.csproj.GenerateResource.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\interface_magasinier.csproj.CoreCompileInputs.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\interface_magasinier.csproj.CopyComplete
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.exe
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.pdb

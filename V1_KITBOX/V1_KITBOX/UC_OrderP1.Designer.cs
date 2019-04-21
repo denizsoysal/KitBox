@@ -86,11 +86,6 @@
             // 
             this.comboBox_corner_color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_corner_color.FormattingEnabled = true;
-            this.comboBox_corner_color.Items.AddRange(new object[] {
-            "Blanc",
-            "Brun",
-            "Noir",
-            "Galvanisé"});
             this.comboBox_corner_color.Location = new System.Drawing.Point(182, 274);
             this.comboBox_corner_color.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_corner_color.Name = "comboBox_corner_color";
@@ -113,12 +108,6 @@
             // 
             this.comboBoxWidth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWidth.FormattingEnabled = true;
-            this.comboBoxWidth.Items.AddRange(new object[] {
-            "10",
-            "20",
-            "30",
-            "40",
-            "50"});
             this.comboBoxWidth.Location = new System.Drawing.Point(182, 226);
             this.comboBoxWidth.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxWidth.Name = "comboBoxWidth";
@@ -141,12 +130,6 @@
             // 
             this.comboBoxDepth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDepth.FormattingEnabled = true;
-            this.comboBoxDepth.Items.AddRange(new object[] {
-            "10",
-            "20",
-            "30",
-            "40",
-            "50"});
             this.comboBoxDepth.Location = new System.Drawing.Point(182, 191);
             this.comboBoxDepth.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDepth.Name = "comboBoxDepth";

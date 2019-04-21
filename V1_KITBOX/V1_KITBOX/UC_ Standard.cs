@@ -94,6 +94,14 @@ namespace V1_KITBOX
 
         private void UC__Standard_Load(object sender, EventArgs e)
         {
+            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Tasseau'", cbx_height);
+            function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Porte'", cbx_color);
+            function.ConnectionClose();
+
+        }
+
+        private void lbl_height_Click(object sender, EventArgs e)
+        {
 
         }
     }

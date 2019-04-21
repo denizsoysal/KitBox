@@ -112,7 +112,7 @@
             // button_validate
             // 
             this.button_validate.Location = new System.Drawing.Point(424, 299);
-            this.button_validate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_validate.Margin = new System.Windows.Forms.Padding(2);
             this.button_validate.Name = "button_validate";
             this.button_validate.Size = new System.Drawing.Size(106, 27);
             this.button_validate.TabIndex = 7;
@@ -146,11 +146,8 @@
             // 
             this.cbx_color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_color.FormattingEnabled = true;
-            this.cbx_color.Items.AddRange(new object[] {
-            "Blanc",
-            "Brun"});
             this.cbx_color.Location = new System.Drawing.Point(270, 257);
-            this.cbx_color.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_color.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_color.Name = "cbx_color";
             this.cbx_color.Size = new System.Drawing.Size(126, 21);
             this.cbx_color.TabIndex = 4;
@@ -163,9 +160,10 @@
             this.lbl_height.Location = new System.Drawing.Point(111, 97);
             this.lbl_height.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_height.Name = "lbl_height";
-            this.lbl_height.Size = new System.Drawing.Size(134, 20);
+            this.lbl_height.Size = new System.Drawing.Size(147, 20);
             this.lbl_height.TabIndex = 3;
-            this.lbl_height.Text = "Hauteur standard";
+            this.lbl_height.Text = "Hauteur d\'un casier";
+            this.lbl_height.Click += new System.EventHandler(this.lbl_height_Click);
             // 
             // lbl_nbox
             // 
@@ -191,7 +189,7 @@
             "6",
             "7"});
             this.cbx_nbox.Location = new System.Drawing.Point(270, 180);
-            this.cbx_nbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_nbox.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_nbox.Name = "cbx_nbox";
             this.cbx_nbox.Size = new System.Drawing.Size(126, 21);
             this.cbx_nbox.TabIndex = 1;
@@ -203,14 +201,8 @@
             this.cbx_height.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_height.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbx_height.FormattingEnabled = true;
-            this.cbx_height.Items.AddRange(new object[] {
-            "100",
-            "150",
-            "180",
-            "200",
-            "230"});
-            this.cbx_height.Location = new System.Drawing.Point(270, 97);
-            this.cbx_height.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_height.Location = new System.Drawing.Point(270, 99);
+            this.cbx_height.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_height.Name = "cbx_height";
             this.cbx_height.Size = new System.Drawing.Size(126, 21);
             this.cbx_height.TabIndex = 0;
@@ -240,7 +232,7 @@
             this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.buttonCustom);
             this.Controls.Add(this.buttonOrderP1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC__Standard";
             this.Size = new System.Drawing.Size(888, 554);
             this.Load += new System.EventHandler(this.UC__Standard_Load);

@@ -61,7 +61,6 @@ namespace V1_KITBOX
             }
 
         }
-
         public static String Return(string Select, string From, string WhereOne, ComboBox ComboOne, string WhereTwo, ComboBox ComboTwo, Label Lab)
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
@@ -86,6 +85,69 @@ namespace V1_KITBOX
             return Lab.Text = Reader.GetString(Select);
 
         }
+        public static String Return0(string Select, string From, string WhereOne, string ComboOne)
+        {
+            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
+            MySqlConnection connection;
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            connection.Open();
+            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "'";
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySql.Data.MySqlClient.MySqlDataReader Reader;
+            Reader = Command.ExecuteReader();
+
+
+            while (Reader.Read())
+            {
+
+            }
+            return Reader.GetString(Select);
+
+        }
+
+        public static String Return2(string Select, string From, string WhereOne, string ComboOne, string WhereTwo, string ComboTwo, string WhereThree, string ComboThree)
+        {
+            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
+            MySqlConnection connection;
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            connection.Open();
+            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "' AND " + WhereTwo + "='" + ComboTwo + "' AND " + WhereThree + "='" + ComboThree + "'";
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySql.Data.MySqlClient.MySqlDataReader Reader;
+            Reader = Command.ExecuteReader();
+
+
+            while (Reader.Read())
+            {
+
+            }
+            return Reader.GetString(Select);
+
+        }
+
+        public static String Return3(string Select, string From, string WhereOne, string ComboOne, string WhereTwo, string ComboTwo, string WhereThree, string ComboThree, string WhereFour, string ComboFour)
+        {
+            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
+            MySqlConnection connection;
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            connection.Open();
+            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "' AND " + WhereTwo + "='" + ComboTwo + "' AND " + WhereThree + "='" + ComboThree + "'" + "' AND " + WhereFour + "='" + ComboFour + "'";
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySql.Data.MySqlClient.MySqlDataReader Reader;
+            Reader = Command.ExecuteReader();
+
+
+            while (Reader.Read())
+            {
+
+            }
+            return Reader.GetString(Select);
+
+        }
+
 
         public static void Insert(string Insert, string Column, string Values)
         {
@@ -99,6 +161,21 @@ namespace V1_KITBOX
             cmd.ExecuteNonQuery();
             connection.Close();
         }
+        public static void Insert2(string Insert, string Column1, string Column2, string Column3, string Column4, string Column5, string Value1, string Value2, string Value3 , string Value4, string Value5)
+        {
+            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
+            MySqlConnection connection;
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+
+            connection.Open();
+            MySqlCommand cmd = connection.CreateCommand();
+            //cmd.CommandText = "INSERT INTO " + Insert + " (" + Column + ") VALUES(" + Values + ")";
+            cmd.CommandText = "INSERT INTO " + Insert + "(" + Column1 +"," + Column2 + "," + Column3 + "," + Column4 + "," + Column5 + ") values(" + Value1 + "," + Value2 + "," + Value3 + "," + Value4 + "," + Value5 + ")";
+            
+            cmd.ExecuteNonQuery();
+            connection.Close();
+        }
+
 
         public static void Update(string Update, string Set, string Where)
         {
