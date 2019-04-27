@@ -54,9 +54,9 @@
             this.BoxHeigthValue = new System.Windows.Forms.Label();
             this.BoxColorValue = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxFirstname = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxLastname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -310,24 +310,25 @@
             this.label4.TabIndex = 31;
             this.label4.Text = " Nom :";
             // 
-            // textBox1
+            // tbxFirstname
             // 
-            this.textBox1.Location = new System.Drawing.Point(690, 247);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 32;
+            this.tbxFirstname.Location = new System.Drawing.Point(690, 247);
+            this.tbxFirstname.Name = "tbxFirstname";
+            this.tbxFirstname.Size = new System.Drawing.Size(158, 20);
+            this.tbxFirstname.TabIndex = 32;
+            this.tbxFirstname.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // tbxLastname
             // 
-            this.textBox2.Location = new System.Drawing.Point(690, 284);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 34;
+            this.tbxLastname.Location = new System.Drawing.Point(690, 284);
+            this.tbxLastname.Name = "tbxLastname";
+            this.tbxLastname.Size = new System.Drawing.Size(158, 20);
+            this.tbxLastname.TabIndex = 34;
             // 
             // label5
             // 
@@ -429,8 +430,8 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxLastname);
+            this.Controls.Add(this.tbxFirstname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BoxColorValue);
             this.Controls.Add(this.BoxHeigthValue);
@@ -493,9 +494,9 @@
         private System.Windows.Forms.Label BoxColorValue;
         private System.Windows.Forms.Label BoxDoorsType;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxFirstname;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxLastname;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
