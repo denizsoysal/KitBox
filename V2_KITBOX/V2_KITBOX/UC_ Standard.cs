@@ -127,10 +127,5 @@ namespace V1_KITBOX
             function.ConnectionClose();
 
         }
-
-        private void lbl_height_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

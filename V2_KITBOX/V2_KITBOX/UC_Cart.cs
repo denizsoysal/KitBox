@@ -92,23 +92,18 @@ namespace V1_KITBOX
             string Customer_ID;
 
             //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
-            PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
-            PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
-            DoorCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", Door_color); //code barre de la porte
-            TasseauCode = function.Return0("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight); //code barre du tausseau
-            TraverseAVCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Av"); //code barre de la porte
-            TraverseGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Largeur", "0", "Profondeur", deppth); //code barre de la porte
-            TraverseARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Ar"); //code barre de la porte
-            CorniereCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", CornerHeightt, "`Reference`", "Cornieres", "Couleur", Corner_color); //code barre de la porte
+            PannelHBCode = function.CodeBarre( "Largeur" + "='" + widdth + "' AND " + "Profondeur" + "='" + deppth + "' AND " + "Couleur" + "='" + Corner_color +"'"); //code barre du panneau HB 
+            PannelGDCode = function.CodeBarre( "Hauteur" + "='" + BoxHeight + "' AND " + "Profondeur" + "='" + deppth + "' AND " + "Couleur" + "='" + BoxColor + "'"); //code barre du panneau GD
+            PannelARCode = function.CodeBarre( "`Reference`" + "='" + "Panneau Ar" + "' AND " + "`Hauteur`" + "='" + BoxHeight + "' AND " + "`Largeur`" + "='" + widdth + "' AND " + "`Couleur`" + "='" + BoxColor + "'");
+            DoorCode = function.CodeBarre( "Hauteur" + "='" + BoxHeight + "' AND " + "Largeur" + "='" + widdth + "' AND " + "Couleur" + "='" + Door_color + "'"); //code barre de la porte
+            TasseauCode = function.CodeBarre( "Hauteur" + "='" + BoxHeight + "'"); //code barre du tausseau
+            TraverseAVCode = function.CodeBarre( "Hauteur" + "='" + "0" + "' AND " + "Profondeur" + "='" + "0" + "' AND " + "Largeur" + "='" + widdth + "' AND " + "`Reference`" + "='" + "Traverse Av" + "'"); //code barre de la porte
+            TraverseGDCode = function.CodeBarre( "Hauteur" + "='" + "0" + "' AND " + "Largeur" + "='" + "0" + "' AND " + "Profondeur" + "='" + deppth + "'"); //code barre de la porte
+            TraverseARCode = function.CodeBarre( "Hauteur" + "='" + "0" + "' AND " + "Profondeur" + "='" + "0" + "' AND " + "Largeur" + "='" + widdth + "' AND " + "`Reference`" + "='" + "Traverse Ar" + "'"); //code barre de la porte
+            CorniereCode = function.CodeBarre( "Hauteur" + "='" + CornerHeightt + "' AND " + "`Reference`" + "='" + "Cornieres" + "' AND " + "Couleur" + "='" + Corner_color + "'"); //code barre de la porte
             Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
 
-              //  Customer_ID = Customer_ID.ToString();
-               function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text+ "' , PrenomClient = '" + tbxFirstname.Text+"'", "idClient='" + Customer_ID+"'");
-               // function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "'", "idClient='" + Customer_ID + "'");
-                //  function.Update("kitbox_database.`client`", "NomClient"+ tbxLastname.Text + ", PrenomClient = '" + tbxFirstname.Text + "'", "client_fk = '" + Customer_ID + "'");
-                // string CommandString = "SELECT CodeBarre FROM `kitbox` WHERE `Reference`='Panneau Ar' AND `Hauteur` = '42' AND `Largeur` = '120' AND `Couleur` = 'Blanc'";
-                // PannelARCode = function.Returna("SELECT CodeBarre FROM `kitbox` WHERE `Reference`= 'Panneau Ar' AND `Hauteur` = '42' AND `Largeur` = '120' AND `Couleur` = 'Blanc'");
-                PannelARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "`Reference`", "Panneau Ar" , "`Hauteur`", BoxHeight, "`Largeur`", widdth, "`Couleur`", BoxColor);
+            function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text+ "' , PrenomClient = '" + tbxFirstname.Text+"'", "idClient='" + Customer_ID+"'");
             function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
 
                 //----
@@ -123,15 +118,15 @@ namespace V1_KITBOX
                 string TraverseARStock = "";
                 string TraverseGDStock = "";
 
-                CorniereStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", CorniereCode);
-                PannelARStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", PannelARCode);
-                PannelGDStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", PannelGDCode);
-                PannelHBStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", PannelHBCode);
-                DoorStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", DoorCode);
-                TasseauStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", TasseauCode); ;
-                TraverseAVStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", TraverseAVCode); 
-                TraverseARStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", TraverseARCode);
-                TraverseGDStock = function.Return0("Enstock", "kitbox_database.`kitbox`", "CodeBarre", TraverseGDCode);
+                CorniereStock = function.Return("Enstock", "CodeBarre", CorniereCode);
+                PannelARStock = function.Return("Enstock", "CodeBarre", PannelARCode);
+                PannelGDStock = function.Return("Enstock", "CodeBarre", PannelGDCode);
+                PannelHBStock = function.Return("Enstock", "CodeBarre", PannelHBCode);
+                DoorStock = function.Return("Enstock", "CodeBarre", DoorCode);
+                TasseauStock = function.Return("Enstock", "CodeBarre", TasseauCode); ;
+                TraverseAVStock = function.Return("Enstock", "CodeBarre", TraverseAVCode); 
+                TraverseARStock = function.Return("Enstock","CodeBarre", TraverseARCode);
+                TraverseGDStock = function.Return("Enstock","CodeBarre", TraverseGDCode);
                 //
                 string CorniereUpdate = (Int32.Parse(CorniereStock) - 4).ToString();
                 string PannelARUpdate = (Int32.Parse(PannelARStock) - 1* totalBoxes).ToString();
@@ -155,15 +150,15 @@ namespace V1_KITBOX
                 string TraverseARMin = "";
                 string TraverseGDMin = "";
 
-                CorniereMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", CorniereCode);
-                PannelARMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", PannelARCode);
-                PannelGDMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", PannelGDCode);
-                PannelHBMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", PannelHBCode);
-                DoorMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", DoorCode);
-                TasseauMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", TasseauCode); ;
-                TraverseAVMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", TraverseAVCode);
-                TraverseARMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", TraverseARCode);
-                TraverseGDMin = function.Return0("StockMinimum", "kitbox_database.`kitbox`", "CodeBarre", TraverseGDCode);
+                CorniereMin = function.Return("StockMinimum","CodeBarre", CorniereCode);
+                PannelARMin = function.Return("StockMinimum","CodeBarre", PannelARCode);
+                PannelGDMin = function.Return("StockMinimum","CodeBarre", PannelGDCode);
+                PannelHBMin = function.Return("StockMinimum","CodeBarre", PannelHBCode);
+                DoorMin = function.Return("StockMinimum","CodeBarre", DoorCode);
+                TasseauMin = function.Return("StockMinimum","CodeBarre", TasseauCode); ;
+                TraverseAVMin = function.Return("StockMinimum","CodeBarre", TraverseAVCode);
+                TraverseARMin = function.Return("StockMinimum", "CodeBarre", TraverseARCode);
+                TraverseGDMin = function.Return("StockMinimum","CodeBarre", TraverseGDCode);
 
                 //
 
@@ -178,23 +173,23 @@ namespace V1_KITBOX
                 string TraverseGDPrice = "";
                 string TotalPrice = "";
 
-                CornierePrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", CorniereCode);
+                CornierePrice = function.Return("PrixClient","CodeBarre", CorniereCode);
                 CornierePrice = (float.Parse(CornierePrice) * 4).ToString();
-                PannelARPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", PannelARCode);
+                PannelARPrice = function.Return("PrixClient", "CodeBarre", PannelARCode);
                 PannelARPrice = (float.Parse(PannelARPrice) * 1 * totalBoxes).ToString();
-                PannelGDPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", PannelGDCode);
+                PannelGDPrice = function.Return("PrixClient", "CodeBarre", PannelGDCode);
                 PannelGDPrice = (float.Parse(PannelGDPrice) * 2 * totalBoxes).ToString();
-                PannelHBPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", PannelHBCode);
+                PannelHBPrice = function.Return("PrixClient", "CodeBarre", PannelHBCode);
                 PannelHBPrice = (float.Parse(PannelHBPrice) * 2 * totalBoxes).ToString();
-                DoorPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", DoorCode);
+                DoorPrice = function.Return("PrixClient", "CodeBarre", DoorCode);
                 DoorPrice = (float.Parse(DoorPrice) * 2 * totalBoxes).ToString();
-                TasseauPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", TasseauCode); ;
+                TasseauPrice = function.Return("PrixClient", "CodeBarre", TasseauCode); ;
                 TasseauPrice = (float.Parse(TasseauPrice) * 4 * totalBoxes).ToString();
-                TraverseAVPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", TraverseAVCode);
+                TraverseAVPrice = function.Return("PrixClient", "CodeBarre", TraverseAVCode);
                 TraverseAVPrice = (float.Parse(TraverseAVPrice) * 2 * totalBoxes).ToString();
-                TraverseARPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", TraverseARCode);
+                TraverseARPrice = function.Return("PrixClient", "CodeBarre", TraverseARCode);
                 TraverseARPrice = (float.Parse(TraverseARPrice) * 2 * totalBoxes).ToString();
-                TraverseGDPrice = function.Return0("PrixClient", "kitbox_database.`kitbox`", "CodeBarre", TraverseGDCode);
+                TraverseGDPrice = function.Return("PrixClient", "CodeBarre", TraverseGDCode);
                 TraverseGDPrice = (float.Parse(TraverseGDPrice) * 4 * totalBoxes).ToString();
                 TotalPrice = (float.Parse(CornierePrice) + float.Parse(PannelARPrice) + float.Parse(PannelGDPrice) + float.Parse(PannelHBPrice) +  float.Parse(DoorPrice) + float.Parse(TasseauPrice) + float.Parse(TraverseAVPrice) + float.Parse(TraverseARPrice) + float.Parse(TraverseGDPrice)).ToString();
 
@@ -277,44 +272,6 @@ namespace V1_KITBOX
         }
 
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void CabinetPriceValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetCornerColorValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxHeigthValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetHeightValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxDoorColorValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

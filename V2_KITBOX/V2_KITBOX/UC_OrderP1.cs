@@ -41,15 +41,6 @@ namespace V1_KITBOX
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void UC_OrderP1_Load(object sender, EventArgs e)
         {

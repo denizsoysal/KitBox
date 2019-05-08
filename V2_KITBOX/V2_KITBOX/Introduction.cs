@@ -72,10 +72,6 @@ namespace V1_KITBOX
             this.Controls.Add(new UC_OrderP1(order));
         }
 
-        private void Introduction_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

@@ -149,7 +149,6 @@
             this.lbl_height.Size = new System.Drawing.Size(147, 20);
             this.lbl_height.TabIndex = 3;
             this.lbl_height.Text = "Hauteur d\'un casier";
-            this.lbl_height.Click += new System.EventHandler(this.lbl_height_Click);
             // 
             // lbl_nbox
             // 

@@ -81,37 +81,14 @@ namespace V1_KITBOX
             }
 
         }
-        public static String Return(string Select, string From, string WhereOne, ComboBox ComboOne, string WhereTwo, ComboBox ComboTwo, Label Lab)
-        {
-            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
-            MySqlConnection connection;
-            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-
-            Object SelectedOne = ComboOne.SelectedItem;
-            Object SelectedTwo = ComboTwo.SelectedItem;
-            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            connection.Open();
-            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + SelectedOne + "' AND " + WhereTwo + "='" + SelectedTwo + "'";
-            MySql.Data.MySqlClient.MySqlCommand Command;
-            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            MySql.Data.MySqlClient.MySqlDataReader Reader;
-            Reader = Command.ExecuteReader();
-
-
-            while (Reader.Read())
-            {
-
-            }
-            return Lab.Text = Reader.GetString(Select);
-
-        }
-        public static String Return0(string Select, string From, string WhereOne, string ComboOne)
+ 
+        public static String Return(string Select, string WhereName, string WhereValue)
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
             MySqlConnection connection;
             connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();
-            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "'";
+            string CommandString = "SELECT DISTINCT " + Select + " FROM " + "kitbox_database.`kitbox`" + " WHERE " + WhereName + "='" + WhereValue + "'";
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySql.Data.MySqlClient.MySqlDataReader Reader;
@@ -125,14 +102,13 @@ namespace V1_KITBOX
             return Reader.GetString(Select);
 
         }
-
-        public static String Returna(string Select)
+        public static String CodeBarre( string Where)
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
             MySqlConnection connection;
             connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();
-            string CommandString = Select ;
+            string CommandString = "SELECT DISTINCT " + "CodeBarre" + " FROM " + "kitbox_database.`kitbox`" + " WHERE " + Where +"";
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySql.Data.MySqlClient.MySqlDataReader Reader;
@@ -143,57 +119,9 @@ namespace V1_KITBOX
             {
 
             }
-            return Reader.GetString(Select);
+            return Reader.GetString("CodeBarre");
 
         }
-
-        public static String Return2(string Select, string From, string WhereOne, string ComboOne, string WhereTwo, string ComboTwo, string WhereThree, string ComboThree)
-        {
-
-            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
-            MySqlConnection connection;
-            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            connection.Open();
-            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "' AND " + WhereTwo + "='" + ComboTwo + "' AND " + WhereThree + "='" + ComboThree + "'";
-            MySql.Data.MySqlClient.MySqlCommand Command;
-            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            MySql.Data.MySqlClient.MySqlDataReader Reader;
-            Reader = Command.ExecuteReader();
-            Reader.Read();
-
-            while (Reader.Read())
-            {
-
-            }
-            return Reader.GetString(Select);
-
-        }
-
-        public static String Return3(string Select, string From, string WhereOne, string ComboOne, string WhereTwo, string ComboTwo, string WhereThree, string ComboThree, string WhereFour, string ComboFour)
-        {
-            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
-            MySqlConnection connection;
-            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            connection.Open();
-            //PannelARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", BoxColor, "Reference", PannelAR);
-            // string CommandString = "SELECT CodeBarre FROM `kitbox` WHERE `Reference`='Panneau Ar' AND `Hauteur` = '42' AND `Largeur` = '120' AND `Couleur` = 'Blanc'";
-            string CommandString = "SELECT " + Select + " FROM " + From + " WHERE " + WhereOne + "='" + ComboOne + "' AND " + WhereTwo + "='" + ComboTwo + "' AND " + WhereThree + "='" + ComboThree + "' AND " + WhereFour + "='" + ComboFour + "'";
-            MySql.Data.MySqlClient.MySqlCommand Command;
-            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            MySql.Data.MySqlClient.MySqlDataReader Reader;
-            Reader = Command.ExecuteReader();
-
-
-            while (Reader.Read())
-            {
-
-            }
-            return Reader.GetString(Select);
-            //Reader.Read();
-            //return Reader.GetString(Select);
-
-        }
-
 
         public static void Insert(string Insert, string Column, string Values)
         {
