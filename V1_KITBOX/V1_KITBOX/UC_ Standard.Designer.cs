@@ -42,6 +42,8 @@
             this.cbx_nbox = new System.Windows.Forms.ComboBox();
             this.cbx_height = new System.Windows.Forms.ComboBox();
             this.buttonCart = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.boxHeight = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +98,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.boxHeight);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button_validate);
             this.panel1.Controls.Add(this.lbl_info);
             this.panel1.Controls.Add(this.lbl_color);
@@ -157,7 +161,7 @@
             // 
             this.lbl_height.AutoSize = true;
             this.lbl_height.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_height.Location = new System.Drawing.Point(111, 97);
+            this.lbl_height.Location = new System.Drawing.Point(106, 84);
             this.lbl_height.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_height.Name = "lbl_height";
             this.lbl_height.Size = new System.Drawing.Size(147, 20);
@@ -201,7 +205,7 @@
             this.cbx_height.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_height.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbx_height.FormattingEnabled = true;
-            this.cbx_height.Location = new System.Drawing.Point(270, 99);
+            this.cbx_height.Location = new System.Drawing.Point(270, 83);
             this.cbx_height.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_height.Name = "cbx_height";
             this.cbx_height.Size = new System.Drawing.Size(126, 21);
@@ -220,6 +224,28 @@
             this.buttonCart.Text = "Voir le panier";
             this.buttonCart.UseVisualStyleBackColor = false;
             this.buttonCart.Click += new System.EventHandler(this.buttonCart_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(111, 133);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Hauteur de l\'armoire";
+            // 
+            // boxHeight
+            // 
+            this.boxHeight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boxHeight.FormattingEnabled = true;
+            this.boxHeight.Location = new System.Drawing.Point(270, 132);
+            this.boxHeight.Margin = new System.Windows.Forms.Padding(2);
+            this.boxHeight.Name = "boxHeight";
+            this.boxHeight.Size = new System.Drawing.Size(126, 21);
+            this.boxHeight.TabIndex = 9;
+            this.boxHeight.SelectedIndexChanged += new System.EventHandler(this.boxHeight_SelectedIndexChanged);
             // 
             // UC__Standard
             // 
@@ -259,5 +285,7 @@
         private System.Windows.Forms.ComboBox cbx_nbox;
         private System.Windows.Forms.ComboBox cbx_height;
         private System.Windows.Forms.Button button_validate;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox boxHeight;
     }
 }

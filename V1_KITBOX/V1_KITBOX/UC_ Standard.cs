@@ -14,6 +14,7 @@ namespace V1_KITBOX
     {
         //private List<string> _cabinet = new List<string>();
         private int height;
+        private int Totalheight;
         private int nbrBoxes;
         private string cabinetColor;
         Order order;
@@ -61,7 +62,7 @@ namespace V1_KITBOX
 
         private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.height = int.Parse(cbx_height.Text);             
+            this.height = int.Parse(cbx_height.Text);  // in the case if we want to use the height of a box           
         }
 
         private void cbx_nbox_SelectedIndexChanged(object sender, EventArgs e)
@@ -96,12 +97,20 @@ namespace V1_KITBOX
         {
             function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Tasseau'", cbx_height);
             function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Porte'", cbx_color);
+            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Cornieres'", boxHeight);
+
             function.ConnectionClose();
 
         }
 
         private void lbl_height_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void boxHeight_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          this.Totalheight = int.Parse(boxHeight.Text); //define the height of the cabinet
 
         }
     }

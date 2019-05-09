@@ -121,7 +121,7 @@
             // 
             // buttonValidateAndPay
             // 
-            this.buttonValidateAndPay.Location = new System.Drawing.Point(753, 468);
+            this.buttonValidateAndPay.Location = new System.Drawing.Point(748, 468);
             this.buttonValidateAndPay.Name = "buttonValidateAndPay";
             this.buttonValidateAndPay.Size = new System.Drawing.Size(132, 49);
             this.buttonValidateAndPay.TabIndex = 5;

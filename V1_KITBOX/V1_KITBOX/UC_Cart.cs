@@ -84,19 +84,20 @@ namespace V1_KITBOX
             string CorniereCode = "";
             int BoxHeightt = int.Parse(BoxHeight);
             int CornerHeight = (BoxHeightt + 4) * 3;
-            string CornerHeightt = CornerHeight.ToString();
-            string Customer_ID;
+                string CornerHeightt = CornerHeight.ToString();
+                
+                string Customer_ID;
 
             //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
-            PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
-            PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
-            DoorCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", Door_color); //code barre de la porte
-            TasseauCode = function.Return0("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight); //code barre du tausseau
-            TraverseAVCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Av"); //code barre de la porte
-            TraverseGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Largeur", "0", "Profondeur", deppth); //code barre de la porte
-            TraverseARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Ar"); //code barre de la porte
-            CorniereCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", CornerHeightt, "`Reference`", "Cornieres", "Couleur", Corner_color); //code barre de la porte
-            Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
+           PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
+           PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
+           DoorCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", Door_color); //code barre de la porte
+           TasseauCode = function.Return0("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight); //code barre du tausseau
+           TraverseAVCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Av"); //code barre de la porte
+           TraverseGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Largeur", "0", "Profondeur", deppth); //code barre de la porte
+           TraverseARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", "0", "Profondeur", "0", "Largeur", widdth, "`Reference`", "Traverse Ar"); //code barre de la porte
+           CorniereCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", CornerHeightt, "`Reference`", "Cornieres", "Couleur", Corner_color); //code barre de la porte
+           Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
 
               //  Customer_ID = Customer_ID.ToString();
                function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text+ "' , PrenomClient = '" + tbxFirstname.Text+"'", "idClient='" + Customer_ID+"'");
@@ -104,8 +105,8 @@ namespace V1_KITBOX
                 //  function.Update("kitbox_database.`client`", "NomClient"+ tbxLastname.Text + ", PrenomClient = '" + tbxFirstname.Text + "'", "client_fk = '" + Customer_ID + "'");
                 // string CommandString = "SELECT CodeBarre FROM `kitbox` WHERE `Reference`='Panneau Ar' AND `Hauteur` = '42' AND `Largeur` = '120' AND `Couleur` = 'Blanc'";
                 // PannelARCode = function.Returna("SELECT CodeBarre FROM `kitbox` WHERE `Reference`= 'Panneau Ar' AND `Hauteur` = '42' AND `Largeur` = '120' AND `Couleur` = 'Blanc'");
-                PannelARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "`Reference`", "Panneau Ar" , "`Hauteur`", BoxHeight, "`Largeur`", widdth, "`Couleur`", BoxColor);
-            function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
+             PannelARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "`Reference`", "Panneau Ar" , "`Hauteur`", BoxHeight, "`Largeur`", widdth, "`Couleur`", BoxColor);
+             function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
 
 
 
