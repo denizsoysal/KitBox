@@ -56,7 +56,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Introduction";
             this.Size = new System.Drawing.Size(888, 554);
-            this.Load += new System.EventHandler(this.Introduction_Load);
+         
             this.ResumeLayout(false);
 
         }
