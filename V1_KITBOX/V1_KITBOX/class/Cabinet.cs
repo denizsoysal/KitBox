@@ -43,6 +43,11 @@ namespace V1_KITBOX
         public int GetWidth() { return width; }
         public int GetDepth(){ return depth; }
         public Corner GetCorner() { return corner; }
+        public int GetNumberBoxes()
+        {
+            int n = boxes.Count;
+            return n;
+        }
         
         
 

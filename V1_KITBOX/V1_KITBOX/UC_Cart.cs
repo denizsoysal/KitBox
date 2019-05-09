@@ -19,10 +19,11 @@ namespace V1_KITBOX
             InitializeComponent();
             this.Dock = DockStyle.Fill;
             this.order = currentOrder;
-
+            int totalBoxes = 0;
             for(int i=0; i< this.order.GetCabinets.Count;i++)
             {
                 lbx_cabinets.Items.Add("Armoire " +(i+1).ToString() );
+                totalBoxes = totalBoxes+ order.GetCabinets[i].GetNumberBoxes();
             }
             lbx_cabinets.SelectedIndex = 0;
             
@@ -179,51 +180,9 @@ namespace V1_KITBOX
             {
                 BoxDoorTypeValue.Text = "Bois";
                 BoxDoorColorValue.Text = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetDoorColor;
-            }
-
-            
+            }          
 
         }
 
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetPriceValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetCornerColorValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxHeigthValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetHeightValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxDoorColorValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
