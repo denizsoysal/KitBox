@@ -66,7 +66,7 @@ namespace V1_KITBOX
             string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
             string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor().ToString(); //couleur des cornières
 
-            int totalBoxes = 3;
+            int totalBoxes = 0;
             for (int i = 0; i < this.order.GetCabinets.Count; i++)
             {
 
@@ -99,6 +99,8 @@ namespace V1_KITBOX
             string TraverseARCode = "";
             string CorniereCode = "";                
             string Customer_ID;
+            string CommandState = "Enregistrée";
+            string NumberOfBoxes = totalBoxes.ToString();
 
            PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
            PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
@@ -115,15 +117,17 @@ namespace V1_KITBOX
                // function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "'", "idClient='" + Customer_ID + "'");
                 //  function.Update("kitbox_database.`client`", "NomClient"+ tbxLastname.Text + ", PrenomClient = '" + tbxFirstname.Text + "'", "client_fk = '" + Customer_ID + "'");
              PannelARCode = function.Return3("CodeBarre", "kitbox_database.`kitbox`", "`Reference`", "Panneau Ar" , "`Hauteur`", BoxHeight, "`Largeur`", widdth, "`Couleur`", BoxColor);
-             function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
-             
+                // function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'" , "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
+                function.Insert3("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "`Command_state`", "`number_of_box`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'", "'" + CommandState + "'", "'" + NumberOfBoxes + "'");
             }
-            catch (Exception ex)
+            catch (Exception ex)    
             {
                 MessageBox.Show(ex.Message);
 
 
             }
+                    /**/
+                     
 
         }
 

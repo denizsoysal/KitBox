@@ -24,3 +24,4 @@ C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\interface_magasinier.csproj.CopyComplete
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.exe
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.Form3.resources
