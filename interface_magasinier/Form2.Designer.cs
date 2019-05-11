@@ -80,6 +80,7 @@
             this.Enstock.Name = "Enstock";
             this.Enstock.Size = new System.Drawing.Size(100, 20);
             this.Enstock.TabIndex = 5;
+            this.Enstock.TextChanged += new System.EventHandler(this.Enstock_TextChanged);
             // 
             // label2
             // 

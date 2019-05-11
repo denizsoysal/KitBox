@@ -269,5 +269,10 @@ namespace WinForms_MySQL
             home home = new home();
             home.ShowDialog();
         }
+
+        private void Enstock_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,7 +64,7 @@ namespace V1_KITBOX
                 string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
                 string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor().ToString(); //couleur des cornières
 
-                int totalBoxes = 3;
+                int totalBoxes = 0;
                 for (int i = 0; i < this.order.GetCabinets.Count; i++)
                 {
 
@@ -98,6 +98,7 @@ namespace V1_KITBOX
                 string TraverseARCode = "";
                 string CorniereCode = "";
                 string Customer_ID;
+                string CommandState = "Enregistrée";
 
                 //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
                 PannelHBCode = function.CodeBarre("Largeur" + "='" + widdth + "' AND " + "Profondeur" + "='" + deppth + "' AND " + "Couleur" + "='" + Corner_color + "'"); //code barre du panneau HB 
@@ -122,8 +123,8 @@ namespace V1_KITBOX
                 label16.Text = Customer_ID;
 
                 function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "' , PrenomClient = '" + tbxFirstname.Text + "'", "idClient='" + Customer_ID + "'");
-                function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
-
+                //function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
+                function.Insert3("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "`Command_state`", "`number_of_box`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'", "'" + CommandState + "'", "'" + totalBoxes + "'");
                 //----
 
                 string CorniereStock = "";

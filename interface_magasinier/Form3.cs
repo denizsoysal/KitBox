@@ -11,12 +11,12 @@ using MySql.Data.MySqlClient;
 
 namespace WinForms_MySQL
 {
-    public partial class Form3 : Form
+    public partial class idCommand : Form
     {
         string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
         private MySqlConnection connection;
 
-        public Form3()
+        public idCommand()
         {
             this.InitConnexion();
 
@@ -75,6 +75,84 @@ namespace WinForms_MySQL
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
                 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string etat = "Terminée";
+            string CommandString = "update kitbox_database.commande set Command_state='" + etat + "' where idCommande='" + this.id_Command.Text + "';";
+
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySqlDataReader myReader;
+            try
+            {
+                connection.Open();
+                myReader = Command.ExecuteReader();
+                MessageBox.Show("saved");
+                while (myReader.Read())
+                {
+
+
+                }
+
+
+
+
+            }
+
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+
+            }
+            LoadTable();
+            connection.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            // connection.Open();
+            string CommandString = "delete from kitbox_database.commande where idCommande='" + this.id_Command.Text + "' ;";
+
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySqlDataReader myReader;
+            try
+            {
+                connection.Open();
+                myReader = Command.ExecuteReader();
+                MessageBox.Show("saved");
+                while (myReader.Read())
+                {
+
+
+                }
+
+
+
+
+            }
+
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+
+            }
+            LoadTable();
+            connection.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
