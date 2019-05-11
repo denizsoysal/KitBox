@@ -95,9 +95,9 @@ namespace V1_KITBOX
 
         private void UC__Standard_Load(object sender, EventArgs e)
         {
-            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Tasseau'", cbx_height);
+            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Cornieres'", cbx_height);
             function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Porte'", cbx_color);
-            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Cornieres'", boxHeight);
+           
 
             function.ConnectionClose();
 
@@ -110,7 +110,7 @@ namespace V1_KITBOX
 
         private void boxHeight_SelectedIndexChanged(object sender, EventArgs e)
         {
-          this.Totalheight = int.Parse(boxHeight.Text); //define the height of the cabinet
+          this.Totalheight = int.Parse(cbx_height.Text); //define the total height
 
         }
     }
