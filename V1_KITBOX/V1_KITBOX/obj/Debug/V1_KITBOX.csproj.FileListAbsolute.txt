@@ -240,3 +240,21 @@ C:\Users\RudyM\Documents\V1_KITBOX 11-05\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX
 C:\Users\RudyM\Documents\V1_KITBOX 11-05\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
 C:\Users\RudyM\Documents\V1_KITBOX 11-05\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
 C:\Users\RudyM\Documents\V1_KITBOX 11-05\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe.config
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.exe
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\V1_KITBOX.pdb
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\MySql.Data.dll
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\Google.Protobuf.dll
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\bin\Debug\MySql.Data.xml
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csprojResolveAssemblyReference.cache
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Form1.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Introduction.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.Properties.Resources.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC__Standard.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_OrderP1.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Cart.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.UC_Custom.resources
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.GenerateResource.Cache
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.csproj.CoreCompileInputs.cache
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.exe
+C:\Users\RudyM\Documents\GitHub\KitBox\V1_KITBOX\V1_KITBOX\obj\Debug\V1_KITBOX.pdb
