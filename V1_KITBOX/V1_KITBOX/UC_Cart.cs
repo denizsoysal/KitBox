@@ -66,10 +66,10 @@ namespace V1_KITBOX
             string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
             string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor().ToString(); //couleur des cornières
 
-            int totalBoxes = 0;
+            int totalBoxes = 3;
             for (int i = 0; i < this.order.GetCabinets.Count; i++)
             {
-                lbx_cabinets.Items.Add("Armoire " + (i + 1).ToString());
+
                 totalBoxes = totalBoxes + order.GetCabinets[i].GetNumberBoxes();
 
             }
@@ -100,7 +100,6 @@ namespace V1_KITBOX
             string CorniereCode = "";                
             string Customer_ID;
 
-           //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
            PannelHBCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Largeur", widdth, "Profondeur", deppth, "Couleur", Corner_color); //code barre du panneau HB 
            PannelGDCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Profondeur", deppth, "Couleur", BoxColor); //code barre du panneau GD
            DoorCode = function.Return2("CodeBarre", "kitbox_database.`kitbox`", "Hauteur", BoxHeight, "Largeur", widdth, "Couleur", Door_color); //code barre de la porte

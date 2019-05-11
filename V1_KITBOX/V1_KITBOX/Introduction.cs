@@ -34,37 +34,7 @@ namespace V1_KITBOX
         private void button1_Click(object sender, EventArgs e)
         {
 
-            string CommandString = "insert into kitbox_database.commande DEFAULT VALUES";
-            string CommandString2 = "insert into kitbox_database.client DEFAULT VALUES";
-            //
-            MySql.Data.MySqlClient.MySqlCommand Command;
-            MySql.Data.MySqlClient.MySqlCommand Command2;
 
-            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            Command2 = new MySql.Data.MySqlClient.MySqlCommand(CommandString2, connection);
-
-            MySqlDataReader myReader;
-            MySqlDataReader myReader2;
-            try
-            {
-                connection.Open();
-                myReader = Command.ExecuteReader();
-
-                MessageBox.Show("saved");
-                while (myReader.Read())
-                {
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            connection.Close();
-
-
-            connection.Open();
-            myReader2 = Command2.ExecuteReader();
-            connection.Close();
 
             int orderNumber = 3456;  // Chercher dans la databse le numéro d'une nouvelle commande
             this.order = new Order(orderNumber);
