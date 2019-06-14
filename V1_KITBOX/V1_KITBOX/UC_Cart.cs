@@ -213,6 +213,8 @@ namespace V1_KITBOX
                 TotalPrice = (float.Parse(CornierePrice) + float.Parse(PannelARPrice) + float.Parse(PannelGDPrice) + float.Parse(PannelHBPrice) + float.Parse(DoorPrice) + float.Parse(TasseauPrice) + float.Parse(TraverseAVPrice) + float.Parse(TraverseARPrice) + float.Parse(TraverseGDPrice)).ToString();
 
                 CabinetPriceValue.Text = TotalPrice + " €";
+                CabinetPriceValue2.Text = TotalPrice + " €";
+
 
                 //-----
                 //function.Insert("kitbox_database.`commande`", "`PanneauHB`", "'" + PannelHBCode + "'");

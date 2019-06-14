@@ -75,6 +75,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.CabinetPriceValue2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelResume
@@ -145,7 +146,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 6;
-            this.label1.Text = "90€";
             // 
             // label2
             // 
@@ -499,11 +499,21 @@
             this.label16.TabIndex = 52;
             this.label16.Text = "label16";
             // 
+            // CabinetPriceValue2
+            // 
+            this.CabinetPriceValue2.AutoSize = true;
+            this.CabinetPriceValue2.Location = new System.Drawing.Point(749, 373);
+            this.CabinetPriceValue2.Name = "CabinetPriceValue2";
+            this.CabinetPriceValue2.Size = new System.Drawing.Size(31, 13);
+            this.CabinetPriceValue2.TabIndex = 53;
+            this.CabinetPriceValue2.Text = "........";
+            // 
             // UC_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.CabinetPriceValue2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -607,5 +617,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label CabinetPriceValue2;
     }
 }
