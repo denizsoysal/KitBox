@@ -292,5 +292,9 @@ namespace V1_KITBOX
 
         }
 
+        private void BoxDoorTypeValue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

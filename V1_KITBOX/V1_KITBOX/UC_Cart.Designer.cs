@@ -407,6 +407,7 @@
             this.BoxDoorTypeValue.Size = new System.Drawing.Size(34, 13);
             this.BoxDoorTypeValue.TabIndex = 42;
             this.BoxDoorTypeValue.Text = ".........";
+            this.BoxDoorTypeValue.Click += new System.EventHandler(this.BoxDoorTypeValue_Click);
             // 
             // BoxDoorColorValue
             // 
