@@ -131,41 +131,49 @@ namespace WinForms_MySQL
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySqlDataReader myReader;
-            try
+            if (CodeBarre.Text.Trim() == string.Empty || Enstock.Text.Trim() == string.Empty)
             {
-                connection.Open();
-                myReader = Command.ExecuteReader();
-                MessageBox.Show("saved");
-                while (myReader.Read())
+                MessageBox.Show("Please make sure that all fields are completed");
+                return; // return because we don't want to run normal code of buton click
+            }
+            else
+            {
+                try
                 {
+                    connection.Open();
+                    myReader = Command.ExecuteReader();
+                    MessageBox.Show("saved");
+                    while (myReader.Read())
+                    {
+
+
+                    }
+
+
 
 
                 }
+                // MySql.Data.MySqlClient.MySqlDataReader Reader;
+                // Reader = Command.ExecuteReader();
+
+                //while (Reader.Read())
+                // {
+
+
+                // combo.Items.Add(Reader.GetString("Dimensions"));
+                // }
 
 
 
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+
+                }
+                LoadTable();
+                connection.Close();
             }
-            // MySql.Data.MySqlClient.MySqlDataReader Reader;
-            // Reader = Command.ExecuteReader();
-
-            //while (Reader.Read())
-            // {
-
-
-            // combo.Items.Add(Reader.GetString("Dimensions"));
-            // }
-
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-
-            }
-            LoadTable();
-            connection.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -177,41 +185,50 @@ namespace WinForms_MySQL
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySqlDataReader myReader;
-            try
+            if (CodeBarre.Text.Trim() == string.Empty || Enstock.Text.Trim() == string.Empty)
             {
-                connection.Open();
-                myReader = Command.ExecuteReader();
-                MessageBox.Show("saved");
-                while (myReader.Read())
+                MessageBox.Show("Please make sure that all fields are completed");
+                return; // return because we don't want to run normal code of buton click
+            }
+            else
+            {
+
+                try
                 {
+                    connection.Open();
+                    myReader = Command.ExecuteReader();
+                    MessageBox.Show("saved");
+                    while (myReader.Read())
+                    {
+
+
+                    }
+
+
 
 
                 }
+                // MySql.Data.MySqlClient.MySqlDataReader Reader;
+                // Reader = Command.ExecuteReader();
+
+                //while (Reader.Read())
+                // {
+
+
+                // combo.Items.Add(Reader.GetString("Dimensions"));
+                // }
 
 
 
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+
+                }
+                LoadTable();
+                connection.Close();
             }
-            // MySql.Data.MySqlClient.MySqlDataReader Reader;
-            // Reader = Command.ExecuteReader();
-
-            //while (Reader.Read())
-            // {
-
-
-            // combo.Items.Add(Reader.GetString("Dimensions"));
-            // }
-
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-
-            }
-            LoadTable();
-            connection.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)

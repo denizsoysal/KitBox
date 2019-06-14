@@ -85,96 +85,104 @@ namespace WinForms_MySQL
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySqlDataReader myReader;
-            try
+            if (id_Command.Text.Trim() == string.Empty)
             {
-                connection.Open();
-                myReader = Command.ExecuteReader();
-                MessageBox.Show("saved");
-                while (myReader.Read())
+                MessageBox.Show("Please make sure that all fields are completed");
+                return; // return because we don't want to run normal code of buton click
+            }
+            else
+            {
+                try
                 {
+                    connection.Open();
+                    myReader = Command.ExecuteReader();
+                    MessageBox.Show("saved");
+                    while (myReader.Read())
+                    {
+
+
+                    }
+
+
 
 
                 }
 
 
 
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+
+                }
+
+                string CorniereCode = "";
+                string PanneauARCode = "";
+                string PanneauGDCode = "";
+                string PanneauHBCode = "";
+                string PorteCode = "";
+                string TasseauCode = "";
+                string TraverseARCode = "";
+                string TraverseAVCode = "";
+                string TraverseGDCode = "";
+                string totalBoxes_str = "";
+
+                CorniereCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+                PanneauARCode = function.Return("PanneauAR", "idCommande", this.id_Command.Text);
+                PanneauGDCode = function.Return("PanneauGD", "idCommande", this.id_Command.Text);
+                PanneauHBCode = function.Return("PanneauHB", "idCommande", this.id_Command.Text);
+                PorteCode = function.Return("Porte", "idCommande", this.id_Command.Text);
+                TasseauCode = function.Return("Tasseau", "idCommande", this.id_Command.Text);
+                TraverseARCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+                TraverseAVCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+                TraverseGDCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+                totalBoxes_str = function.Return("number_of_box", "idCommande", this.id_Command.Text);
+                int totalBoxes = Int32.Parse(totalBoxes_str);
+
+                string CorniereStock = "";
+                string PannelARStock = "";
+                string PannelGDStock = "";
+                string PannelHBStock = "";
+                string DoorStock = "";
+                string TasseauStock = "";
+                string TraverseAVStock = "";
+                string TraverseARStock = "";
+                string TraverseGDStock = "";
+
+                CorniereStock = function.Return2("Enstock", "CodeBarre", CorniereCode);
+                PannelARStock = function.Return2("Enstock", "CodeBarre", PanneauARCode);
+                PannelGDStock = function.Return2("Enstock", "CodeBarre", PanneauGDCode);
+                PannelHBStock = function.Return2("Enstock", "CodeBarre", PanneauHBCode);
+                DoorStock = function.Return2("Enstock", "CodeBarre", PorteCode);
+                TasseauStock = function.Return2("Enstock", "CodeBarre", TasseauCode); ;
+                TraverseAVStock = function.Return2("Enstock", "CodeBarre", TraverseAVCode);
+                TraverseARStock = function.Return2("Enstock", "CodeBarre", TraverseARCode);
+                TraverseGDStock = function.Return2("Enstock", "CodeBarre", TraverseGDCode);
+                //
+                string CorniereUpdate = (Int32.Parse(CorniereStock) - 4).ToString();
+                string PannelARUpdate = (Int32.Parse(PannelARStock) - 1 * totalBoxes).ToString();
+                string PannelGDUpdate = (Int32.Parse(PannelGDStock) - 2 * totalBoxes).ToString();
+                string PannelHBUpdate = (Int32.Parse(PannelHBStock) - 2 * totalBoxes).ToString();
+                string DoorUpdate = (Int32.Parse(DoorStock) - 2 * totalBoxes).ToString();
+                string TasseauUpdate = (Int32.Parse(TasseauStock) - 4 * totalBoxes).ToString();
+                string TraverseAVUpdate = (Int32.Parse(TraverseAVStock) - 2 * totalBoxes).ToString();
+                string TraverseARUpdate = (Int32.Parse(TraverseARStock) - 2 * totalBoxes).ToString();
+                string TraverseGDUpdate = (Int32.Parse(TraverseGDStock) - 4 * totalBoxes).ToString();
+
+
+                function.Update(CorniereUpdate, CorniereCode);
+                function.Update(PannelARUpdate, PanneauARCode);
+                function.Update(PannelGDUpdate, PanneauGDCode);
+                function.Update(PannelHBUpdate, PanneauHBCode);
+                function.Update(DoorUpdate, PorteCode);
+                function.Update(TasseauUpdate, TasseauCode);
+                function.Update(TraverseAVUpdate, TraverseAVCode);
+                function.Update(TraverseARUpdate, TraverseARCode);
+                function.Update(TraverseGDUpdate, TraverseGDCode);
+                LoadTable();
+                connection.Close();
             }
-
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-
-            }
-            
-             string CorniereCode ="";
-             string PanneauARCode="";
-             string PanneauGDCode="";
-             string PanneauHBCode="";
-             string PorteCode="";
-             string TasseauCode="";
-             string TraverseARCode="";
-             string TraverseAVCode="";
-             string TraverseGDCode="";
-             string totalBoxes_str="";
-
-             CorniereCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-             PanneauARCode = function.Return("PanneauAR", "idCommande", this.id_Command.Text);
-             PanneauGDCode = function.Return("PanneauGD", "idCommande", this.id_Command.Text);
-             PanneauHBCode = function.Return("PanneauHB", "idCommande", this.id_Command.Text);
-             PorteCode = function.Return("Porte", "idCommande", this.id_Command.Text);
-             TasseauCode = function.Return("Tasseau", "idCommande", this.id_Command.Text);
-             TraverseARCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-             TraverseAVCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-             TraverseGDCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-             totalBoxes_str  = function.Return("number_of_box", "idCommande", this.id_Command.Text);
-             int totalBoxes = Int32.Parse(totalBoxes_str);
-
-             string CorniereStock = "";
-             string PannelARStock = "";
-             string PannelGDStock = "";
-             string PannelHBStock = "";
-             string DoorStock = "";
-             string TasseauStock = "";
-             string TraverseAVStock = "";
-             string TraverseARStock = "";
-             string TraverseGDStock = "";
-
-             CorniereStock = function.Return2("Enstock", "CodeBarre", CorniereCode);
-             PannelARStock = function.Return2("Enstock", "CodeBarre", PanneauARCode);
-             PannelGDStock = function.Return2("Enstock", "CodeBarre", PanneauGDCode);
-             PannelHBStock = function.Return2("Enstock", "CodeBarre", PanneauHBCode);
-             DoorStock = function.Return2("Enstock", "CodeBarre", PorteCode);
-             TasseauStock = function.Return2("Enstock", "CodeBarre", TasseauCode); ;
-             TraverseAVStock = function.Return2("Enstock", "CodeBarre", TraverseAVCode);
-             TraverseARStock = function.Return2("Enstock", "CodeBarre", TraverseARCode);
-             TraverseGDStock = function.Return2("Enstock", "CodeBarre", TraverseGDCode);
-             //
-             string CorniereUpdate = (Int32.Parse(CorniereStock) - 4).ToString();
-             string PannelARUpdate = (Int32.Parse(PannelARStock) - 1 * totalBoxes).ToString();
-             string PannelGDUpdate = (Int32.Parse(PannelGDStock) - 2 * totalBoxes).ToString();
-             string PannelHBUpdate = (Int32.Parse(PannelHBStock) - 2 * totalBoxes).ToString();
-             string DoorUpdate = (Int32.Parse(DoorStock) - 2 * totalBoxes).ToString();
-             string TasseauUpdate = (Int32.Parse(TasseauStock) - 4 * totalBoxes).ToString();
-             string TraverseAVUpdate = (Int32.Parse(TraverseAVStock) - 2 * totalBoxes).ToString();
-             string TraverseARUpdate = (Int32.Parse(TraverseARStock) - 2 * totalBoxes).ToString();
-             string TraverseGDUpdate = (Int32.Parse(TraverseGDStock) - 4 * totalBoxes).ToString();
- 
-           
-             function.Update(CorniereUpdate, CorniereCode);
-             function.Update(PannelARUpdate, PanneauARCode);
-             function.Update(PannelGDUpdate, PanneauGDCode);
-             function.Update(PannelHBUpdate, PanneauHBCode);
-             function.Update(DoorUpdate, PorteCode);
-             function.Update(TasseauUpdate, TasseauCode);
-             function.Update(TraverseAVUpdate, TraverseAVCode);
-             function.Update(TraverseARUpdate, TraverseARCode);
-             function.Update(TraverseGDUpdate, TraverseGDCode);
-             LoadTable();
-             connection.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -186,37 +194,52 @@ namespace WinForms_MySQL
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
             MySqlDataReader myReader;
-            try
+            if (id_Command.Text.Trim() == string.Empty)
             {
-                connection.Open();
-                myReader = Command.ExecuteReader();
-                MessageBox.Show("saved");
-                while (myReader.Read())
+                MessageBox.Show("Please make sure that all fields are completed");
+                return; // return because we don't want to run normal code of buton click
+            }
+            else
+            {
+                try
                 {
+                    connection.Open();
+                    myReader = Command.ExecuteReader();
+                    MessageBox.Show("saved");
+                    while (myReader.Read())
+                    {
+
+
+                    }
+
+
 
 
                 }
 
 
 
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+
+                }
+                LoadTable();
+                connection.Close();
             }
-
-
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-
-            }
-            LoadTable();
-            connection.Close();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            home home = new home();
+            home.ShowDialog();
         }
     }
 }
