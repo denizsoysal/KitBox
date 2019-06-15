@@ -12,7 +12,6 @@ namespace V1_KITBOX
 {
     public partial class UC_Cart : UserControl
     {
-        // private List<string> cabinet;
         private Order order;
         public UC_Cart(Order currentOrder)
         {
@@ -30,15 +29,6 @@ namespace V1_KITBOX
             lbx_boxes.SelectedIndex = 0; // this call the changed selected item so we don't need to add the items here
 
 
-            // provisoire, pour visualiser le dico des pièces,
-            // montre comment accéder aux codes bares des pièces et leur nombre nécessaire
-            /*string result = "";
-            foreach (string code in order.getOrderElements.Keys)
-            {
-                result += code + " : ";
-                result += order.getOrderElements[code].ToString() + "\n";
-            }
-            label3.Text = result;*/
         }
 
 
@@ -83,7 +73,6 @@ namespace V1_KITBOX
                 int TotalHeight_int = (Boxheight_int + 4) * totalBoxes;
                 string TotalHeight = TotalHeight_int.ToString();
 
-                //label1.Text = BoxHeight; //prix
                 BoxHeigthValue.Text = BoxHeight;
                 string BoxColor = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetColor;
                 string Door_color = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetDoorColor;
@@ -100,7 +89,6 @@ namespace V1_KITBOX
                 string Customer_ID;
                 string CommandState = "Enregistrée";
 
-                //function.Insert("kitbox_database.`test`", "`depth`", "'" + deppth + "','" + widdth + "','" + Corner_color + "'");
                 PannelHBCode = function.CodeBarre("Largeur" + "='" + widdth + "' AND " + "Profondeur" + "='" + deppth + "' AND " + "Couleur" + "='" + Corner_color + "'"); //code barre du panneau HB 
                 PannelGDCode = function.CodeBarre("Hauteur" + "='" + BoxHeight + "' AND " + "Profondeur" + "='" + deppth + "' AND " + "Couleur" + "='" + BoxColor + "'"); //code barre du panneau GD
                 PannelARCode = function.CodeBarre("`Reference`" + "='" + "Panneau Ar" + "' AND " + "`Hauteur`" + "='" + BoxHeight + "' AND " + "`Largeur`" + "='" + widdth + "' AND " + "`Couleur`" + "='" + BoxColor + "'");
@@ -114,41 +102,8 @@ namespace V1_KITBOX
 
 
                 function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "' , PrenomClient = '" + tbxFirstname.Text + "'", "idClient='" + Customer_ID + "'");
-                //function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
                 function.Insert3("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "`Command_state`", "`number_of_box`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'", "'" + CommandState + "'", "'" + totalBoxes + "'");
-                //----
-                /*
-                string CorniereStock = "";
-                string PannelARStock = "";
-                string PannelGDStock = "";
-                string PannelHBStock = "";
-                string DoorStock = "";
-                string TasseauStock = "";
-                string TraverseAVStock = "";
-                string TraverseARStock = "";
-                string TraverseGDStock = "";
-
-                CorniereStock = function.Return("Enstock", "CodeBarre", CorniereCode);
-                PannelARStock = function.Return("Enstock", "CodeBarre", PannelARCode);
-                PannelGDStock = function.Return("Enstock", "CodeBarre", PannelGDCode);
-                PannelHBStock = function.Return("Enstock", "CodeBarre", PannelHBCode);
-                DoorStock = function.Return("Enstock", "CodeBarre", DoorCode);
-                TasseauStock = function.Return("Enstock", "CodeBarre", TasseauCode); ;
-                TraverseAVStock = function.Return("Enstock", "CodeBarre", TraverseAVCode);
-                TraverseARStock = function.Return("Enstock", "CodeBarre", TraverseARCode);
-                TraverseGDStock = function.Return("Enstock", "CodeBarre", TraverseGDCode);
-                //
-                string CorniereUpdate = (Int32.Parse(CorniereStock) - 4).ToString();
-                string PannelARUpdate = (Int32.Parse(PannelARStock) - 1 * totalBoxes).ToString();
-                string PannelGDUpdate = (Int32.Parse(PannelGDStock) - 2 * totalBoxes).ToString();
-                string PannelHBUpdate = (Int32.Parse(PannelHBStock) - 2 * totalBoxes).ToString();
-                string DoorUpdate = (Int32.Parse(DoorStock) - 2 * totalBoxes).ToString();
-                string TasseauUpdate = (Int32.Parse(TasseauStock) - 4 * totalBoxes).ToString();
-                string TraverseAVUpdate = (Int32.Parse(TraverseAVStock) - 2 * totalBoxes).ToString();
-                string TraverseARUpdate = (Int32.Parse(TraverseARStock) - 2 * totalBoxes).ToString();
-                string TraverseGDUpdate = (Int32.Parse(TraverseGDStock) - 4 * totalBoxes).ToString();
-                */
-                //
+ 
 
                 string CorniereMin = "";
                 string PannelARMin = "";
@@ -170,7 +125,7 @@ namespace V1_KITBOX
                 TraverseARMin = function.Return("StockMinimum", "CodeBarre", TraverseARCode);
                 TraverseGDMin = function.Return("StockMinimum", "CodeBarre", TraverseGDCode);
 
-                //
+                
 
                 string CornierePrice = "";
                 string PannelARPrice = "";
@@ -207,10 +162,6 @@ namespace V1_KITBOX
                 CabinetPriceValue2.Text = TotalPrice + " €";
 
 
-                //-----
-                //function.Insert("kitbox_database.`commande`", "`PanneauHB`", "'" + PannelHBCode + "'");
-                //function.Insert("kitbox_database.`commande`", "`PanneauGD`", "'" + PannelGDCode + "'");
-                //string CommandString = "insert into kitbox_database.test (DelaiFourn2) values('" + this.REF.Text + "','" + this.CodeBarre.Text + "','" + this.Dimensions.Text + "','" + this.Hauteur.Text + "','" + this.Profondeur.Text + "','" + this.Largeur.Text + "','" + this.Couleur.Text + "','" + this.EnStock.Text + "','" + this.StockMinimum.Text + "','" + this.PrixClient.Text + "','" + this.NbPecesCasier.Text + "','" + this.PrixFourn1.Text + "','" + this.DelaiFourn1.Text + "','" + this.PrixFourn2.Text + "','" + this.DelaiFourn2.Text + "') ;";
             }
             catch (Exception ex)
             {
@@ -253,9 +204,7 @@ namespace V1_KITBOX
             CabinetDepthValue.Text = order.GetCabinets[selectedCabinet].GetDepth().ToString();
             CabinetWidthValue.Text = order.GetCabinets[selectedCabinet].GetWidth().ToString();
             CabinetCornerColorValue.Text = order.GetCabinets[selectedCabinet].GetCorner().GetColor();
-            /* string deppth = order.GetCabinets[selectedCabinet].GetDepth().ToString(); //profondeur de l'armoire
-             string widdth = order.GetCabinets[selectedCabinet].GetWidth().ToString(); //largeur de l'armoire
-             string Corner_color = order.GetCabinets[selectedCabinet].GetCorner().GetColor(); //couleur des cornières*/
+
 
         }
 
@@ -263,7 +212,6 @@ namespace V1_KITBOX
         {
             int selectedCabinet = lbx_cabinets.SelectedIndex;
             int selectedBox = lbx_boxes.SelectedIndex;
-            //BoxHeigthValue.Text = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetHeight.ToString();
             BoxColorValue.Text = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetColor;
 
             string doorColor = order.GetCabinets[selectedCabinet].GetBoxes[selectedBox].GetDoorColor;

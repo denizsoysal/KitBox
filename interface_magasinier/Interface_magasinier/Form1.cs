@@ -30,10 +30,8 @@ namespace WinForms_MySQL
         private void button1_Click(object sender, EventArgs e)
         {
             {
-               // connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-              //  connection.Open();
                 string CommandString = "insert into kitbox_database.kitbox (Reference,CodeBarre,Dimensions,Hauteur,Profondeur,Largeur,Couleur,Enstock,StockMinimum,PrixClient,NbPiecesCasier,PrixFourn1,DelaiFourn1,PrixFourn2,DelaiFourn2) values('" + this.REF.Text + "','" + this.CodeBarre.Text + "','" + this.Dimensions.Text + "','" + this.Hauteur.Text + "','" + this.Profondeur.Text + "','" + this.Largeur.Text + "','" + this.Couleur.Text + "','" + this.EnStock.Text + "','" + this.StockMinimum.Text + "','" + this.PrixClient.Text + "','" + this.NbPecesCasier.Text + "','" + this.PrixFourn1.Text + "','" + this.DelaiFourn1.Text + "','" + this.PrixFourn2.Text + "','" + this.DelaiFourn2.Text + "') ;";
-                //
+                
                 MySql.Data.MySqlClient.MySqlCommand Command;
                 Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
                 MySqlDataReader myReader;

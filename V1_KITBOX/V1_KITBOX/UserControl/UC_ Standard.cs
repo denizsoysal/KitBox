@@ -12,7 +12,6 @@ namespace V1_KITBOX
 {
     public partial class UC__Standard : UserControl
     {
-        //private List<string> _cabinet = new List<string>();
         private int height;
         private int Totalheight;
         private int nbrBoxes;
@@ -78,75 +77,57 @@ namespace V1_KITBOX
             {
 
                 case "36":
-                    //  lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox1);
                     break;
                 case "46":
-                    // lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox1);
                     break;
                 case "56":
-                    //  lblHauteur.Text = "Hauteur: 52 cm";
                     cbx_nbox.Items.AddRange(arrayBox1);
                     break;
                 case "72":
-                    // lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox2);
                     break;
                 case "92":
-                    // lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox2);
                     break;
                 case "108":
-                    //  lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox3);
                     break;
                 case "112":
-                    //   lblHauteur.Text = "Hauteur: 52 cm";
                     cbx_nbox.Items.AddRange(arrayBox2);
                     break;
                 case "138":
-                    //  lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox3);
                     break;
                 case "144":
-                    //   lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox4);
                     break;
                 case "168":
-                    //  lblHauteur.Text = "Hauteur: 52 cm";
                     cbx_nbox.Items.AddRange(arrayBox3);
                     break;
                 case "180":
-                    //  lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox5);
                     break;
                 case "184":
-                    //  lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox4);
                     break;
                 case "216":
-                    // lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox6);
                     break;
                 case "224":
-                    //   lblHauteur.Text = "Hauteur: 52 cm";
                     cbx_nbox.Items.AddRange(arrayBox4);
                     break;
                 case "230":
-                    //  lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox5);
                     break;
                 case "252":
-                    //  lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox7);
                     break;
                 case "276":
-                    //   lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox6);
                     break;
                 case "280":
-                    //  lblHauteur.Text = "Hauteur: 52 cm";
                     cbx_nbox.Items.AddRange(arrayBox5);
                     break;
             }

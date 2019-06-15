@@ -34,18 +34,11 @@ namespace WinForms_MySQL
             connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();
             string CommandString = "SELECT * FROM `kitbox_database`.`commande` ";
-            // MySqlCommand command = new MySqlCommand("SELECT Dimensions FROM `kitbox_database`.`kitbox` WHERE Reference='Cornieres'");
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            // MySql.Data.MySqlClient.MySqlDataReader Reader;
-            // Reader = Command.ExecuteReader();
-
-            //while (Reader.Read())
-            // {
 
 
-            // combo.Items.Add(Reader.GetString("Dimensions"));
-            // }
+
 
             try
             {
@@ -74,7 +67,14 @@ namespace WinForms_MySQL
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-                
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                id_Command.Text = row.Cells["idCommande"].Value.ToString();
+   
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -187,8 +187,6 @@ namespace WinForms_MySQL
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            // connection.Open();
             string CommandString = "delete from kitbox_database.commande where idCommande='" + this.id_Command.Text + "' ;";
 
             MySql.Data.MySqlClient.MySqlCommand Command;

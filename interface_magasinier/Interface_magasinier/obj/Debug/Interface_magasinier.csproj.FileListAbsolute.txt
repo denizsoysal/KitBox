@@ -25,3 +25,17 @@ C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.exe
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.pdb
 C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\obj\Debug\WinForms_MySQL.idCommand.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\bin\Debug\WinForms_MySQL.exe.config
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\bin\Debug\WinForms_MySQL.exe
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\bin\Debug\WinForms_MySQL.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\interface_magasinier.csprojAssemblyReference.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.Form1.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.Form2.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.idCommand.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.home.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.Properties.Resources.resources
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\interface_magasinier.csproj.GenerateResource.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\interface_magasinier.csproj.CoreCompileInputs.cache
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\interface_magasinier.csproj.CopyComplete
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.exe
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.pdb

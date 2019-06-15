@@ -20,7 +20,6 @@ namespace V1_KITBOX
         {
             this.InitConnexion();
             InitializeComponent();
-            //order = new Order(10);
 
         }
         private void InitConnexion()

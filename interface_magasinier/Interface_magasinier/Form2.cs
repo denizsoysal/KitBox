@@ -36,18 +36,11 @@ namespace WinForms_MySQL
             connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();
             string CommandString = "SELECT * FROM `kitbox_database`.`kitbox` ";
-            // MySqlCommand command = new MySqlCommand("SELECT Dimensions FROM `kitbox_database`.`kitbox` WHERE Reference='Cornieres'");
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-            // MySql.Data.MySqlClient.MySqlDataReader Reader;
-            // Reader = Command.ExecuteReader();
-
-            //while (Reader.Read())
-            // {
 
 
-            // combo.Items.Add(Reader.GetString("Dimensions"));
-            // }
+
 
             try
             {
@@ -82,18 +75,11 @@ namespace WinForms_MySQL
             connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             connection.Open();
             string CommandString = "SELECT * FROM `kitbox_database`.`kitbox` ";
-            // MySqlCommand command = new MySqlCommand("SELECT Dimensions FROM `kitbox_database`.`kitbox` WHERE Reference='Cornieres'");
             MySql.Data.MySqlClient.MySqlCommand Command;
             Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
-           // MySql.Data.MySqlClient.MySqlDataReader Reader;
-           // Reader = Command.ExecuteReader();
-
-            //while (Reader.Read())
-           // {
 
 
-               // combo.Items.Add(Reader.GetString("Dimensions"));
-           // }
+
 
             try
             {
@@ -124,8 +110,6 @@ namespace WinForms_MySQL
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            // connection.Open();
             string CommandString = "update kitbox_database.kitbox set Enstock='" + this.Enstock.Text + "' where CodeBarre='" + this.CodeBarre.Text + "';";
 
             MySql.Data.MySqlClient.MySqlCommand Command;
@@ -153,15 +137,9 @@ namespace WinForms_MySQL
 
 
                 }
-                // MySql.Data.MySqlClient.MySqlDataReader Reader;
-                // Reader = Command.ExecuteReader();
-
-                //while (Reader.Read())
-                // {
 
 
-                // combo.Items.Add(Reader.GetString("Dimensions"));
-                // }
+
 
 
 
@@ -178,8 +156,6 @@ namespace WinForms_MySQL
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            // connection.Open();
             string CommandString = "delete from kitbox_database.kitbox where CodeBarre='" + this.Code_Barre.Text + "' ;";
 
             MySql.Data.MySqlClient.MySqlCommand Command;
@@ -208,15 +184,7 @@ namespace WinForms_MySQL
 
 
                 }
-                // MySql.Data.MySqlClient.MySqlDataReader Reader;
-                // Reader = Command.ExecuteReader();
-
-                //while (Reader.Read())
-                // {
-
-
-                // combo.Items.Add(Reader.GetString("Dimensions"));
-                // }
+  
 
 
 
@@ -262,11 +230,8 @@ namespace WinForms_MySQL
 
                 CodeBarre.Text = row.Cells["CodeBarre"].Value.ToString();
                 Enstock.Text = row.Cells["Enstock"].Value.ToString();
-
-
-
-
-
+                Code_Barre.Text = row.Cells["CodeBarre"].Value.ToString();
+                                                                      
             }
         }
 

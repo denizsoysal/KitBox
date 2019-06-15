@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 12 mai 2019 à 17:47
+-- Généré le :  sam. 15 juin 2019 à 20:09
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `client` (
   `NomClient` tinytext,
   `PrenomClient` tinytext,
   PRIMARY KEY (`idClient`)
-) ENGINE=InnoDB AUTO_INCREMENT=308 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=315 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `client`
@@ -347,7 +347,14 @@ INSERT INTO `client` (`idClient`, `NomClient`, `PrenomClient`) VALUES
 (304, NULL, NULL),
 (305, 'soysal', 'deniz'),
 (306, NULL, NULL),
-(307, '', '');
+(307, 'De la tour', 'Toto '),
+(308, '', ''),
+(309, 'De la tour', 'Toto '),
+(310, 'Bocaj', 'Jacob'),
+(311, 'Antoine', 'Marc'),
+(312, 'Antoine', 'Marc'),
+(313, 'Patron', 'Deniz'),
+(314, '', '');
 
 -- --------------------------------------------------------
 
@@ -372,7 +379,35 @@ CREATE TABLE IF NOT EXISTS `commande` (
   `number_of_box` int(11) DEFAULT NULL,
   PRIMARY KEY (`idCommande`),
   KEY `client_fk` (`client_fk`)
-) ENGINE=InnoDB AUTO_INCREMENT=406 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=428 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `commande`
+--
+
+INSERT INTO `commande` (`idCommande`, `client_fk`, `Corniere`, `PanneauAR`, `PanneauGD`, `PanneauHB`, `Porte`, `Tasseau`, `TraverseAR`, `TraverseAV`, `TraverseGD`, `Command_state`, `number_of_box`) VALUES
+(406, 307, 'COR108BL', 'PAR32100BL', 'PAG3242BL', 'PAH42100BL', 'POR3242BL', 'TAS27', 'TRR100', 'TRF100', 'TRG42', 'Enregistrée', 3),
+(407, 307, 'COR108BL', 'PAR32100BL', 'PAG3242BL', 'PAH42100BL', 'POR3242BL', 'TAS27', 'TRR100', 'TRF100', 'TRG42', 'Enregistrée', 3),
+(408, 307, 'COR92BR', 'PAR4232BL', 'PAG4242BL', 'PAH4232BR', 'POR4242BL', 'TAS37', 'TRR32', 'TRF32', 'TRG42', 'Enregistrée', 2),
+(409, 307, 'COR92BR', 'PAR4232BL', 'PAG4242BL', 'PAH4232BR', 'POR4242BL', 'TAS37', 'TRR32', 'TRF32', 'TRG42', 'Enregistrée', 2),
+(410, 307, 'COR276BL', 'PAR4242BL', 'PAG4262BL', 'PAH6242BL', 'POR4262BL', 'TAS37', 'TRR42', 'TRF42', 'TRG62', 'Enregistrée', 6),
+(411, 308, 'COR276BL', 'PAR4242BL', 'PAG4262BL', 'PAH6242BL', 'POR4262BL', 'TAS37', 'TRR42', 'TRF42', 'TRG62', 'Enregistrée', 6),
+(412, 309, 'COR138BR', 'PAR4242BL', 'PAG4252BL', 'PAH5242BR', 'POR4252BL', 'TAS37', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
+(413, 309, 'COR138BR', 'PAR4242BL', 'PAG4252BL', 'PAH5242BR', 'POR4252BL', 'TAS37', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
+(414, 310, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
+(415, 310, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
+(416, 311, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
+(417, 312, 'COR276BR', 'PAR42100BL', 'PAG4242BL', 'PAH42100BR', 'POR4242BL', 'TAS37', 'TRR100', 'TRF100', 'TRG42', 'Enregistrée', 6),
+(418, 312, 'COR276BR', 'PAR42100BL', 'PAG4242BL', 'PAH42100BR', 'POR4242BL', 'TAS37', 'TRR100', 'TRF100', 'TRG42', 'Enregistrée', 6),
+(419, 313, 'COR180BL', 'PAR3280BL', 'PAG3242BL', 'PAH4280BL', 'POR3242BL', 'TAS27', 'TRR80', 'TRF80', 'TRG42', 'Enregistrée', 5),
+(420, 313, 'COR180BL', 'PAR3280BL', 'PAG3242BL', 'PAH4280BL', 'POR3242BL', 'TAS27', 'TRR80', 'TRF80', 'TRG42', 'Enregistrée', 5),
+(421, 314, 'COR184BR', 'PAR4252BR', 'PAG4252BR', 'PAH5252BR', 'POR4252BR', 'TAS37', 'TRR52', 'TRF52', 'TRG52', 'Enregistrée', 4),
+(422, 314, 'COR230BL', 'PAR4252BL', 'PAG4262BL', 'PAH6252BL', 'POR4262BL', 'TAS37', 'TRR52', 'TRF52', 'TRG62', 'Enregistrée', 5),
+(423, 314, 'COR144BL', 'PAR3252BL', 'PAG3242BL', 'PAH4252BL', 'POR3242BL', 'TAS27', 'TRR52', 'TRF52', 'TRG42', 'Enregistrée', 4),
+(424, 314, 'COR280BL', 'PAR52120BL', 'PAG5252BL', 'PAH52120BL', 'POR5252BL', 'TAS47', 'TRR120', 'TRF120', 'TRG52', 'Enregistrée', 5),
+(425, 314, 'COR216BL', 'PAR3232BL', 'PAG3252BL', 'PAH5232BL', 'POR3252BL', 'TAS27', 'TRR32', 'TRF32', 'TRG52', 'Enregistrée', 6),
+(426, 314, 'COR168BR', 'PAR5242BL', 'PAG5252BL', 'PAH5242BR', 'POR5252BL', 'TAS47', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
+(427, 314, 'COR216BL', 'PAR32100BL', 'PAG3262BL', 'PAH62100BL', 'POR3262BL', 'TAS27', 'TRR100', 'TRF100', 'TRG62', 'Enregistrée', 6);
 
 -- --------------------------------------------------------
 
