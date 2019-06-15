@@ -50,27 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="class\Corner.cs" />
-    <Compile Include="class\Boxe.cs" />
-    <Compile Include="class\Cabinet.cs" />
-    <Compile Include="class\Caps.cs" />
-    <Compile Include="class\Cleat.cs" />
-    <Compile Include="class\Crossbar.cs" />
-    <Compile Include="class\Door.cs" />
-    <Compile Include="class\Element.cs" />
-    <Compile Include="class\Order.cs" />
-    <Compile Include="class\Panel.cs" />
+    <Compile Include="Classes\Corner.cs" />
+    <Compile Include="Classes\Boxe.cs" />
+    <Compile Include="Classes\Cabinet.cs" />
+    <Compile Include="Classes\Caps.cs" />
+    <Compile Include="Classes\Cleat.cs" />
+    <Compile Include="Classes\Crossbar.cs" />
+    <Compile Include="Classes\Door.cs" />
+    <Compile Include="Classes\Element.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\Panel.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="functions_sql.cs" />
-    <Compile Include="Introduction.cs">
+    <Compile Include="BDD_functions\functions_sql.cs" />
+    <Compile Include="UserControl\Introduction.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Introduction.Designer.cs">
+    <Compile Include="UserControl\Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -80,34 +80,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UC_ Standard.cs">
+    <Compile Include="UserControl\UC_ Standard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ Standard.Designer.cs">
+    <Compile Include="UserControl\UC_ Standard.Designer.cs">
       <DependentUpon>UC_ Standard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_OrderP1.cs">
+    <Compile Include="UserControl\UC_OrderP1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_OrderP1.Designer.cs">
+    <Compile Include="UserControl\UC_OrderP1.Designer.cs">
       <DependentUpon>UC_OrderP1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Cart.cs">
+    <Compile Include="UserControl\UC_Cart.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Cart.Designer.cs">
+    <Compile Include="UserControl\UC_Cart.Designer.cs">
       <DependentUpon>UC_Cart.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Custom.cs">
+    <Compile Include="UserControl\UC_Custom.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_Custom.Designer.cs">
+    <Compile Include="UserControl\UC_Custom.Designer.cs">
       <DependentUpon>UC_Custom.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Introduction.resx">
+    <EmbeddedResource Include="UserControl\Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,16 +115,16 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ Standard.resx">
+    <EmbeddedResource Include="UserControl\UC_ Standard.resx">
       <DependentUpon>UC_ Standard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_OrderP1.resx">
+    <EmbeddedResource Include="UserControl\UC_OrderP1.resx">
       <DependentUpon>UC_OrderP1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Cart.resx">
+    <EmbeddedResource Include="UserControl\UC_Cart.resx">
       <DependentUpon>UC_Cart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_Custom.resx">
+    <EmbeddedResource Include="UserControl\UC_Custom.resx">
       <DependentUpon>UC_Custom.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

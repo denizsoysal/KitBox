@@ -81,7 +81,7 @@ namespace V1_KITBOX
                     //  lblHauteur.Text = "Hauteur: 32 cm";
                     cbx_nbox.Items.AddRange(arrayBox1);
                     break;
-                case "46 ":
+                case "46":
                     // lblHauteur.Text = "Hauteur: 42 cm";
                     cbx_nbox.Items.AddRange(arrayBox1);
                     break;
