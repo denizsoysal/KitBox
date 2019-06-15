@@ -112,15 +112,6 @@ namespace V1_KITBOX
                 CorniereCode = function.CodeBarre("Hauteur" + "='" + TotalHeight.ToString() + "' AND " + "`Reference`" + "='" + "Cornieres" + "' AND " + "Couleur" + "='" + Corner_color + "'"); //code barre de la porte
                 Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
 
-                label8.Text = PannelHBCode;
-                label9.Text = PannelGDCode;
-                label10.Text = PannelARCode;
-                label11.Text = DoorCode;
-                label12.Text = TasseauCode;
-                label13.Text = TraverseAVCode;
-                label14.Text = TraverseGDCode;
-                label15.Text = CorniereCode;
-                label16.Text = Customer_ID;
 
                 function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "' , PrenomClient = '" + tbxFirstname.Text + "'", "idClient='" + Customer_ID + "'");
                 //function.Insert2("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'");
