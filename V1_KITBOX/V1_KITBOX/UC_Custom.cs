@@ -262,23 +262,56 @@ namespace V1_KITBOX
 
         private void buttonAdToCart_Click(object sender, EventArgs e)
         {
-            // tout mettre dans une condition qui verifie que tous les étages ont des hauteurs et couleurs
-            order.AddCabinet(this.depth, this.width, heights.Sum(), this.corner_color);
-            List<Cabinet> cabinets = order.GetCabinets;
-            int index_of_cabinet = cabinets.Count - 1;
+            bool completeCabinet = true;
+            bool checkComplete = false;
+            int boxesAmount = this.colors.Count;
+            int boxindex = 0;
 
-            for (int i = 0; i < this.heights.Count; i++)
+            while (!checkComplete)
             {
-                cabinets[index_of_cabinet].AddBox(heights[i], width, depth,colors[i], doors[i],doors_color[i]);
-                order.AddLastBoxElementsToDico();
+
+                if (this.colors[boxindex] != "" && this.heights[boxindex] != 0)
+                {
+                    if (boxindex < boxesAmount - 1)
+                    {
+                        boxindex++;
+                    }
+                    else
+                    {
+                        checkComplete = true;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Veuillez au minimum choisir une hauteur et une couleur pour l'étage " + (boxindex + 1).ToString() + ".", "Erreur",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    checkComplete = true;
+                    completeCabinet = false;
+                }
 
             }
-            order.AddCornerToDico();
-           
 
-            this.BackgroundImage = null;
-            this.Controls.Clear();
-            this.Controls.Add(new UC_Cart(order));
+            if (completeCabinet)
+            {
+                order.AddCabinet(this.depth, this.width, heights.Sum(), this.corner_color);
+                List<Cabinet> cabinets = order.GetCabinets;
+                int index_of_cabinet = cabinets.Count - 1;
+
+                for (int i = 0; i < this.heights.Count; i++)
+                {
+                    cabinets[index_of_cabinet].AddBox(heights[i], width, depth, colors[i], doors[i], doors_color[i]);
+                    order.AddLastBoxElementsToDico();
+
+                }
+                order.AddCornerToDico();
+
+
+                this.BackgroundImage = null;
+                this.Controls.Clear();
+                this.Controls.Add(new UC_Custom(order, this.depth, this.width, this.corner_color));
+            }
+
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
@@ -330,14 +363,16 @@ namespace V1_KITBOX
         {
             if (cbx_door_color.Text == "Brun")
             {
-                panel_door_color.BackColor = System.Drawing.Color.Maroon;              
+                panel_door_color.BackColor = System.Drawing.Color.Maroon;
+                doors_color[BoxIndex] = cbx_door_color.Text;
             }
-            else
+            else if (cbx_door_color.Text == "Blanc")
             {
                 panel_door_color.BackColor = System.Drawing.Color.White;
+                doors_color[BoxIndex] = cbx_door_color.Text;
             }
-            doors_color[BoxIndex] = cbx_door_color.Text;
             doors[BoxIndex] = true;
+
         }
 
         private void checkBox_glass_CheckedChanged(object sender, EventArgs e)
@@ -349,6 +384,12 @@ namespace V1_KITBOX
                 checkBox_wood.Checked = false;
             }        
         }
-        
+
+        private void GoToCart_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = null;
+            this.Controls.Clear();
+            this.Controls.Add(new UC_Cart(order));
+        }
     }
 }
