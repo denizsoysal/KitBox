@@ -147,6 +147,8 @@
     <None Include="Resources\rond_button.png" />
     <None Include="Resources\Shelf_dimensions.png" />
     <None Include="Resources\trash_logo.png" />
+    <None Include="Resources\Shelf_dimensions_english.bmp" />
+    <None Include="Resources\Shelf_dimensions_english.png" />
     <Content Include="Resources\wooden_shelf.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

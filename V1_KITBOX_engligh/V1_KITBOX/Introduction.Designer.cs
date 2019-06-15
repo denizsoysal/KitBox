@@ -40,7 +40,7 @@
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(196, 74);
             this.btn_start.TabIndex = 0;
-            this.btn_start.Text = "commencer";
+            this.btn_start.Text = "Start";
             this.btn_start.UseVisualStyleBackColor = false;
             this.btn_start.Click += new System.EventHandler(this.button1_Click);
             // 

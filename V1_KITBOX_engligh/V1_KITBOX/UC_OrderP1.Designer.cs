@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_OrderP1));
             this.label_corner_color = new System.Windows.Forms.Label();
             this.dimension_title = new System.Windows.Forms.Label();
             this.continue_btn = new System.Windows.Forms.Button();
@@ -151,7 +150,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImage = global::V1_KITBOX.Properties.Resources.Shelf_dimensions_english;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(358, 52);
             this.panel1.Name = "panel1";
