@@ -175,6 +175,9 @@ namespace V1_KITBOX
         {
             LoadData();
 
+            MessageBox.Show("Merci pour votre commande "+ tbxFirstname.Text+" "+ tbxLastname.Text+",\nà bientot !","Commande enregistrée");
+            this.Controls.Clear();
+            this.Controls.Add(new Introduction());
         }
 
         private void button1_Click(object sender, EventArgs e)
