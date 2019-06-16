@@ -241,20 +241,5 @@ namespace V1_KITBOX
         {
 
         }
-
-        private void CabinetPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CabinetDepthValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BoxDoorColorValue_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

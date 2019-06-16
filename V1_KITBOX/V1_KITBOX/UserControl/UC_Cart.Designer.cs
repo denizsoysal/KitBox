@@ -75,55 +75,46 @@
             this.labelResume.BackColor = System.Drawing.Color.LightGray;
             this.labelResume.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelResume.Font = new System.Drawing.Font("Calibri", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResume.Location = new System.Drawing.Point(54, 140);
-            this.labelResume.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelResume.Location = new System.Drawing.Point(36, 44);
             this.labelResume.Name = "labelResume";
-            this.labelResume.Size = new System.Drawing.Size(330, 74);
+            this.labelResume.Size = new System.Drawing.Size(171, 39);
             this.labelResume.TabIndex = 0;
             this.labelResume.Text = "Votre panier";
             // 
             // lbx_cabinets
             // 
-            this.lbx_cabinets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbx_cabinets.FormattingEnabled = true;
-            this.lbx_cabinets.ItemHeight = 37;
-            this.lbx_cabinets.Location = new System.Drawing.Point(72, 356);
-            this.lbx_cabinets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbx_cabinets.Location = new System.Drawing.Point(36, 185);
+            this.lbx_cabinets.Margin = new System.Windows.Forms.Padding(2);
             this.lbx_cabinets.Name = "lbx_cabinets";
-            this.lbx_cabinets.Size = new System.Drawing.Size(322, 152);
+            this.lbx_cabinets.Size = new System.Drawing.Size(163, 82);
             this.lbx_cabinets.TabIndex = 0;
             this.lbx_cabinets.SelectedIndexChanged += new System.EventHandler(this.lbx_cabinets_SelectedIndexChanged);
             // 
             // labelPrixTotal
             // 
             this.labelPrixTotal.AutoSize = true;
-            this.labelPrixTotal.BackColor = System.Drawing.Color.RosyBrown;
             this.labelPrixTotal.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrixTotal.Location = new System.Drawing.Point(1183, 614);
-            this.labelPrixTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelPrixTotal.Location = new System.Drawing.Point(639, 364);
             this.labelPrixTotal.Name = "labelPrixTotal";
-            this.labelPrixTotal.Size = new System.Drawing.Size(202, 53);
+            this.labelPrixTotal.Size = new System.Drawing.Size(104, 27);
             this.labelPrixTotal.TabIndex = 2;
             this.labelPrixTotal.Text = "Prix total :";
             // 
             // labelDisponibilité
             // 
-            this.labelDisponibilité.BackColor = System.Drawing.Color.RosyBrown;
             this.labelDisponibilité.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDisponibilité.Location = new System.Drawing.Point(1124, 695);
-            this.labelDisponibilité.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelDisponibilité.Location = new System.Drawing.Point(606, 407);
             this.labelDisponibilité.Name = "labelDisponibilité";
-            this.labelDisponibilité.Size = new System.Drawing.Size(278, 54);
+            this.labelDisponibilité.Size = new System.Drawing.Size(153, 23);
             this.labelDisponibilité.TabIndex = 3;
             this.labelDisponibilité.Text = "Disponibilité :";
             // 
             // buttonreturnShopping
             // 
-            this.buttonreturnShopping.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonreturnShopping.Location = new System.Drawing.Point(1224, 900);
-            this.buttonreturnShopping.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonreturnShopping.Location = new System.Drawing.Point(612, 468);
             this.buttonreturnShopping.Name = "buttonreturnShopping";
-            this.buttonreturnShopping.Size = new System.Drawing.Size(264, 94);
+            this.buttonreturnShopping.Size = new System.Drawing.Size(132, 49);
             this.buttonreturnShopping.TabIndex = 4;
             this.buttonreturnShopping.Text = "Continuer les achats";
             this.buttonreturnShopping.UseVisualStyleBackColor = true;
@@ -131,11 +122,9 @@
             // 
             // buttonValidateAndPay
             // 
-            this.buttonValidateAndPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonValidateAndPay.Location = new System.Drawing.Point(1496, 900);
-            this.buttonValidateAndPay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonValidateAndPay.Location = new System.Drawing.Point(748, 468);
             this.buttonValidateAndPay.Name = "buttonValidateAndPay";
-            this.buttonValidateAndPay.Size = new System.Drawing.Size(264, 94);
+            this.buttonValidateAndPay.Size = new System.Drawing.Size(132, 49);
             this.buttonValidateAndPay.TabIndex = 5;
             this.buttonValidateAndPay.Text = "Valider et payer";
             this.buttonValidateAndPay.UseVisualStyleBackColor = true;
@@ -143,34 +132,28 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1448, 616);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(768, 366);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 44);
+            this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 6;
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.RosyBrown;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1424, 695);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(748, 409);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 54);
+            this.label2.Size = new System.Drawing.Size(132, 23);
             this.label2.TabIndex = 7;
-            this.label2.Text = "1 semaine";
+            this.label2.Text = "Dans une semaine";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // buttonQuit
             // 
             this.buttonQuit.AutoSize = true;
-            this.buttonQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQuit.Location = new System.Drawing.Point(0, 0);
-            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.buttonQuit.Name = "buttonQuit";
-            this.buttonQuit.Size = new System.Drawing.Size(310, 44);
+            this.buttonQuit.Size = new System.Drawing.Size(128, 23);
             this.buttonQuit.TabIndex = 8;
             this.buttonQuit.Text = "Vider le panier et quitter";
             this.buttonQuit.UseVisualStyleBackColor = true;
@@ -178,317 +161,241 @@
             // 
             // lbx_boxes
             // 
-            this.lbx_boxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbx_boxes.FormattingEnabled = true;
-            this.lbx_boxes.ItemHeight = 37;
-            this.lbx_boxes.Location = new System.Drawing.Point(630, 356);
-            this.lbx_boxes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbx_boxes.Location = new System.Drawing.Point(322, 185);
             this.lbx_boxes.Name = "lbx_boxes";
-            this.lbx_boxes.Size = new System.Drawing.Size(330, 152);
+            this.lbx_boxes.Size = new System.Drawing.Size(110, 82);
             this.lbx_boxes.TabIndex = 9;
             this.lbx_boxes.SelectedIndexChanged += new System.EventHandler(this.lbx_boxes_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.RosyBrown;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1128, 387);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(608, 247);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 37);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Prénom : ";
             // 
             // BoxHeigth
             // 
             this.BoxHeigth.AutoSize = true;
-            this.BoxHeigth.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxHeigth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxHeigth.Location = new System.Drawing.Point(646, 583);
-            this.BoxHeigth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxHeigth.Location = new System.Drawing.Point(323, 303);
             this.BoxHeigth.Name = "BoxHeigth";
-            this.BoxHeigth.Size = new System.Drawing.Size(158, 37);
+            this.BoxHeigth.Size = new System.Drawing.Size(54, 13);
             this.BoxHeigth.TabIndex = 20;
             this.BoxHeigth.Text = "Hauteur : ";
             // 
             // CabinetDepth
             // 
             this.CabinetDepth.AutoSize = true;
-            this.CabinetDepth.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetDepth.Location = new System.Drawing.Point(67, 763);
-            this.CabinetDepth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetDepth.Location = new System.Drawing.Point(37, 397);
             this.CabinetDepth.Name = "CabinetDepth";
-            this.CabinetDepth.Size = new System.Drawing.Size(203, 37);
+            this.CabinetDepth.Size = new System.Drawing.Size(68, 13);
             this.CabinetDepth.TabIndex = 19;
             this.CabinetDepth.Text = "Profondeur : ";
             // 
             // CabinetWidth
             // 
             this.CabinetWidth.AutoSize = true;
-            this.CabinetWidth.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetWidth.Location = new System.Drawing.Point(64, 698);
-            this.CabinetWidth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetWidth.Location = new System.Drawing.Point(35, 363);
             this.CabinetWidth.Name = "CabinetWidth";
-            this.CabinetWidth.Size = new System.Drawing.Size(155, 37);
+            this.CabinetWidth.Size = new System.Drawing.Size(52, 13);
             this.CabinetWidth.TabIndex = 18;
             this.CabinetWidth.Text = "Largeur : ";
             // 
             // CabinetHeight
             // 
             this.CabinetHeight.AutoSize = true;
-            this.CabinetHeight.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetHeight.Location = new System.Drawing.Point(64, 640);
-            this.CabinetHeight.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetHeight.Location = new System.Drawing.Point(37, 333);
             this.CabinetHeight.Name = "CabinetHeight";
-            this.CabinetHeight.Size = new System.Drawing.Size(158, 37);
+            this.CabinetHeight.Size = new System.Drawing.Size(54, 13);
             this.CabinetHeight.TabIndex = 17;
             this.CabinetHeight.Text = "Hauteur : ";
             // 
             // CabinetPrice
             // 
             this.CabinetPrice.AutoSize = true;
-            this.CabinetPrice.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetPrice.Location = new System.Drawing.Point(64, 583);
-            this.CabinetPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetPrice.Location = new System.Drawing.Point(37, 303);
             this.CabinetPrice.Name = "CabinetPrice";
-            this.CabinetPrice.Size = new System.Drawing.Size(98, 37);
+            this.CabinetPrice.Size = new System.Drawing.Size(33, 13);
             this.CabinetPrice.TabIndex = 16;
             this.CabinetPrice.Text = "Prix : ";
-            this.CabinetPrice.Click += new System.EventHandler(this.CabinetPrice_Click);
             // 
             // BoxColor
             // 
             this.BoxColor.AutoSize = true;
-            this.BoxColor.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxColor.Location = new System.Drawing.Point(646, 640);
-            this.BoxColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxColor.Location = new System.Drawing.Point(323, 333);
             this.BoxColor.Name = "BoxColor";
-            this.BoxColor.Size = new System.Drawing.Size(156, 37);
+            this.BoxColor.Size = new System.Drawing.Size(52, 13);
             this.BoxColor.TabIndex = 21;
             this.BoxColor.Text = "Couleur : ";
             // 
             // BoxDoors
             // 
             this.BoxDoors.AutoSize = true;
-            this.BoxDoors.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxDoors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDoors.Location = new System.Drawing.Point(646, 698);
-            this.BoxDoors.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxDoors.Location = new System.Drawing.Point(323, 363);
             this.BoxDoors.Name = "BoxDoors";
-            this.BoxDoors.Size = new System.Drawing.Size(136, 37);
+            this.BoxDoors.Size = new System.Drawing.Size(46, 13);
             this.BoxDoors.TabIndex = 22;
             this.BoxDoors.Text = "Portes : ";
             // 
             // CabinetPriceValue
             // 
             this.CabinetPriceValue.AutoSize = true;
-            this.CabinetPriceValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetPriceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetPriceValue.Location = new System.Drawing.Point(295, 583);
-            this.CabinetPriceValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetPriceValue.Location = new System.Drawing.Point(76, 303);
             this.CabinetPriceValue.Name = "CabinetPriceValue";
-            this.CabinetPriceValue.Size = new System.Drawing.Size(89, 37);
+            this.CabinetPriceValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetPriceValue.TabIndex = 23;
             this.CabinetPriceValue.Text = "........";
             // 
             // CabinetHeightValue
             // 
             this.CabinetHeightValue.AutoSize = true;
-            this.CabinetHeightValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetHeightValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetHeightValue.Location = new System.Drawing.Point(295, 640);
-            this.CabinetHeightValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetHeightValue.Location = new System.Drawing.Point(97, 333);
             this.CabinetHeightValue.Name = "CabinetHeightValue";
-            this.CabinetHeightValue.Size = new System.Drawing.Size(89, 37);
+            this.CabinetHeightValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetHeightValue.TabIndex = 24;
             this.CabinetHeightValue.Text = "........";
             // 
             // CabinetWidthValue
             // 
             this.CabinetWidthValue.AutoSize = true;
-            this.CabinetWidthValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetWidthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetWidthValue.Location = new System.Drawing.Point(295, 695);
-            this.CabinetWidthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetWidthValue.Location = new System.Drawing.Point(93, 363);
             this.CabinetWidthValue.Name = "CabinetWidthValue";
-            this.CabinetWidthValue.Size = new System.Drawing.Size(89, 37);
+            this.CabinetWidthValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetWidthValue.TabIndex = 25;
             this.CabinetWidthValue.Text = "........";
             // 
             // CabinetDepthValue
             // 
             this.CabinetDepthValue.AutoSize = true;
-            this.CabinetDepthValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetDepthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetDepthValue.Location = new System.Drawing.Point(295, 763);
-            this.CabinetDepthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetDepthValue.Location = new System.Drawing.Point(111, 397);
             this.CabinetDepthValue.Name = "CabinetDepthValue";
-            this.CabinetDepthValue.Size = new System.Drawing.Size(89, 37);
+            this.CabinetDepthValue.Size = new System.Drawing.Size(31, 13);
             this.CabinetDepthValue.TabIndex = 26;
             this.CabinetDepthValue.Text = "........";
-            this.CabinetDepthValue.Click += new System.EventHandler(this.CabinetDepthValue_Click);
             // 
             // BoxHeigthValue
             // 
             this.BoxHeigthValue.AutoSize = true;
-            this.BoxHeigthValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxHeigthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxHeigthValue.Location = new System.Drawing.Point(837, 583);
-            this.BoxHeigthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxHeigthValue.Location = new System.Drawing.Point(383, 303);
             this.BoxHeigthValue.Name = "BoxHeigthValue";
-            this.BoxHeigthValue.Size = new System.Drawing.Size(89, 37);
+            this.BoxHeigthValue.Size = new System.Drawing.Size(31, 13);
             this.BoxHeigthValue.TabIndex = 27;
             this.BoxHeigthValue.Text = "........";
             // 
             // BoxColorValue
             // 
             this.BoxColorValue.AutoSize = true;
-            this.BoxColorValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxColorValue.Location = new System.Drawing.Point(837, 640);
-            this.BoxColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxColorValue.Location = new System.Drawing.Point(381, 333);
             this.BoxColorValue.Name = "BoxColorValue";
-            this.BoxColorValue.Size = new System.Drawing.Size(89, 37);
+            this.BoxColorValue.Size = new System.Drawing.Size(31, 13);
             this.BoxColorValue.TabIndex = 28;
             this.BoxColorValue.Text = "........";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.RosyBrown;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1172, 454);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(630, 282);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 37);
+            this.label4.Size = new System.Drawing.Size(54, 20);
             this.label4.TabIndex = 31;
             this.label4.Text = " Nom :";
             // 
             // tbxFirstname
             // 
-            this.tbxFirstname.Location = new System.Drawing.Point(1292, 387);
-            this.tbxFirstname.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbxFirstname.Location = new System.Drawing.Point(690, 247);
             this.tbxFirstname.Name = "tbxFirstname";
-            this.tbxFirstname.Size = new System.Drawing.Size(312, 31);
+            this.tbxFirstname.Size = new System.Drawing.Size(158, 20);
             this.tbxFirstname.TabIndex = 32;
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // tbxLastname
             // 
-            this.tbxLastname.Location = new System.Drawing.Point(1292, 458);
-            this.tbxLastname.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbxLastname.Location = new System.Drawing.Point(690, 284);
             this.tbxLastname.Name = "tbxLastname";
-            this.tbxLastname.Size = new System.Drawing.Size(312, 31);
+            this.tbxLastname.Size = new System.Drawing.Size(158, 20);
             this.tbxLastname.TabIndex = 34;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.RosyBrown;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1128, 297);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(608, 200);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(449, 44);
+            this.label5.Size = new System.Drawing.Size(226, 24);
             this.label5.TabIndex = 35;
             this.label5.Text = "Entrez vos coordonnées :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(64, 292);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(32, 152);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(249, 44);
+            this.label6.Size = new System.Drawing.Size(106, 20);
             this.label6.TabIndex = 36;
             this.label6.Text = "Vos armoires ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(623, 298);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(318, 155);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(339, 44);
+            this.label7.Size = new System.Drawing.Size(145, 20);
             this.label7.TabIndex = 37;
             this.label7.Text = "Etages de l\'armoire";
             // 
             // CabinetCornerColor
             // 
             this.CabinetCornerColor.AutoSize = true;
-            this.CabinetCornerColor.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetCornerColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetCornerColor.Location = new System.Drawing.Point(64, 823);
-            this.CabinetCornerColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetCornerColor.Location = new System.Drawing.Point(37, 428);
             this.CabinetCornerColor.Name = "CabinetCornerColor";
-            this.CabinetCornerColor.Size = new System.Drawing.Size(182, 37);
+            this.CabinetCornerColor.Size = new System.Drawing.Size(60, 13);
             this.CabinetCornerColor.TabIndex = 38;
             this.CabinetCornerColor.Text = "Cornières : ";
             // 
             // CabinetCornerColorValue
             // 
             this.CabinetCornerColorValue.AutoSize = true;
-            this.CabinetCornerColorValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetCornerColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetCornerColorValue.Location = new System.Drawing.Point(295, 823);
-            this.CabinetCornerColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetCornerColorValue.Location = new System.Drawing.Point(103, 428);
             this.CabinetCornerColorValue.Name = "CabinetCornerColorValue";
-            this.CabinetCornerColorValue.Size = new System.Drawing.Size(107, 37);
+            this.CabinetCornerColorValue.Size = new System.Drawing.Size(37, 13);
             this.CabinetCornerColorValue.TabIndex = 39;
             this.CabinetCornerColorValue.Text = "..........";
             // 
             // BoxDoorType
             // 
             this.BoxDoorType.AutoSize = true;
-            this.BoxDoorType.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxDoorType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BoxDoorType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDoorType.Location = new System.Drawing.Point(794, 707);
-            this.BoxDoorType.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxDoorType.Location = new System.Drawing.Point(381, 366);
             this.BoxDoorType.Name = "BoxDoorType";
-            this.BoxDoorType.Size = new System.Drawing.Size(152, 33);
+            this.BoxDoorType.Size = new System.Drawing.Size(60, 13);
             this.BoxDoorType.TabIndex = 40;
             this.BoxDoorType.Text = "- Matériau :";
             // 
             // BoxDoorColor
             // 
             this.BoxDoorColor.AutoSize = true;
-            this.BoxDoorColor.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxDoorColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.BoxDoorColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDoorColor.Location = new System.Drawing.Point(795, 763);
-            this.BoxDoorColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxDoorColor.Location = new System.Drawing.Point(381, 397);
             this.BoxDoorColor.Name = "BoxDoorColor";
-            this.BoxDoorColor.Size = new System.Drawing.Size(142, 33);
+            this.BoxDoorColor.Size = new System.Drawing.Size(55, 13);
             this.BoxDoorColor.TabIndex = 41;
             this.BoxDoorColor.Text = "- Couleur :";
             // 
             // BoxDoorTypeValue
             // 
             this.BoxDoorTypeValue.AutoSize = true;
-            this.BoxDoorTypeValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxDoorTypeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDoorTypeValue.Location = new System.Drawing.Point(956, 707);
-            this.BoxDoorTypeValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxDoorTypeValue.Location = new System.Drawing.Point(447, 366);
             this.BoxDoorTypeValue.Name = "BoxDoorTypeValue";
-            this.BoxDoorTypeValue.Size = new System.Drawing.Size(86, 31);
+            this.BoxDoorTypeValue.Size = new System.Drawing.Size(34, 13);
             this.BoxDoorTypeValue.TabIndex = 42;
             this.BoxDoorTypeValue.Text = ".........";
             this.BoxDoorTypeValue.Click += new System.EventHandler(this.BoxDoorTypeValue_Click);
@@ -496,34 +403,26 @@
             // BoxDoorColorValue
             // 
             this.BoxDoorColorValue.AutoSize = true;
-            this.BoxDoorColorValue.BackColor = System.Drawing.Color.RosyBrown;
-            this.BoxDoorColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDoorColorValue.Location = new System.Drawing.Point(956, 763);
-            this.BoxDoorColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.BoxDoorColorValue.Location = new System.Drawing.Point(442, 397);
             this.BoxDoorColorValue.Name = "BoxDoorColorValue";
-            this.BoxDoorColorValue.Size = new System.Drawing.Size(78, 31);
+            this.BoxDoorColorValue.Size = new System.Drawing.Size(31, 13);
             this.BoxDoorColorValue.TabIndex = 43;
             this.BoxDoorColorValue.Text = "........";
-            this.BoxDoorColorValue.Click += new System.EventHandler(this.BoxDoorColorValue_Click);
             // 
             // CabinetPriceValue2
             // 
             this.CabinetPriceValue2.AutoSize = true;
-            this.CabinetPriceValue2.BackColor = System.Drawing.Color.RosyBrown;
-            this.CabinetPriceValue2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CabinetPriceValue2.Location = new System.Drawing.Point(1423, 623);
-            this.CabinetPriceValue2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.CabinetPriceValue2.Location = new System.Drawing.Point(749, 373);
             this.CabinetPriceValue2.Name = "CabinetPriceValue2";
-            this.CabinetPriceValue2.Size = new System.Drawing.Size(98, 42);
+            this.CabinetPriceValue2.Size = new System.Drawing.Size(31, 13);
             this.CabinetPriceValue2.TabIndex = 53;
             this.CabinetPriceValue2.Text = "........";
             // 
             // UC_Cart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.woodtemplate;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.CabinetPriceValue2);
             this.Controls.Add(this.BoxDoorColorValue);
             this.Controls.Add(this.BoxDoorTypeValue);
@@ -561,9 +460,9 @@
             this.Controls.Add(this.buttonValidateAndPay);
             this.Controls.Add(this.labelPrixTotal);
             this.Controls.Add(this.labelDisponibilité);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Cart";
-            this.Size = new System.Drawing.Size(1776, 1065);
+            this.Size = new System.Drawing.Size(888, 554);
             this.Load += new System.EventHandler(this.UC_Cart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

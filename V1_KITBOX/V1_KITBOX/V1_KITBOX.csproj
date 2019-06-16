@@ -141,15 +141,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\woodtemplate.png" />
     <None Include="Resources\hiding_panel.png" />
     <None Include="Resources\etage_boxe.png" />
     <None Include="Resources\add_button.png" />
     <None Include="Resources\rond_button.png" />
     <None Include="Resources\Shelf_dimensions.png" />
     <None Include="Resources\trash_logo.png" />
-    <None Include="Resources\intro_kitbox.png" />
-    <None Include="Resources\start_btn.png" />
     <Content Include="Resources\wooden_shelf.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

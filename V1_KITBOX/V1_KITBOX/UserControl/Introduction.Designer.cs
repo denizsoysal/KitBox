@@ -33,35 +33,29 @@
             // 
             // btn_start
             // 
-            this.btn_start.BackColor = System.Drawing.Color.Transparent;
-            this.btn_start.BackgroundImage = global::V1_KITBOX.Properties.Resources.start_btn;
-            this.btn_start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_start.FlatAppearance.BorderSize = 0;
-            this.btn_start.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
-            this.btn_start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Snow;
-            this.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_start.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_start.Font = new System.Drawing.Font("Castellar", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_start.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_start.Location = new System.Drawing.Point(526, 575);
-            this.btn_start.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_start.Location = new System.Drawing.Point(346, 470);
+            this.btn_start.Margin = new System.Windows.Forms.Padding(2);
             this.btn_start.Name = "btn_start";
-            this.btn_start.Size = new System.Drawing.Size(665, 161);
+            this.btn_start.Size = new System.Drawing.Size(196, 74);
             this.btn_start.TabIndex = 0;
+            this.btn_start.Text = "commencer";
             this.btn_start.UseVisualStyleBackColor = false;
             this.btn_start.Click += new System.EventHandler(this.button1_Click);
             // 
             // Introduction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.woodtemplate;
+            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.wooden_shelf;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btn_start);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Introduction";
-            this.Size = new System.Drawing.Size(1776, 1065);
+            this.Size = new System.Drawing.Size(888, 554);
             this.Load += new System.EventHandler(this.Introduction_Load);
             this.ResumeLayout(false);
 
