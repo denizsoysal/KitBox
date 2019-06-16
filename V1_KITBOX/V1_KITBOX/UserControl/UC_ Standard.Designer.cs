@@ -133,10 +133,10 @@
             // lbl_info
             // 
             this.lbl_info.AutoSize = true;
-            this.lbl_info.BackColor = System.Drawing.Color.LightGray;
+            this.lbl_info.BackColor = System.Drawing.Color.RosyBrown;
             this.lbl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_info.Location = new System.Drawing.Point(4, 658);
+            this.lbl_info.Location = new System.Drawing.Point(30, 655);
             this.lbl_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_info.Name = "lbl_info";
             this.lbl_info.Size = new System.Drawing.Size(1175, 31);
@@ -147,7 +147,7 @@
             // lbl_color
             // 
             this.lbl_color.AutoSize = true;
-            this.lbl_color.BackColor = System.Drawing.Color.LightGray;
+            this.lbl_color.BackColor = System.Drawing.Color.RosyBrown;
             this.lbl_color.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_color.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -176,7 +176,7 @@
             // lbl_height
             // 
             this.lbl_height.AutoSize = true;
-            this.lbl_height.BackColor = System.Drawing.Color.LightGray;
+            this.lbl_height.BackColor = System.Drawing.Color.RosyBrown;
             this.lbl_height.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_height.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_height.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -191,7 +191,7 @@
             // lbl_nbox
             // 
             this.lbl_nbox.AutoSize = true;
-            this.lbl_nbox.BackColor = System.Drawing.Color.LightGray;
+            this.lbl_nbox.BackColor = System.Drawing.Color.RosyBrown;
             this.lbl_nbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbl_nbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nbox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -253,7 +253,7 @@
             // centimeter3
             // 
             this.centimeter3.AutoSize = true;
-            this.centimeter3.BackColor = System.Drawing.Color.LightGray;
+            this.centimeter3.BackColor = System.Drawing.Color.RosyBrown;
             this.centimeter3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.centimeter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.centimeter3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -268,7 +268,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.woodtemplate;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.buttonCart);
             this.Controls.Add(this.panel1);

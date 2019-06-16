@@ -97,7 +97,7 @@
             // labelPrixTotal
             // 
             this.labelPrixTotal.AutoSize = true;
-            this.labelPrixTotal.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelPrixTotal.BackColor = System.Drawing.Color.RosyBrown;
             this.labelPrixTotal.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPrixTotal.Location = new System.Drawing.Point(1183, 614);
             this.labelPrixTotal.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -108,7 +108,7 @@
             // 
             // labelDisponibilité
             // 
-            this.labelDisponibilité.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelDisponibilité.BackColor = System.Drawing.Color.RosyBrown;
             this.labelDisponibilité.Font = new System.Drawing.Font("Calibri", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDisponibilité.Location = new System.Drawing.Point(1124, 695);
             this.labelDisponibilité.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -153,7 +153,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.BackColor = System.Drawing.Color.RosyBrown;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(1424, 695);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -191,7 +191,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gainsboro;
+            this.label3.BackColor = System.Drawing.Color.RosyBrown;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(1128, 387);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -203,7 +203,7 @@
             // BoxHeigth
             // 
             this.BoxHeigth.AutoSize = true;
-            this.BoxHeigth.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxHeigth.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxHeigth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxHeigth.Location = new System.Drawing.Point(646, 583);
             this.BoxHeigth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -215,7 +215,7 @@
             // CabinetDepth
             // 
             this.CabinetDepth.AutoSize = true;
-            this.CabinetDepth.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetDepth.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetDepth.Location = new System.Drawing.Point(67, 763);
             this.CabinetDepth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -227,7 +227,7 @@
             // CabinetWidth
             // 
             this.CabinetWidth.AutoSize = true;
-            this.CabinetWidth.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetWidth.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetWidth.Location = new System.Drawing.Point(64, 698);
             this.CabinetWidth.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -239,7 +239,7 @@
             // CabinetHeight
             // 
             this.CabinetHeight.AutoSize = true;
-            this.CabinetHeight.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetHeight.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetHeight.Location = new System.Drawing.Point(64, 640);
             this.CabinetHeight.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -251,7 +251,7 @@
             // CabinetPrice
             // 
             this.CabinetPrice.AutoSize = true;
-            this.CabinetPrice.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetPrice.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetPrice.Location = new System.Drawing.Point(64, 583);
             this.CabinetPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -264,7 +264,7 @@
             // BoxColor
             // 
             this.BoxColor.AutoSize = true;
-            this.BoxColor.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxColor.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxColor.Location = new System.Drawing.Point(646, 640);
             this.BoxColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -276,7 +276,7 @@
             // BoxDoors
             // 
             this.BoxDoors.AutoSize = true;
-            this.BoxDoors.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxDoors.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxDoors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxDoors.Location = new System.Drawing.Point(646, 698);
             this.BoxDoors.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -288,7 +288,7 @@
             // CabinetPriceValue
             // 
             this.CabinetPriceValue.AutoSize = true;
-            this.CabinetPriceValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetPriceValue.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetPriceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetPriceValue.Location = new System.Drawing.Point(295, 583);
             this.CabinetPriceValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -300,7 +300,7 @@
             // CabinetHeightValue
             // 
             this.CabinetHeightValue.AutoSize = true;
-            this.CabinetHeightValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetHeightValue.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetHeightValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetHeightValue.Location = new System.Drawing.Point(295, 640);
             this.CabinetHeightValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -312,7 +312,7 @@
             // CabinetWidthValue
             // 
             this.CabinetWidthValue.AutoSize = true;
-            this.CabinetWidthValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetWidthValue.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetWidthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetWidthValue.Location = new System.Drawing.Point(295, 695);
             this.CabinetWidthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -324,7 +324,7 @@
             // CabinetDepthValue
             // 
             this.CabinetDepthValue.AutoSize = true;
-            this.CabinetDepthValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetDepthValue.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetDepthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetDepthValue.Location = new System.Drawing.Point(295, 763);
             this.CabinetDepthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -337,7 +337,7 @@
             // BoxHeigthValue
             // 
             this.BoxHeigthValue.AutoSize = true;
-            this.BoxHeigthValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxHeigthValue.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxHeigthValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxHeigthValue.Location = new System.Drawing.Point(837, 583);
             this.BoxHeigthValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -349,7 +349,7 @@
             // BoxColorValue
             // 
             this.BoxColorValue.AutoSize = true;
-            this.BoxColorValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxColorValue.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxColorValue.Location = new System.Drawing.Point(837, 640);
             this.BoxColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -361,7 +361,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.BackColor = System.Drawing.Color.RosyBrown;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1172, 454);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -395,13 +395,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.BackColor = System.Drawing.Color.RosyBrown;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(1128, 297);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(451, 46);
+            this.label5.Size = new System.Drawing.Size(449, 44);
             this.label5.TabIndex = 35;
             this.label5.Text = "Entrez vos coordonnées :";
             // 
@@ -434,7 +433,7 @@
             // CabinetCornerColor
             // 
             this.CabinetCornerColor.AutoSize = true;
-            this.CabinetCornerColor.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetCornerColor.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetCornerColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetCornerColor.Location = new System.Drawing.Point(64, 823);
             this.CabinetCornerColor.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -446,7 +445,7 @@
             // CabinetCornerColorValue
             // 
             this.CabinetCornerColorValue.AutoSize = true;
-            this.CabinetCornerColorValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetCornerColorValue.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetCornerColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetCornerColorValue.Location = new System.Drawing.Point(295, 823);
             this.CabinetCornerColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -458,7 +457,7 @@
             // BoxDoorType
             // 
             this.BoxDoorType.AutoSize = true;
-            this.BoxDoorType.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxDoorType.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxDoorType.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.BoxDoorType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxDoorType.Location = new System.Drawing.Point(794, 707);
@@ -471,7 +470,7 @@
             // BoxDoorColor
             // 
             this.BoxDoorColor.AutoSize = true;
-            this.BoxDoorColor.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxDoorColor.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxDoorColor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.BoxDoorColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxDoorColor.Location = new System.Drawing.Point(795, 763);
@@ -484,7 +483,7 @@
             // BoxDoorTypeValue
             // 
             this.BoxDoorTypeValue.AutoSize = true;
-            this.BoxDoorTypeValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxDoorTypeValue.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxDoorTypeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxDoorTypeValue.Location = new System.Drawing.Point(956, 707);
             this.BoxDoorTypeValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -497,7 +496,7 @@
             // BoxDoorColorValue
             // 
             this.BoxDoorColorValue.AutoSize = true;
-            this.BoxDoorColorValue.BackColor = System.Drawing.Color.Gainsboro;
+            this.BoxDoorColorValue.BackColor = System.Drawing.Color.RosyBrown;
             this.BoxDoorColorValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BoxDoorColorValue.Location = new System.Drawing.Point(956, 763);
             this.BoxDoorColorValue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -510,7 +509,7 @@
             // CabinetPriceValue2
             // 
             this.CabinetPriceValue2.AutoSize = true;
-            this.CabinetPriceValue2.BackColor = System.Drawing.Color.Gainsboro;
+            this.CabinetPriceValue2.BackColor = System.Drawing.Color.RosyBrown;
             this.CabinetPriceValue2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabinetPriceValue2.Location = new System.Drawing.Point(1423, 623);
             this.CabinetPriceValue2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
@@ -523,7 +522,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.woodtemplate;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.CabinetPriceValue2);
             this.Controls.Add(this.BoxDoorColorValue);
