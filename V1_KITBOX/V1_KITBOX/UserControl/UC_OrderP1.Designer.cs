@@ -46,7 +46,7 @@
             // label_corner_color
             // 
             this.label_corner_color.AutoSize = true;
-            this.label_corner_color.BackColor = System.Drawing.Color.RosyBrown;
+            this.label_corner_color.BackColor = System.Drawing.Color.LightGray;
             this.label_corner_color.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_corner_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_corner_color.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -102,7 +102,7 @@
             // width_label
             // 
             this.width_label.AutoSize = true;
-            this.width_label.BackColor = System.Drawing.Color.RosyBrown;
+            this.width_label.BackColor = System.Drawing.Color.LightGray;
             this.width_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.width_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.width_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -127,7 +127,7 @@
             // depth_label
             // 
             this.depth_label.AutoSize = true;
-            this.depth_label.BackColor = System.Drawing.Color.RosyBrown;
+            this.depth_label.BackColor = System.Drawing.Color.LightGray;
             this.depth_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.depth_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.depth_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -179,7 +179,7 @@
             // centimeter3
             // 
             this.centimeter3.AutoSize = true;
-            this.centimeter3.BackColor = System.Drawing.Color.RosyBrown;
+            this.centimeter3.BackColor = System.Drawing.Color.LightGray;
             this.centimeter3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.centimeter3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.centimeter3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -193,7 +193,7 @@
             // centimeter2
             // 
             this.centimeter2.AutoSize = true;
-            this.centimeter2.BackColor = System.Drawing.Color.RosyBrown;
+            this.centimeter2.BackColor = System.Drawing.Color.LightGray;
             this.centimeter2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.centimeter2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.centimeter2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -209,7 +209,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BackgroundImage = global::V1_KITBOX.Properties.Resources.woodtemplate;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.centimeter3);
             this.Controls.Add(this.centimeter2);
