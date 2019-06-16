@@ -133,5 +133,10 @@ namespace V1_KITBOX
             this.Totalheight = int.Parse(cbx_height.Text); //define the total height
 
         }
+
+        private void centimeter3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
