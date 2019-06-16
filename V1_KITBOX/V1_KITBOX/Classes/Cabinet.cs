@@ -23,7 +23,7 @@ namespace V1_KITBOX
             this.height = height;
             this.corner = new Corner(height, corner_color);
             boxes = new List<Boxe>();
-            MessageBox.Show("Une armoire à été crée aux dimensions :" + depth.ToString() + "-"+width.ToString()+" couleur "+corner_color);
+            MessageBox.Show("Votre armoire est ajouté au panier :\nProfondeur : " + depth.ToString() + "\nLargeur : "+width.ToString()+"\nHauteur : "+height.ToString(), "Bravo !");
         }
 
         public void AddBox(int height, int width, int depth, string color, bool door, string door_color)

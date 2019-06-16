@@ -92,21 +92,24 @@ namespace V1_KITBOX
         }
 
         private void button_validate_Click(object sender, EventArgs e)
-        {
-            // Vérifier que tous les champs sont remplis
-
-            this.order.AddCabinet(this.depth, this.width, this.height, this.corner_color);
-            List<Cabinet> cabinets = order.GetCabinets;
-            int index_of_cabinet = cabinets.Count - 1;
-            for (int i = 0; i < this.nbrBoxes; i++)
+        { 
+            if(cbx_color.Text=="" || cbx_height.Text=="" || cbx_nbox.Text == "")
             {
-                cabinets[index_of_cabinet].AddBox(height / nbrBoxes, width, depth, cabinetColor, true, cabinetColor);
-                order.AddLastBoxElementsToDico();
+                MessageBox.Show("Veuillez remplir tous les champs pour ajouter votre armoire au panier.", "Erreur",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            order.AddCornerToDico();
-
-            MessageBox.Show("Votre armoire a été ajoutée au panier.");
-
+            else
+            {
+                this.order.AddCabinet(this.depth, this.width, this.height, this.corner_color);
+                List<Cabinet> cabinets = order.GetCabinets;
+                int index_of_cabinet = cabinets.Count - 1;
+                for (int i = 0; i < this.nbrBoxes; i++)
+                {
+                    cabinets[index_of_cabinet].AddBox(height / nbrBoxes, width, depth, cabinetColor, true, cabinetColor);
+                    order.AddLastBoxElementsToDico();
+                }
+                order.AddCornerToDico();
+            }
         }
 
         private void UC__Standard_Load(object sender, EventArgs e)
