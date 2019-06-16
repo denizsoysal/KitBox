@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 15 juin 2019 à 20:09
+-- Généré le :  sam. 15 juin 2019 à 20:43
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -379,7 +379,7 @@ CREATE TABLE IF NOT EXISTS `commande` (
   `number_of_box` int(11) DEFAULT NULL,
   PRIMARY KEY (`idCommande`),
   KEY `client_fk` (`client_fk`)
-) ENGINE=InnoDB AUTO_INCREMENT=428 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=429 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `commande`
@@ -394,7 +394,6 @@ INSERT INTO `commande` (`idCommande`, `client_fk`, `Corniere`, `PanneauAR`, `Pan
 (411, 308, 'COR276BL', 'PAR4242BL', 'PAG4262BL', 'PAH6242BL', 'POR4262BL', 'TAS37', 'TRR42', 'TRF42', 'TRG62', 'Enregistrée', 6),
 (412, 309, 'COR138BR', 'PAR4242BL', 'PAG4252BL', 'PAH5242BR', 'POR4252BL', 'TAS37', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
 (413, 309, 'COR138BR', 'PAR4242BL', 'PAG4252BL', 'PAH5242BR', 'POR4252BL', 'TAS37', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
-(414, 310, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
 (415, 310, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
 (416, 311, 'COR224BR', 'PAR52100BL', 'PAG5252BL', 'PAH52100BR', 'POR5252BL', 'TAS47', 'TRR100', 'TRF100', 'TRG52', 'Enregistrée', 4),
 (417, 312, 'COR276BR', 'PAR42100BL', 'PAG4242BL', 'PAH42100BR', 'POR4242BL', 'TAS37', 'TRR100', 'TRF100', 'TRG42', 'Enregistrée', 6),
@@ -407,7 +406,8 @@ INSERT INTO `commande` (`idCommande`, `client_fk`, `Corniere`, `PanneauAR`, `Pan
 (424, 314, 'COR280BL', 'PAR52120BL', 'PAG5252BL', 'PAH52120BL', 'POR5252BL', 'TAS47', 'TRR120', 'TRF120', 'TRG52', 'Enregistrée', 5),
 (425, 314, 'COR216BL', 'PAR3232BL', 'PAG3252BL', 'PAH5232BL', 'POR3252BL', 'TAS27', 'TRR32', 'TRF32', 'TRG52', 'Enregistrée', 6),
 (426, 314, 'COR168BR', 'PAR5242BL', 'PAG5252BL', 'PAH5242BR', 'POR5252BL', 'TAS47', 'TRR42', 'TRF42', 'TRG52', 'Enregistrée', 3),
-(427, 314, 'COR216BL', 'PAR32100BL', 'PAG3262BL', 'PAH62100BL', 'POR3262BL', 'TAS27', 'TRR100', 'TRF100', 'TRG62', 'Enregistrée', 6);
+(427, 314, 'COR216BL', 'PAR32100BL', 'PAG3262BL', 'PAH62100BL', 'POR3262BL', 'TAS27', 'TRR100', 'TRF100', 'TRG62', 'Enregistrée', 6),
+(428, 314, 'COR138BL', 'PAR42120BL', 'PAG4242BL', 'PAH42120BL', 'POR4242BL', 'TAS37', 'TRR120', 'TRF120', 'TRG42', 'Enregistrée', 3);
 
 -- --------------------------------------------------------
 
@@ -776,80 +776,6 @@ INSERT INTO `kitbox` (`idPiece`, `Reference`, `CodeBarre`, `Dimensions`, `Hauteu
 (307, 'Traverse Ar', 'TRR62', '62(L)', 0, 0, 62, NULL, 44, 16, '1,6', 2, '1,35', 12, 0, '1,11', 10, 0),
 (308, 'Traverse Ar', 'TRR80', '80(L)', 0, 0, 80, NULL, 45, 16, '1,8', 2, '1,52', 3, 0, '1,16', 11, 0);
 
--- --------------------------------------------------------
-
---
--- Structure de la table `lienpiecefornisseur`
---
-
-DROP TABLE IF EXISTS `lienpiecefornisseur`;
-CREATE TABLE IF NOT EXISTS `lienpiecefornisseur` (
-  `idLien` int(11) NOT NULL AUTO_INCREMENT,
-  `FkPiece` int(11) NOT NULL,
-  `FkFournisseur` int(11) NOT NULL,
-  PRIMARY KEY (`idLien`),
-  KEY `FkPiece` (`FkPiece`),
-  KEY `lienpiecefornisseur_ibfk_1` (`FkFournisseur`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `test`
---
-
-DROP TABLE IF EXISTS `test`;
-CREATE TABLE IF NOT EXISTS `test` (
-  `width` text,
-  `depth` text,
-  `color` text
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `test`
---
-
-INSERT INTO `test` (`width`, `depth`, `color`) VALUES
-('(CabinetWidthValue.Text).ToInt()', '(CabinetDepthValue.Text).ToInt()', '0'),
-('order.GetCabinets[selectedCabinet].GetWidth().ToString()', 'order.GetCabinets[selectedCabinet].GetDepth().ToString()', '0'),
-('order.GetCabinets[selectedCabinet].GetWidth().ToString()', 'order.GetCabinets[selectedCabinet].GetDepth().ToString()', '0'),
-(NULL, NULL, '0'),
-('wwidth', 'ddepth', '0'),
-('wwidth', 'ddepth', '0'),
-('50', '40', '0'),
-('50', '40', '0'),
-('50', '20', '0'),
-('50', '20', '0'),
-('30', '40', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('100', '52', '0'),
-('30', '10', 'Noir'),
-('32', '40', 'Galvanisé'),
-('30', '40', 'Blanc'),
-('30', '30', 'Noir'),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, '', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL),
-(NULL, 'PAH32100BL', NULL);
-
 --
 -- Contraintes pour les tables déchargées
 --
@@ -859,13 +785,6 @@ INSERT INTO `test` (`width`, `depth`, `color`) VALUES
 --
 ALTER TABLE `commande`
   ADD CONSTRAINT `commande_ibfk_1` FOREIGN KEY (`client_fk`) REFERENCES `client` (`idClient`);
-
---
--- Contraintes pour la table `lienpiecefornisseur`
---
-ALTER TABLE `lienpiecefornisseur`
-  ADD CONSTRAINT `lienpiecefornisseur_ibfk_1` FOREIGN KEY (`FkFournisseur`) REFERENCES `fournisseur` (`idFournisseur`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `lienpiecefornisseur_ibfk_2` FOREIGN KEY (`FkPiece`) REFERENCES `kitbox` (`idPiece`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
