@@ -12,6 +12,7 @@ namespace V1_KITBOX
 {
     public partial class UC__Standard : UserControl
     {
+        private List<Int32> PannelHeights = new List<Int32>();
         private int height;
         private int Totalheight;
         private int nbrBoxes;
@@ -65,71 +66,17 @@ namespace V1_KITBOX
         private void cbx_height_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbx_nbox.Items.Clear();
-            this.height = int.Parse(cbx_height.Text);  // in the case if we want to use the height of a box           
-            string[] arrayBox1 = { "1" };
-            string[] arrayBox2 = { "2" };
-            string[] arrayBox3 = { "3" };
-            string[] arrayBox4 = { "4" };
-            string[] arrayBox5 = { "5" };
-            string[] arrayBox6 = { "6" };
-            string[] arrayBox7 = { "7" };
-            switch (cbx_height.Text)
-            {
+            this.height = int.Parse(cbx_height.Text);
 
-                case "36":
-                    cbx_nbox.Items.AddRange(arrayBox1);
-                    break;
-                case "46":
-                    cbx_nbox.Items.AddRange(arrayBox1);
-                    break;
-                case "56":
-                    cbx_nbox.Items.AddRange(arrayBox1);
-                    break;
-                case "72":
-                    cbx_nbox.Items.AddRange(arrayBox2);
-                    break;
-                case "92":
-                    cbx_nbox.Items.AddRange(arrayBox2);
-                    break;
-                case "108":
-                    cbx_nbox.Items.AddRange(arrayBox3);
-                    break;
-                case "112":
-                    cbx_nbox.Items.AddRange(arrayBox2);
-                    break;
-                case "138":
-                    cbx_nbox.Items.AddRange(arrayBox3);
-                    break;
-                case "144":
-                    cbx_nbox.Items.AddRange(arrayBox4);
-                    break;
-                case "168":
-                    cbx_nbox.Items.AddRange(arrayBox3);
-                    break;
-                case "180":
-                    cbx_nbox.Items.AddRange(arrayBox5);
-                    break;
-                case "184":
-                    cbx_nbox.Items.AddRange(arrayBox4);
-                    break;
-                case "216":
-                    cbx_nbox.Items.AddRange(arrayBox6);
-                    break;
-                case "224":
-                    cbx_nbox.Items.AddRange(arrayBox4);
-                    break;
-                case "230":
-                    cbx_nbox.Items.AddRange(arrayBox5);
-                    break;
-                case "252":
-                    cbx_nbox.Items.AddRange(arrayBox7);
-                    break;
-                case "276":
-                    cbx_nbox.Items.AddRange(arrayBox6);
-                    break;
-                case "280":
-                    cbx_nbox.Items.AddRange(arrayBox5);
-                    break;
+            foreach (int PannelHeight in PannelHeights)
+            {
+                int BoxHeight = PannelHeight + 4;
+                if (this.height % BoxHeight == 0)
+                {
+                    int numberOfBox = this.height / BoxHeight;
+                    string[] numberOfBoxTxt = { numberOfBox.ToString() };
+                    cbx_nbox.Items.AddRange(numberOfBoxTxt);
+                }
             }
         }
 
@@ -164,8 +111,9 @@ namespace V1_KITBOX
 
         private void UC__Standard_Load(object sender, EventArgs e)
         {
-            string[] arrayHauteur = { "36", "46", "56", "72", "92", "108", "112", "138", "144", "168", "180", "184", "216", "224", "230", "252", "276", "280" };
-            cbx_height.Items.AddRange(arrayHauteur);
+            function.FillList("Hauteur", "kitbox_database.`kitbox`", "Reference='Panneau Ar'", PannelHeights);
+
+            function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Cornieres' ORDER BY Hauteur ASC", cbx_height);
             function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Porte'", cbx_color);
 
 

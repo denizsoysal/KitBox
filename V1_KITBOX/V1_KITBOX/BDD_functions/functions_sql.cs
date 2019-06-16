@@ -82,6 +82,28 @@ namespace V1_KITBOX
 
         }
 
+
+        public static void FillList(string Select, string From, string Where, List<Int32> Combo)
+        {
+            string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
+            MySqlConnection connection;
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+
+            connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            connection.Open();
+            string CommandString = "SELECT DISTINCT " + Select + " FROM " + From + " WHERE " + Where;
+            MySql.Data.MySqlClient.MySqlCommand Command;
+            Command = new MySql.Data.MySqlClient.MySqlCommand(CommandString, connection);
+            MySql.Data.MySqlClient.MySqlDataReader Reader;
+            Reader = Command.ExecuteReader();
+
+            while (Reader.Read())
+            {
+                Combo.Add(Reader.GetInt32(Select));
+            }
+
+        }
+
         public static String Return(string Select, string WhereName, string WhereValue)
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=kitbox_database; UID=root; PASSWORD=";
