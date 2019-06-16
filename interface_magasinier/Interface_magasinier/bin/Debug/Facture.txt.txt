@@ -1,0 +1,17 @@
+KitBox, L'armoire sur mesure.
+Client n°: 314
+Commande n°: 429
+
+Date et heure: 16-06-19 20:03:29
+Cornière : COR36BL
+PanneauHB: PAH3242BL
+PanneauGD: PAG3232BL
+PanneauAR: PAR3242BL
+Porte: POR3232BL
+Tasseau: TAS27
+TraverseAV: TRF42
+TraverseGD: TRG32
+TraverseAR: TRR42
+Prix: En cours de négociation
+
+A la prochaine

@@ -35,6 +35,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.Print = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -108,11 +110,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // Print
+            // 
+            this.Print.Location = new System.Drawing.Point(700, 402);
+            this.Print.Name = "Print";
+            this.Print.Size = new System.Drawing.Size(75, 23);
+            this.Print.TabIndex = 19;
+            this.Print.Text = "Print";
+            this.Print.UseVisualStyleBackColor = true;
+            this.Print.Click += new System.EventHandler(this.Print_Click);
+            // 
             // idCommand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Print);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
@@ -134,5 +147,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Print;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

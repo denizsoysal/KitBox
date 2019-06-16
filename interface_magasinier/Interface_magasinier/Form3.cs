@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.IO;
 
 namespace WinForms_MySQL
 {
@@ -72,12 +73,12 @@ namespace WinForms_MySQL
                 DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
                 id_Command.Text = row.Cells["idCommande"].Value.ToString();
-   
+
 
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             string etat = "Terminée";
             string CommandString = "update kitbox_database.commande set Command_state='" + etat + "' where idCommande='" + this.id_Command.Text + "';";
@@ -134,9 +135,9 @@ namespace WinForms_MySQL
                 PanneauHBCode = function.Return("PanneauHB", "idCommande", this.id_Command.Text);
                 PorteCode = function.Return("Porte", "idCommande", this.id_Command.Text);
                 TasseauCode = function.Return("Tasseau", "idCommande", this.id_Command.Text);
-                TraverseARCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-                TraverseAVCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
-                TraverseGDCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+                TraverseARCode = function.Return("TraverseAR", "idCommande", this.id_Command.Text);
+                TraverseAVCode = function.Return("TraverseAV", "idCommande", this.id_Command.Text);
+                TraverseGDCode = function.Return("TraverseGD", "idCommande", this.id_Command.Text);
                 totalBoxes_str = function.Return("number_of_box", "idCommande", this.id_Command.Text);
                 int totalBoxes = Int32.Parse(totalBoxes_str);
 
@@ -238,6 +239,79 @@ namespace WinForms_MySQL
             this.Hide();
             home home = new home();
             home.ShowDialog();
+        }
+
+        public void Print_Click(object sender, EventArgs e)
+        {
+
+
+
+            string CorniereCode = function.Return("Corniere", "idCommande", this.id_Command.Text);
+            string PanneauARCode = function.Return("PanneauAR", "idCommande", this.id_Command.Text);
+            string PanneauGDCode = function.Return("PanneauGD", "idCommande", this.id_Command.Text);
+            string PanneauHBCode = function.Return("PanneauHB", "idCommande", this.id_Command.Text);
+            string PorteCode = function.Return("Porte", "idCommande", this.id_Command.Text);
+            string TasseauCode = function.Return("Tasseau", "idCommande", this.id_Command.Text);
+            string TraverseARCode = function.Return("TraverseAR", "idCommande", this.id_Command.Text);
+            string TraverseAVCode = function.Return("TraverseAV", "idCommande", this.id_Command.Text);
+            string TraverseGDCode = function.Return("TraverseGD", "idCommande", this.id_Command.Text);
+            string Customer_ID = function.Return("client_fk", "idCommande", this.id_Command.Text); ;
+            string Command_ID = function.Return("idCommande", "idCommande", this.id_Command.Text);
+            string TotalPrice = "En cours de négociation";
+            //
+
+            //
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.InitialDirectory = "C:\" ";
+            saveFileDialog1.Title = "Save the facture " + Command_ID;
+            saveFileDialog1.CheckFileExists = true;
+            saveFileDialog1.CheckPathExists = true;
+            saveFileDialog1.DefaultExt = "txt";
+            saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.FileName = "Facture.txt";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter file = new StreamWriter(saveFileDialog1.FileName);
+                Encoding asciiEncoding = Encoding.ASCII;
+                file.Write("KitBox, L'armoire sur mesure.");
+                file.Write("\r\n");
+                file.Write("Client n°: " + Customer_ID);
+                file.Write("\r\n");
+                file.Write("Commande n°: " + Command_ID);
+                file.Write("\r\n");
+                file.Write("\r\n");
+                file.Write("Date et heure: " + Convert.ToString(DateTime.Now));
+
+                file.Write("\r\n");
+                file.Write("Cornière : " + CorniereCode);
+                file.Write("\r\n");
+                file.Write("PanneauHB: " + PanneauHBCode);
+                file.Write("\r\n");
+                file.Write("PanneauGD: " + PanneauGDCode);
+                file.Write("\r\n");
+                file.Write("PanneauAR: " + PanneauARCode);
+                file.Write("\r\n");
+                file.Write("Porte: " + PorteCode);
+                file.Write("\r\n");
+                file.Write("Tasseau: " + TasseauCode);
+                file.Write("\r\n");
+                file.Write("TraverseAV: " + TraverseAVCode);
+                file.Write("\r\n");
+                file.Write("TraverseGD: " + TraverseGDCode);
+                file.Write("\r\n");
+                file.Write("TraverseAR: " + TraverseARCode);
+                file.Write("\r\n");
+                file.Write("Prix: " + TotalPrice);
+                file.Write("\r\n");
+                file.Write("\r\nA la prochaine");
+
+
+                file.Close();
+                MessageBox.Show("Le fichier a bien été créé dans l'emplacement spécifié!", "Facture", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
         }
     }
 }
