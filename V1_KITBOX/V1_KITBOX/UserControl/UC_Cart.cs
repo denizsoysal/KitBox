@@ -36,7 +36,6 @@ namespace V1_KITBOX
 
         private void UC_Cart_Load(object sender, EventArgs e)
         {
-            LoadData();
         }
 
         public void LoadData()
@@ -100,6 +99,8 @@ namespace V1_KITBOX
                 CorniereCode = function.CodeBarre("Hauteur" + "='" + TotalHeight.ToString() + "' AND " + "`Reference`" + "='" + "Cornieres" + "' AND " + "Couleur" + "='" + Corner_color + "'"); //code barre de la porte
                 Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
 
+                function.Insert("kitbox_database.`Client`", "`NomClient`,`PrenomClient`", "'', ''");
+                Customer_ID = function.Select2("idClient", "kitbox_database.`client`", "idClient");
 
                 function.Update("kitbox_database.`client`", "NomClient='" + tbxLastname.Text + "' , PrenomClient = '" + tbxFirstname.Text + "'", "idClient='" + Customer_ID + "'");
                 function.Insert3("kitbox_database.`commande`", "`PanneauHB`", "`PanneauGD`", "`Porte`", "`Tasseau`", "`PanneauAR`", "`TraverseAV`", "`TraverseGD`", "`TraverseAR`", "`Corniere`", "`client_fk`", "`Command_state`", "`number_of_box`", "'" + PannelHBCode + "'", "'" + PannelGDCode + "'", "'" + DoorCode + "'", "'" + TasseauCode + "'", "'" + PannelARCode + "'", "'" + TraverseAVCode + "'", "'" + TraverseGDCode + "'", "'" + TraverseARCode + "'", "'" + CorniereCode + "'", "'" + Customer_ID + "'", "'" + CommandState + "'", "'" + totalBoxes + "'");
@@ -175,7 +176,7 @@ namespace V1_KITBOX
         {
             LoadData();
 
-            MessageBox.Show("Merci pour votre commande "+ tbxFirstname.Text+" "+ tbxLastname.Text+",\nà bientot !","Commande enregistrée");
+            MessageBox.Show("Merci pour votre commande "+ tbxFirstname.Text+" "+ tbxLastname.Text+",\nà bientôt !","Commande enregistrée");
             this.Controls.Clear();
             this.Controls.Add(new Introduction());
         }

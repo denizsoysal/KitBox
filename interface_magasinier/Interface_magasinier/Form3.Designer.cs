@@ -88,13 +88,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Print);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.id_Command);
             this.groupBox1.Location = new System.Drawing.Point(12, 343);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 93);
+            this.groupBox1.Size = new System.Drawing.Size(397, 93);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Order management";
@@ -102,7 +103,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(365, 402);
+            this.button3.Location = new System.Drawing.Point(493, 402);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(111, 23);
             this.button3.TabIndex = 18;
@@ -112,11 +113,11 @@
             // 
             // Print
             // 
-            this.Print.Location = new System.Drawing.Point(700, 402);
+            this.Print.Location = new System.Drawing.Point(282, 59);
             this.Print.Name = "Print";
-            this.Print.Size = new System.Drawing.Size(75, 23);
+            this.Print.Size = new System.Drawing.Size(97, 23);
             this.Print.TabIndex = 19;
-            this.Print.Text = "Print";
+            this.Print.Text = "Print the invoice";
             this.Print.UseVisualStyleBackColor = true;
             this.Print.Click += new System.EventHandler(this.Print_Click);
             // 
@@ -125,7 +126,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Print);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);

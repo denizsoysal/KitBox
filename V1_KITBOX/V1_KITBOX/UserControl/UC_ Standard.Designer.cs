@@ -146,6 +146,9 @@
             // 
             this.cbx_color.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_color.FormattingEnabled = true;
+            this.cbx_color.Items.AddRange(new object[] {
+            "Blanc",
+            "Brun"});
             this.cbx_color.Location = new System.Drawing.Point(270, 257);
             this.cbx_color.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_color.Name = "cbx_color";

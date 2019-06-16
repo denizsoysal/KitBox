@@ -117,7 +117,6 @@ namespace V1_KITBOX
             function.FillList("Hauteur", "kitbox_database.`kitbox`", "Reference='Panneau Ar'", PannelHeights);
 
             function.Fill("Hauteur", "kitbox_database.`kitbox`", "Reference='Cornieres' ORDER BY Hauteur ASC", cbx_height);
-            function.Fill("Couleur", "kitbox_database.`kitbox`", "Reference='Porte'", cbx_color);
 
 
             function.ConnectionClose();

@@ -55,3 +55,5 @@ C:\Users\RudyM\Downloads\KitBox-master\KitBox\interface_magasinier\Interface_mag
 C:\Users\RudyM\Downloads\KitBox-master\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\interface_magasinier.csproj.CoreCompileInputs.cache
 C:\Users\RudyM\Downloads\KitBox-master\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.exe
 C:\Users\RudyM\Downloads\KitBox-master\KitBox\interface_magasinier\Interface_magasinier\obj\Debug\WinForms_MySQL.pdb
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\bin\Debug\Google.Protobuf.dll
+C:\Users\Deniz\Desktop\ECAM3BA\Q2\projet_info\github\KitBox\interface_magasinier\Interface_magasinier\bin\Debug\MySql.Data.xml
